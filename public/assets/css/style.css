@@ -115,7 +115,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: #F5C862;
+  background: gray;
 }
 
 #header .logo {
@@ -163,7 +163,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  padding: 10px 0 10px 15px;
   font-size: 15px;
   font-weight: 500;
   color: #fff;
@@ -574,7 +574,7 @@ section {
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
-  filter: grayscale(100);
+ /*  filter: grayscale(100); */
 }
 
 .clients img:hover {
@@ -888,7 +888,7 @@ section {
 .cta {
   background: linear-gradient(#F5C862, #F5C862), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
-  padding: 120px 0;
+  padding: 50px 0;
 }
 
 .cta h3 {

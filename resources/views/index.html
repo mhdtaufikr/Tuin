@@ -39,67 +39,181 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
+  <style>
+    #navbar.navbar {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    #header {
+    background-color: gray;
+  }
+  </style>
+  
 
-      <h1 class="logo me-auto"><a href="index.html">Tuin</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#skills">Roadmaps</a></li>
-          <li><a class="nav-link scrollto" href="#news">News</a></li>
-          <li><a class="nav-link scrollto" href="#partner">Partner</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#whitepapper">Whitepapper</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+ <!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+  <div class="align-items-center">
+  <div class="row">
+    <div style="padding-left: 200px;" class="col-md-3">
+      <div  class="pic">
+        <h1 class="logo me-auto">
+          <img style="max-width: 50px; height: auto;" src="assets/img/tuin_logo.png" class="img-fluid logo-image" alt="">
+          <a href="index.html">Tuin</a>
+        </h1>
+    
+    </div>
+    </div>
+    <div class="col-md-6">
+     
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#skills">Roadmaps</a></li>
+            <li><a class="nav-link scrollto" href="#news">News</a></li>
+            <li><a class="nav-link scrollto" href="#partner">Partner</a></li>
+            <li><a class="nav-link scrollto" href="#team">Team</a></li>
+            <li><a class="nav-link scrollto" href="#whitepapper">Whitepaper</a></li>
+            <li><a class="nav-link scrollto" href="#Manifesto">Manifesto</a></li>
+            <li><a class="nav-link scrollto" href="#Tokenomics">Tokenomics</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <div class="header-icons">
+            <img src="path/to/image1.png" class="header-icon" alt="">
+            <img src="path/to/image2.png" class="header-icon" alt="">
+          </div>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+     
+    </div>
+    <div style="padding-left: 100PX;" class="col-md-3">
+    
+      <div class="pic">
+        <h1 class="logo me-auto">
+          <img style="max-width: 50px; height: auto;" src="assets/img/pancakeswap.png" class="img-fluid logo-image" alt="">
+          <img style="max-width: 50px; height: auto;" src="assets/img/Uniswap.png" class="img-fluid logo-image" alt="">
+        </h1>
+      </div>
 
     </div>
-  </header><!-- End Header -->
+  </div>
+</div>
+  
+</header><!-- End Header -->
+
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Bridging Revelution Of The Funding Gap</h1>
-          <h2> With Tuin Token and Web 3.0 Ecosystem</h2>
+        <div class="col-lg-4 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/tuin_g.png" class="img-fluid animated" alt="" style="width:auto;height:auto;">
+        </div>
+        <div class="col-lg-4 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1 class="text-center">Bridging Revolution Of The Funding Gap</h1>
+          <h2 class="text-center"> With Tuin Token and Web 3.0 Ecosystem</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started scrollto">About Us</a>
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            <div class="d-flex justify-content-center">
+              <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="80%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M501.299,132.766c-5.888,-22.03 -23.234,-39.377 -45.264,-45.264c-39.932,-10.701 -200.037,-10.701 -200.037,-10.701c0,0 -160.105,0 -200.038,10.701c-22.025,5.887 -39.376,23.234 -45.264,45.264c-10.696,39.928 -10.696,123.236 -10.696,123.236c0,0 0,83.308 10.696,123.232c5.888,22.03 23.239,39.381 45.264,45.268c39.933,10.697 200.038,10.697 200.038,10.697c0,0 160.105,0 200.037,-10.697c22.03,-5.887 39.376,-23.238 45.264,-45.268c10.701,-39.924 10.701,-123.232 10.701,-123.232c0,0 0,-83.308 -10.701,-123.236Z" style="fill:#ed1f24;fill-rule:nonzero;"/><path d="M204.796,332.803l133.018,-76.801l-133.018,-76.801l0,153.602Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg>
+              </div>
+    
+              <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="80%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M511.2,256C511.2,115.155 396.851,0.806 256.006,0.806L255.994,0.806C115.149,0.806 0.8,115.155 0.8,256C0.8,396.845 115.149,511.194 255.994,511.194L256.006,511.194C396.851,511.194 511.2,396.845 511.2,256ZM281.624,256.002C281.624,318.733 231.116,369.586 168.814,369.586C106.512,369.586 56,318.721 56,256.002C56,193.282 106.508,142.414 168.814,142.414C231.12,142.414 281.624,193.271 281.624,256.002ZM405.381,256.002C405.381,315.05 380.126,362.936 348.974,362.936C317.821,362.936 292.567,315.05 292.567,256.002C292.567,196.954 317.817,149.067 348.97,149.067C380.123,149.067 405.377,196.939 405.377,256.002L405.381,256.002ZM456,256.002C456,308.894 447.119,351.798 436.162,351.798C425.204,351.798 416.327,308.906 416.327,256.002C416.327,203.098 425.207,160.206 436.162,160.206C447.116,160.206 456,203.094 456,256.002Z"/></g></svg>
+              </div>
+    
+              <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="80%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x39_1-discord"><g><path d="M447.249,82.455V474.57c-55.065-48.661-37.454-32.553-101.418-92.018L350,422.987H109.557    c-24.698,0-44.806-20.106-44.806-45.026V82.455c0-24.917,20.107-45.025,44.806-45.025H402.44    C427.14,37.43,447.249,57.538,447.249,82.455z" style="fill:#8A9CFE;"/><path d="M353.481,162.233c-31.474-23.605-61.418-22.95-61.418-22.95l-3.06,3.498    c37.157,11.365,54.425,27.758,54.425,27.758c-51.921-28.456-112.91-28.46-163.273-6.338c-8.088,3.715-12.896,6.338-12.896,6.338    s18.142-17.267,57.485-28.632l-2.185-2.624c0,0-29.945-0.655-61.419,22.95c0,0-31.474,57.047-31.474,127.426    c0,0,18.361,31.692,66.663,33.223c0,0,8.088-9.834,14.645-18.142c-27.759-8.306-38.249-25.789-38.249-25.789    c3.215,2.248,8.517,5.168,8.961,5.463c36.892,20.662,89.295,27.43,136.388,7.65c7.648-2.841,16.174-6.995,25.135-12.896    c0,0-10.929,17.924-39.562,26.01c6.559,8.305,14.427,17.703,14.427,17.703c48.304-1.53,66.881-33.223,66.881-33.223    C384.955,219.28,353.481,162.233,353.481,162.233z M216.438,269.333c-12.24,0-22.295-10.928-22.295-24.262    c0-13.333,9.836-24.261,22.295-24.261c12.458,0,22.513,10.928,22.294,24.261C238.732,258.405,228.896,269.333,216.438,269.333z     M296.216,269.333c-12.239,0-22.294-10.928-22.294-24.262c0-13.333,9.836-24.261,22.294-24.261    c12.459,0,22.295,10.928,22.295,24.261C318.511,258.405,308.675,269.333,296.216,269.333z" style="fill:#FDFDFD;"/></g></g><g id="Layer_1"/></svg>
+              </div>
+    
+              <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="80%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Artwork"><circle cx="255.999" cy="255.999" r="256" style="fill:#ff4500;"/><path d="M426.666,255.999c0,-20.659 -16.767,-37.427 -37.427,-37.427c-10.18,0 -19.163,3.893 -25.75,10.48c-25.45,-18.264 -60.781,-30.241 -99.705,-31.738l17.067,-79.944l55.391,11.677c0.599,14.073 12.276,25.451 26.648,25.451c14.672,0 26.648,-11.977 26.648,-26.648c0,-14.672 -11.976,-26.648 -26.648,-26.648c-10.479,0 -19.462,5.988 -23.653,14.97l-61.979,-13.174c-1.797,-0.299 -3.593,0 -5.09,0.898c-1.497,0.899 -2.396,2.396 -2.995,4.192l-18.863,89.226c-39.822,1.198 -75.452,12.875 -101.202,31.738c-6.587,-6.288 -15.869,-10.48 -25.75,-10.48c-20.659,0 -37.426,16.768 -37.426,37.427c0,15.27 8.982,28.145 22.156,34.134c-0.599,3.593 -0.898,7.485 -0.898,11.377c0,57.488 66.77,103.897 149.408,103.897c82.639,0 149.408,-46.409 149.408,-103.897c0,-3.892 -0.299,-7.485 -0.898,-11.078c12.276,-5.988 21.558,-19.163 21.558,-34.433Zm-256,26.648c0,-14.671 11.977,-26.648 26.648,-26.648c14.671,0 26.648,11.977 26.648,26.648c0,14.672 -11.977,26.648 -26.648,26.648c-14.671,0 -26.648,-11.976 -26.648,-26.648Zm148.809,70.363c-18.264,18.264 -52.996,19.462 -63.176,19.462c-10.18,0 -45.212,-1.497 -63.177,-19.462c-2.695,-2.695 -2.695,-7.186 0,-9.881c2.695,-2.695 7.186,-2.695 9.881,0c11.378,11.378 35.93,15.57 53.595,15.57c17.666,0 41.918,-4.192 53.595,-15.57c2.695,-2.695 7.186,-2.695 9.881,0c2.096,2.994 2.096,7.186 -0.599,9.881Zm-4.79,-43.715c-14.672,0 -26.648,-11.976 -26.648,-26.648c0,-14.671 11.976,-26.648 26.648,-26.648c14.671,0 26.648,11.977 26.648,26.648c0,14.672 -11.977,26.648 -26.648,26.648Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg>
+              </div>
+    
+              <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg enable-background="new 0 0 32 32" height="100%" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="80%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M31.993,6.077C30.816,6.6,29.552,6.953,28.223,7.11c1.355-0.812,2.396-2.098,2.887-3.63  c-1.269,0.751-2.673,1.299-4.168,1.592C25.744,3.797,24.038,3,22.149,3c-3.625,0-6.562,2.938-6.562,6.563  c0,0.514,0.057,1.016,0.169,1.496C10.301,10.785,5.465,8.172,2.227,4.201c-0.564,0.97-0.888,2.097-0.888,3.3  c0,2.278,1.159,4.286,2.919,5.464c-1.075-0.035-2.087-0.329-2.972-0.821c-0.001,0.027-0.001,0.056-0.001,0.082  c0,3.181,2.262,5.834,5.265,6.437c-0.55,0.149-1.13,0.23-1.729,0.23c-0.424,0-0.834-0.041-1.234-0.117  c0.834,2.606,3.259,4.504,6.13,4.558c-2.245,1.76-5.075,2.811-8.15,2.811c-0.53,0-1.053-0.031-1.566-0.092  C2.905,27.913,6.355,29,10.062,29c12.072,0,18.675-10.001,18.675-18.675c0-0.284-0.008-0.568-0.02-0.85  C30,8.55,31.112,7.395,31.993,6.077z" fill="#55ACEE"/><g/><g/><g/><g/><g/><g/></svg>
+              </div>
+    
+              <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                <?xml version="1.0" ?><svg style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" xml:space="preserve"height="100%" width="80%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                  .st0{fill:#4267B2;}
+                  .st1{fill:url(#SVGID_1_);}
+                  .st2{fill:#FFFFFF;}
+                  .st3{fill:#C2191E;}
+                  .st4{fill:#1DA1F3;}
+                  .st5{fill:#FEFE00;}
+                  .st6{fill:#25D366;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
+                  .st7{fill:#CB2027;}
+                  .st8{fill:#0077B5;}
+                  .st9{fill:url(#SVGID_2_);}
+                  .st10{fill:url(#SVGID_3_);}
+                  .st11{fill:#FF004F;}
+                  .st12{fill:#00F7EF;}
+                  .st13{fill:#5181B8;}
+                  .st14{fill:#395976;}
+                  .st15{fill:#F58220;}
+                  .st16{fill:#E6162D;}
+                  .st17{fill:#FF9933;}
+                </style><g id="guidlines"/><g id="FB"/><g id="ig"/><g id="yt"/><g id="twitter"/><g id="snapchat"/><g id="WA"/><g id="Pinterrest"/><g id="Layer_9"/><g id="Layer_10"/><g id="Layer_11"><g><g><path class="st11" d="M58,19.4v9.3c-0.5,0-1.1,0.1-1.7,0.1c-4.5,0-8.7-1.7-11.9-4.4v19.8c0,4-1.3,7.8-3.6,10.8     c-3.2,4.3-8.4,7.2-14.3,7.2c-6.4,0-12-3.4-15.1-8.4c3.2,3,7.5,4.9,12.2,4.9c5.8,0,11-2.8,14.2-7.2c2.2-3,3.6-6.7,3.6-10.8V20.8     c3.2,2.8,7.3,4.4,11.9,4.4c0.6,0,1.1,0,1.7-0.1v-6c0.9,0.2,1.7,0.3,2.6,0.3H58z"/><path class="st11" d="M29,26.3v10.3c-0.7-0.2-1.5-0.3-2.2-0.3c-4.4,0-8,3.7-8,8.2c0,1,0.2,1.9,0.5,2.8c-2-1.5-3.4-3.9-3.4-6.6     c0-4.5,3.6-8.2,8-8.2c0.8,0,1.5,0.1,2.2,0.3l0-6.6c0.2,0,0.4,0,0.6,0C27.5,26.2,28.3,26.2,29,26.3z"/><path class="st11" d="M45.9,12c-1.8-1.6-3.1-3.8-3.8-6.1h2.4c0,0.5,0,0.9,0,1.4C44.7,8.9,45.2,10.5,45.9,12z"/></g></g><path d="M55.1,19.2v6c-0.5,0.1-1.1,0.1-1.7,0.1c-4.5,0-8.7-1.7-11.9-4.4v19.8c0,4-1.3,7.8-3.6,10.8c-3.3,4.4-8.4,7.2-14.2,7.2   c-4.7,0-9-1.9-12.2-4.9c-1.7-2.8-2.7-6-2.7-9.5c0-9.7,7.7-17.6,17.3-17.9l0,6.6c-0.7-0.2-1.5-0.3-2.2-0.3c-4.4,0-8,3.7-8,8.2   c0,2.7,1.3,5.2,3.4,6.6c1.1,3.1,4.1,5.4,7.5,5.4c4.4,0,8-3.7,8-8.2V5.9h7.3c0.7,2.4,2,4.5,3.8,6.1C47.7,15.6,51.1,18.3,55.1,19.2z"/><g><g><g><path class="st12" d="M26.1,22.8l0,3.4c-9.6,0.3-17.3,8.2-17.3,17.9c0,3.5,1,6.7,2.7,9.5C8.1,50.3,6,45.7,6,40.5      c0-9.9,8-17.9,17.8-17.9C24.6,22.6,25.4,22.7,26.1,22.8z"/><path class="st12" d="M42.1,5.9h-7.3v38.6c0,4.5-3.6,8.2-8,8.2c-3.5,0-6.4-2.2-7.5-5.4c1.3,0.9,2.9,1.5,4.6,1.5      c4.4,0,8-3.6,8-8.1V2h9.7v0.2c0,0.4,0,0.8,0.1,1.2C41.7,4.2,41.9,5.1,42.1,5.9z"/></g></g><path class="st12" d="M55.1,15.5C55.1,15.5,55.1,15.5,55.1,15.5v3.6c-4-0.8-7.4-3.5-9.3-7.1C48.3,14.3,51.5,15.6,55.1,15.5z"/></g></g><g id="Layer_12"/><g id="Layer_13"/><g id="Layer_14"/><g id="Layer_15"/><g id="Layer_16"/><g id="Layer_17"/></svg>
+              </div>
+    
+              <div class="col-lg-1 d-flex align-items-center justify-content-center">
+              <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="80%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x31_73-instagram"><g><linearGradient gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="74.3496" x2="393.8339" y1="83.7275" y2="386.7129"><stop offset="0" style="stop-color:#FEC053"/><stop offset="0.3273" style="stop-color:#F2203E"/><stop offset="0.6485" style="stop-color:#B729A8"/><stop offset="1" style="stop-color:#5342D6"/></linearGradient><path d="M256.052,138.088c-65.268,0-117.913,52.646-117.913,117.912    c0,65.267,52.645,117.91,117.913,117.91c65.267,0,117.911-52.644,117.911-117.91C373.963,190.734,321.318,138.088,256.052,138.088    z M256.052,332.659c-42.177,0-76.659-34.38-76.659-76.659c0-42.279,34.378-76.657,76.659-76.657    c42.277,0,76.657,34.378,76.657,76.657C332.709,298.279,298.229,332.659,256.052,332.659L256.052,332.659z M406.288,133.266    c0,15.291-12.315,27.502-27.502,27.502c-15.292,0-27.502-12.314-27.502-27.502c0-15.188,12.313-27.503,27.502-27.503    C393.973,105.763,406.288,118.077,406.288,133.266z M484.382,161.177c-1.743-36.839-10.158-69.474-37.148-96.36    c-26.886-26.887-59.52-35.302-96.36-37.148c-37.971-2.155-151.777-2.155-189.747,0c-36.739,1.743-69.372,10.159-96.361,37.046    c-26.99,26.887-35.302,59.52-37.149,96.36c-2.155,37.969-2.155,151.777,0,189.747c1.745,36.842,10.159,69.473,37.149,96.361    c26.989,26.887,59.521,35.301,96.361,37.148c37.969,2.154,151.776,2.154,189.747,0c36.841-1.744,69.475-10.161,96.36-37.148    c26.887-26.889,35.302-59.52,37.148-96.361C486.538,312.853,486.538,199.147,484.382,161.177z M435.329,391.563    c-8.004,20.112-23.5,35.61-43.716,43.716c-30.273,12.009-102.108,9.236-135.562,9.236c-33.456,0-105.393,2.669-135.563-9.236    c-20.114-8.005-35.611-23.498-43.717-43.716C64.766,361.29,67.538,289.455,67.538,256s-2.669-105.391,9.234-135.562    c8.006-20.114,23.5-35.61,43.717-43.716c30.273-12.007,102.107-9.236,135.563-9.236c33.453,0,105.391-2.668,135.562,9.236    c20.113,8.002,35.609,23.5,43.716,43.716c12.007,30.272,9.237,102.107,9.237,135.562S447.336,361.392,435.329,391.563z" style="fill:url(#SVGID_1_);"/></g></g><g id="Layer_1"/></svg>
+              </div>
+    
+              <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg enable-background="new 0 0 32 32" height="100%" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="80%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle clip-rule="evenodd" cx="16" cy="16" fill="#3B5998" fill-rule="evenodd" r="16"/><path d="M22,32V20h4l1-5h-5v-2c0-2,1.002-3,3-3h2V5c-1,0-2.24,0-4,0c-3.675,0-6,2.881-6,7v3h-4v5h4v12H22   z" fill="#FFFFFF" id="f_2_"/></g><g/><g/><g/><g/><g/><g/></svg>
+              </div>
+              
+              <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                <?xml version="1.0" ?><svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                  .st0{fill:url(#SVGID_1_);}
+                  .st1{fill:#FFFFFF;}
+                  .st2{fill:#D2E4F0;}
+                  .st3{fill:#B5CFE4;}
+                </style><g><linearGradient gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="256" x2="256" y1="0" y2="510.1322"><stop offset="0" style="stop-color:#41BCE7"/><stop offset="1" style="stop-color:#22A6DC"/></linearGradient><circle class="st0" cx="256" cy="256" r="256"/><g><path class="st1" d="M380.6,147.3l-45.7,230.5c0,0-6.4,16-24,8.3l-105.5-80.9L167,286.7l-64.6-21.7c0,0-9.9-3.5-10.9-11.2    c-1-7.7,11.2-11.8,11.2-11.8l256.8-100.7C359.5,141.2,380.6,131.9,380.6,147.3z"/><path class="st2" d="M197.2,375.2c0,0-3.1-0.3-6.9-12.4c-3.8-12.1-23.3-76.1-23.3-76.1l155.1-98.5c0,0,9-5.4,8.6,0    c0,0,1.6,1-3.2,5.4c-4.8,4.5-121.8,109.7-121.8,109.7"/><path class="st3" d="M245.8,336.2l-41.7,38.1c0,0-3.3,2.5-6.8,0.9l8-70.7"/></g></g></svg>
+              </div>
+            </div>
+            <!-- <a style="background-color: gray;" href="#about" class="btn-get-started scrollto">About Us</a>
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+          </div>
+          
+        </div>
+        <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/tuin.png" class="img-fluid animated mb-4" alt="" style="width:auto;height:auto;">
+          <div class="justify-content-center text-center">
+            <button type="button" class="text-center btn btn-outline-secondary"><strong>BUY $ TUIN</strong></button><br><br>
+            <?xml version="1.0" ?><svg height="30px" viewBox="0 0 256 256" width="30px" xmlns="http://www.w3.org/2000/svg"><defs><style>
+              .cls-1 {
+                fill: #acb7dd;
+              }
+        
+              .cls-2 {
+                fill: #828384;
+              }
+        
+              .cls-2, .cls-3, .cls-4 {
+                fill-rule: evenodd;
+              }
+        
+              .cls-3 {
+                fill: #2f3030;
+              }
+        
+              .cls-4 {
+                fill: #131313;
+                opacity: 0.8;
+              }
+            </style></defs><g data-name="etherium eth ethcoin crypto" id="etherium_eth_ethcoin_crypto"><g data-name="etherium eth" id="etherium_eth"><circle class="cls-1" cx="128" cy="128" data-name="Эллипс 9" id="Эллипс_9" r="128"/><path class="cls-2" d="M1144.2,652L1080,758.641l64.2,38.144,63.8-38.144ZM1080,771.355l64.2,37.735,63.8-37.735L1144.2,862Z" data-name="Фигура 2" id="Фигура_2" transform="translate(-1016 -629)"/><path class="cls-3" d="M1144.2,796.539V652l63.62,106.339Zm63.41-25.044L1144.2,862V809.256Z" data-name="Фигура 4" id="Фигура_4" transform="translate(-1016 -629)"/><path class="cls-4" d="M1144.2,729.93L1080,758.641l64.2,38.144,63.8-38.144Z" data-name="Фигура 3" id="Фигура_3" transform="translate(-1016 -629)"/></g></g></svg>
+          <span>Contract Address (ETH)</span>
+          <br><br>
+           <?xml version="1.0" ?><svg style="height: 30px; width:30px;" data-name="Layer 1" id="Layer_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><title/><rect height="18.36" transform="translate(-13.86 94.54) rotate(-45)" width="18.36" x="98.02" y="54.82"/><rect height="18.36" transform="translate(-39.16 33.46) rotate(-45)" width="18.36" x="11.63" y="54.82"/><polygon points="64 94.22 42.48 72.7 29.5 85.68 64 120.18 98.5 85.68 85.52 72.7 64 94.22"/><polygon points="64 33.78 85.52 55.3 98.5 42.32 64 7.82 29.5 42.32 42.48 55.3 64 33.78"/><rect  height="18.13" transform="translate(-26.51 64) rotate(-45)" width="18.13" x="54.93" y="54.93"/></svg>
+          <span>Contract Address (BSC)</span>
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/tuin.png" class="img-fluid animated" alt="" style="width:auto;height:auto;">
-        </div>
+        
       </div>
     </div>
 
@@ -109,60 +223,34 @@
 
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients section-bg">
-      <div class="container">
+      <div class="">
 
         <div class="row" data-aos="zoom-in">
           <div class="d-flex justify-content-center">
-            <div class="col-lg-1 d-flex align-items-center justify-content-center">
-              <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="80%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M501.299,132.766c-5.888,-22.03 -23.234,-39.377 -45.264,-45.264c-39.932,-10.701 -200.037,-10.701 -200.037,-10.701c0,0 -160.105,0 -200.038,10.701c-22.025,5.887 -39.376,23.234 -45.264,45.264c-10.696,39.928 -10.696,123.236 -10.696,123.236c0,0 0,83.308 10.696,123.232c5.888,22.03 23.239,39.381 45.264,45.268c39.933,10.697 200.038,10.697 200.038,10.697c0,0 160.105,0 200.037,-10.697c22.03,-5.887 39.376,-23.238 45.264,-45.268c10.701,-39.924 10.701,-123.232 10.701,-123.232c0,0 0,-83.308 -10.701,-123.236Z" style="fill:#ed1f24;fill-rule:nonzero;"/><path d="M204.796,332.803l133.018,-76.801l-133.018,-76.801l0,153.602Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg>
+            <div class="col-lg-2 d-flex align-items-center justify-content-center">
+              <img src="assets/img/1.png" class="img-fluid animated mb-4" alt="" style="width:auto;height:auto;">  
+            </div>
+
+            <div class="col-lg-2 d-flex align-items-center justify-content-center">
+              <img src="assets/img/2.png" class="img-fluid animated mb-4" alt="" style="width:auto;height:auto;">  
+            </div>
+
+            <div class="col-lg-2 d-flex align-items-center justify-content-center">
+              <img src="assets/img/3.png" class="img-fluid animated mb-4" alt="" style="width:auto;height:auto;">  
+            </div>
+
+            <div class="col-lg-2 d-flex align-items-center justify-content-center">
+              <img src="assets/img/4.png" class="img-fluid animated mb-4" alt="" style="width:auto;height:auto;">  
+            </div>
+
+            <div class="col-lg-2 d-flex align-items-center justify-content-center">
+              <img src="assets/img/5.png" class="img-fluid animated mb-4" alt="" style="width:auto;height:auto;">  
+            </div>
+
+            <div class="col-lg-2 d-flex align-items-center justify-content-center">
+              <img src="assets/img/6.png" class="img-fluid animated mb-4" alt="" style="width:auto;height:auto;">  
             </div>
   
-            <div class="col-lg-1 d-flex align-items-center justify-content-center">
-              <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="80%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M511.2,256C511.2,115.155 396.851,0.806 256.006,0.806L255.994,0.806C115.149,0.806 0.8,115.155 0.8,256C0.8,396.845 115.149,511.194 255.994,511.194L256.006,511.194C396.851,511.194 511.2,396.845 511.2,256ZM281.624,256.002C281.624,318.733 231.116,369.586 168.814,369.586C106.512,369.586 56,318.721 56,256.002C56,193.282 106.508,142.414 168.814,142.414C231.12,142.414 281.624,193.271 281.624,256.002ZM405.381,256.002C405.381,315.05 380.126,362.936 348.974,362.936C317.821,362.936 292.567,315.05 292.567,256.002C292.567,196.954 317.817,149.067 348.97,149.067C380.123,149.067 405.377,196.939 405.377,256.002L405.381,256.002ZM456,256.002C456,308.894 447.119,351.798 436.162,351.798C425.204,351.798 416.327,308.906 416.327,256.002C416.327,203.098 425.207,160.206 436.162,160.206C447.116,160.206 456,203.094 456,256.002Z"/></g></svg>
-            </div>
-  
-            <div class="col-lg-1 d-flex align-items-center justify-content-center">
-              <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="80%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x39_1-discord"><g><path d="M447.249,82.455V474.57c-55.065-48.661-37.454-32.553-101.418-92.018L350,422.987H109.557    c-24.698,0-44.806-20.106-44.806-45.026V82.455c0-24.917,20.107-45.025,44.806-45.025H402.44    C427.14,37.43,447.249,57.538,447.249,82.455z" style="fill:#8A9CFE;"/><path d="M353.481,162.233c-31.474-23.605-61.418-22.95-61.418-22.95l-3.06,3.498    c37.157,11.365,54.425,27.758,54.425,27.758c-51.921-28.456-112.91-28.46-163.273-6.338c-8.088,3.715-12.896,6.338-12.896,6.338    s18.142-17.267,57.485-28.632l-2.185-2.624c0,0-29.945-0.655-61.419,22.95c0,0-31.474,57.047-31.474,127.426    c0,0,18.361,31.692,66.663,33.223c0,0,8.088-9.834,14.645-18.142c-27.759-8.306-38.249-25.789-38.249-25.789    c3.215,2.248,8.517,5.168,8.961,5.463c36.892,20.662,89.295,27.43,136.388,7.65c7.648-2.841,16.174-6.995,25.135-12.896    c0,0-10.929,17.924-39.562,26.01c6.559,8.305,14.427,17.703,14.427,17.703c48.304-1.53,66.881-33.223,66.881-33.223    C384.955,219.28,353.481,162.233,353.481,162.233z M216.438,269.333c-12.24,0-22.295-10.928-22.295-24.262    c0-13.333,9.836-24.261,22.295-24.261c12.458,0,22.513,10.928,22.294,24.261C238.732,258.405,228.896,269.333,216.438,269.333z     M296.216,269.333c-12.239,0-22.294-10.928-22.294-24.262c0-13.333,9.836-24.261,22.294-24.261    c12.459,0,22.295,10.928,22.295,24.261C318.511,258.405,308.675,269.333,296.216,269.333z" style="fill:#FDFDFD;"/></g></g><g id="Layer_1"/></svg>
-            </div>
-  
-            <div class="col-lg-1 d-flex align-items-center justify-content-center">
-              <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="80%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Artwork"><circle cx="255.999" cy="255.999" r="256" style="fill:#ff4500;"/><path d="M426.666,255.999c0,-20.659 -16.767,-37.427 -37.427,-37.427c-10.18,0 -19.163,3.893 -25.75,10.48c-25.45,-18.264 -60.781,-30.241 -99.705,-31.738l17.067,-79.944l55.391,11.677c0.599,14.073 12.276,25.451 26.648,25.451c14.672,0 26.648,-11.977 26.648,-26.648c0,-14.672 -11.976,-26.648 -26.648,-26.648c-10.479,0 -19.462,5.988 -23.653,14.97l-61.979,-13.174c-1.797,-0.299 -3.593,0 -5.09,0.898c-1.497,0.899 -2.396,2.396 -2.995,4.192l-18.863,89.226c-39.822,1.198 -75.452,12.875 -101.202,31.738c-6.587,-6.288 -15.869,-10.48 -25.75,-10.48c-20.659,0 -37.426,16.768 -37.426,37.427c0,15.27 8.982,28.145 22.156,34.134c-0.599,3.593 -0.898,7.485 -0.898,11.377c0,57.488 66.77,103.897 149.408,103.897c82.639,0 149.408,-46.409 149.408,-103.897c0,-3.892 -0.299,-7.485 -0.898,-11.078c12.276,-5.988 21.558,-19.163 21.558,-34.433Zm-256,26.648c0,-14.671 11.977,-26.648 26.648,-26.648c14.671,0 26.648,11.977 26.648,26.648c0,14.672 -11.977,26.648 -26.648,26.648c-14.671,0 -26.648,-11.976 -26.648,-26.648Zm148.809,70.363c-18.264,18.264 -52.996,19.462 -63.176,19.462c-10.18,0 -45.212,-1.497 -63.177,-19.462c-2.695,-2.695 -2.695,-7.186 0,-9.881c2.695,-2.695 7.186,-2.695 9.881,0c11.378,11.378 35.93,15.57 53.595,15.57c17.666,0 41.918,-4.192 53.595,-15.57c2.695,-2.695 7.186,-2.695 9.881,0c2.096,2.994 2.096,7.186 -0.599,9.881Zm-4.79,-43.715c-14.672,0 -26.648,-11.976 -26.648,-26.648c0,-14.671 11.976,-26.648 26.648,-26.648c14.671,0 26.648,11.977 26.648,26.648c0,14.672 -11.977,26.648 -26.648,26.648Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg>
-            </div>
-  
-            <div class="col-lg-1 d-flex align-items-center justify-content-center">
-              <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg enable-background="new 0 0 32 32" height="100%" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="80%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M31.993,6.077C30.816,6.6,29.552,6.953,28.223,7.11c1.355-0.812,2.396-2.098,2.887-3.63  c-1.269,0.751-2.673,1.299-4.168,1.592C25.744,3.797,24.038,3,22.149,3c-3.625,0-6.562,2.938-6.562,6.563  c0,0.514,0.057,1.016,0.169,1.496C10.301,10.785,5.465,8.172,2.227,4.201c-0.564,0.97-0.888,2.097-0.888,3.3  c0,2.278,1.159,4.286,2.919,5.464c-1.075-0.035-2.087-0.329-2.972-0.821c-0.001,0.027-0.001,0.056-0.001,0.082  c0,3.181,2.262,5.834,5.265,6.437c-0.55,0.149-1.13,0.23-1.729,0.23c-0.424,0-0.834-0.041-1.234-0.117  c0.834,2.606,3.259,4.504,6.13,4.558c-2.245,1.76-5.075,2.811-8.15,2.811c-0.53,0-1.053-0.031-1.566-0.092  C2.905,27.913,6.355,29,10.062,29c12.072,0,18.675-10.001,18.675-18.675c0-0.284-0.008-0.568-0.02-0.85  C30,8.55,31.112,7.395,31.993,6.077z" fill="#55ACEE"/><g/><g/><g/><g/><g/><g/></svg>
-            </div>
-  
-            <div class="col-lg-1 d-flex align-items-center justify-content-center">
-              <?xml version="1.0" ?><svg style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" xml:space="preserve"height="100%" width="80%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
-                .st0{fill:#4267B2;}
-                .st1{fill:url(#SVGID_1_);}
-                .st2{fill:#FFFFFF;}
-                .st3{fill:#C2191E;}
-                .st4{fill:#1DA1F3;}
-                .st5{fill:#FEFE00;}
-                .st6{fill:#25D366;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
-                .st7{fill:#CB2027;}
-                .st8{fill:#0077B5;}
-                .st9{fill:url(#SVGID_2_);}
-                .st10{fill:url(#SVGID_3_);}
-                .st11{fill:#FF004F;}
-                .st12{fill:#00F7EF;}
-                .st13{fill:#5181B8;}
-                .st14{fill:#395976;}
-                .st15{fill:#F58220;}
-                .st16{fill:#E6162D;}
-                .st17{fill:#FF9933;}
-              </style><g id="guidlines"/><g id="FB"/><g id="ig"/><g id="yt"/><g id="twitter"/><g id="snapchat"/><g id="WA"/><g id="Pinterrest"/><g id="Layer_9"/><g id="Layer_10"/><g id="Layer_11"><g><g><path class="st11" d="M58,19.4v9.3c-0.5,0-1.1,0.1-1.7,0.1c-4.5,0-8.7-1.7-11.9-4.4v19.8c0,4-1.3,7.8-3.6,10.8     c-3.2,4.3-8.4,7.2-14.3,7.2c-6.4,0-12-3.4-15.1-8.4c3.2,3,7.5,4.9,12.2,4.9c5.8,0,11-2.8,14.2-7.2c2.2-3,3.6-6.7,3.6-10.8V20.8     c3.2,2.8,7.3,4.4,11.9,4.4c0.6,0,1.1,0,1.7-0.1v-6c0.9,0.2,1.7,0.3,2.6,0.3H58z"/><path class="st11" d="M29,26.3v10.3c-0.7-0.2-1.5-0.3-2.2-0.3c-4.4,0-8,3.7-8,8.2c0,1,0.2,1.9,0.5,2.8c-2-1.5-3.4-3.9-3.4-6.6     c0-4.5,3.6-8.2,8-8.2c0.8,0,1.5,0.1,2.2,0.3l0-6.6c0.2,0,0.4,0,0.6,0C27.5,26.2,28.3,26.2,29,26.3z"/><path class="st11" d="M45.9,12c-1.8-1.6-3.1-3.8-3.8-6.1h2.4c0,0.5,0,0.9,0,1.4C44.7,8.9,45.2,10.5,45.9,12z"/></g></g><path d="M55.1,19.2v6c-0.5,0.1-1.1,0.1-1.7,0.1c-4.5,0-8.7-1.7-11.9-4.4v19.8c0,4-1.3,7.8-3.6,10.8c-3.3,4.4-8.4,7.2-14.2,7.2   c-4.7,0-9-1.9-12.2-4.9c-1.7-2.8-2.7-6-2.7-9.5c0-9.7,7.7-17.6,17.3-17.9l0,6.6c-0.7-0.2-1.5-0.3-2.2-0.3c-4.4,0-8,3.7-8,8.2   c0,2.7,1.3,5.2,3.4,6.6c1.1,3.1,4.1,5.4,7.5,5.4c4.4,0,8-3.7,8-8.2V5.9h7.3c0.7,2.4,2,4.5,3.8,6.1C47.7,15.6,51.1,18.3,55.1,19.2z"/><g><g><g><path class="st12" d="M26.1,22.8l0,3.4c-9.6,0.3-17.3,8.2-17.3,17.9c0,3.5,1,6.7,2.7,9.5C8.1,50.3,6,45.7,6,40.5      c0-9.9,8-17.9,17.8-17.9C24.6,22.6,25.4,22.7,26.1,22.8z"/><path class="st12" d="M42.1,5.9h-7.3v38.6c0,4.5-3.6,8.2-8,8.2c-3.5,0-6.4-2.2-7.5-5.4c1.3,0.9,2.9,1.5,4.6,1.5      c4.4,0,8-3.6,8-8.1V2h9.7v0.2c0,0.4,0,0.8,0.1,1.2C41.7,4.2,41.9,5.1,42.1,5.9z"/></g></g><path class="st12" d="M55.1,15.5C55.1,15.5,55.1,15.5,55.1,15.5v3.6c-4-0.8-7.4-3.5-9.3-7.1C48.3,14.3,51.5,15.6,55.1,15.5z"/></g></g><g id="Layer_12"/><g id="Layer_13"/><g id="Layer_14"/><g id="Layer_15"/><g id="Layer_16"/><g id="Layer_17"/></svg>
-            </div>
-  
-            <div class="col-lg-1 d-flex align-items-center justify-content-center">
-            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="80%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x31_73-instagram"><g><linearGradient gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="74.3496" x2="393.8339" y1="83.7275" y2="386.7129"><stop offset="0" style="stop-color:#FEC053"/><stop offset="0.3273" style="stop-color:#F2203E"/><stop offset="0.6485" style="stop-color:#B729A8"/><stop offset="1" style="stop-color:#5342D6"/></linearGradient><path d="M256.052,138.088c-65.268,0-117.913,52.646-117.913,117.912    c0,65.267,52.645,117.91,117.913,117.91c65.267,0,117.911-52.644,117.911-117.91C373.963,190.734,321.318,138.088,256.052,138.088    z M256.052,332.659c-42.177,0-76.659-34.38-76.659-76.659c0-42.279,34.378-76.657,76.659-76.657    c42.277,0,76.657,34.378,76.657,76.657C332.709,298.279,298.229,332.659,256.052,332.659L256.052,332.659z M406.288,133.266    c0,15.291-12.315,27.502-27.502,27.502c-15.292,0-27.502-12.314-27.502-27.502c0-15.188,12.313-27.503,27.502-27.503    C393.973,105.763,406.288,118.077,406.288,133.266z M484.382,161.177c-1.743-36.839-10.158-69.474-37.148-96.36    c-26.886-26.887-59.52-35.302-96.36-37.148c-37.971-2.155-151.777-2.155-189.747,0c-36.739,1.743-69.372,10.159-96.361,37.046    c-26.99,26.887-35.302,59.52-37.149,96.36c-2.155,37.969-2.155,151.777,0,189.747c1.745,36.842,10.159,69.473,37.149,96.361    c26.989,26.887,59.521,35.301,96.361,37.148c37.969,2.154,151.776,2.154,189.747,0c36.841-1.744,69.475-10.161,96.36-37.148    c26.887-26.889,35.302-59.52,37.148-96.361C486.538,312.853,486.538,199.147,484.382,161.177z M435.329,391.563    c-8.004,20.112-23.5,35.61-43.716,43.716c-30.273,12.009-102.108,9.236-135.562,9.236c-33.456,0-105.393,2.669-135.563-9.236    c-20.114-8.005-35.611-23.498-43.717-43.716C64.766,361.29,67.538,289.455,67.538,256s-2.669-105.391,9.234-135.562    c8.006-20.114,23.5-35.61,43.717-43.716c30.273-12.007,102.107-9.236,135.563-9.236c33.453,0,105.391-2.668,135.562,9.236    c20.113,8.002,35.609,23.5,43.716,43.716c12.007,30.272,9.237,102.107,9.237,135.562S447.336,361.392,435.329,391.563z" style="fill:url(#SVGID_1_);"/></g></g><g id="Layer_1"/></svg>
-            </div>
-  
-            <div class="col-lg-1 d-flex align-items-center justify-content-center">
-              <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg enable-background="new 0 0 32 32" height="100%" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="80%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle clip-rule="evenodd" cx="16" cy="16" fill="#3B5998" fill-rule="evenodd" r="16"/><path d="M22,32V20h4l1-5h-5v-2c0-2,1.002-3,3-3h2V5c-1,0-2.24,0-4,0c-3.675,0-6,2.881-6,7v3h-4v5h4v12H22   z" fill="#FFFFFF" id="f_2_"/></g><g/><g/><g/><g/><g/><g/></svg>
-            </div>
           </div>
         </div>
 
@@ -174,15 +262,38 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>About Us</h2>
+          <h2>Tuin Token</h2>
           <div class="col-lg-12">
-            <strong>Welcome to Tuin Token - Empowering You in the World of Cryptocurrency!</strong><br>
-            <i>“At Tuin Token, we believe in the transformative power of blockchain technology and its ability to revolutionize the financial landscape. Our mission is to provide individuals and businesses with a secure and user-friendly platform to explore, invest, and participate in the world of cryptocurrencies.”
+            <strong>Welcome to Tuin Token</strong><br>
+            <i>a cryptocurrency project designed to bridge start-up entrepreneurs and existing business owners with Tuin Venture Capitalists (TVC). Tuin seeks to provide entrepreneurs with a decentralized, transparent, efficient, and accessible platform where they can pitch their business ideas directly to TVC funding through Tuin Tokens. Most often, people with innovative ideas find it difficult to raise capital in the current investment system due to the difficulty of finding bank loans, VC as angel investors, rigid rules of the stock market, etc. <br><br>Tuin Token was created to address this issue. Through the use of blochain and Web 3 technology, it plans to become the leading disruptor of investment inclusion by bypassing the middleman and providing direct funding from TVC to the innovative business idea around the world.
             </i>
           </div>
         </div>
 <br>
-        <div class="row content">
+<style>.rounded-circle{
+  border:1px solid;
+  border-radius:50%;
+  width:100px;
+  height:100px;
+  }</style>
+      <div class="row content">
+        <div class="col-md-4 text-center">
+          <img src="assets/img/11.png" class="border border-warning rounded-circle" alt="Cinque Terre" width="304" height="236"> 
+          <h1 class="mt-3"> $5M to $5B</h1>
+          <p>Execute your idea with Tuin capital</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="assets/img/12.png" class="border border-warning rounded-circle" alt="Cinque Terre" width="304" height="236">
+          <h1 class="mt-3">No</h1> 
+          <p>Interest, strict regulation and bank form registrartion</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="assets/img/13.png" class="border border-warning rounded-circle" alt="Cinque Terre" width="304" height="236"> 
+          <h1 class="mt-3">+2,000 </h1> 
+          <p>$Tuin Token Holders</p>
+        </div>
+      </div>
+       <!--  <div class="row content">
           <div class="col-lg-6">
             <strong>Who We Are</strong><br>
             <i class="text-justify">
@@ -196,12 +307,200 @@ to driving the adoption of digital currencies and empowering individuals to take
               “Our vision is to be a leading player in the cryptocurrency market, 
               offering innovative solutions and cutting-edge technologies that empower individuals to thrive in the digital economy. We aim to create a trusted and transparent ecosystem where users can confidently engage in cryptocurrency transactions, investment, and trading.”
             </i>
-            <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
+            <a href="#" class="btn-learn-more">Learn More</a>
           </div>
-        </div>
+        </div> -->
 
       </div>
     </section><!-- End About Us Section -->
+
+     <!-- ======= Cta Section ======= -->
+     <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+        <div class="row">
+          <div class="col-lg-12 text-center text-lg-start">
+            <h3 class="text-center">"Buy and make your Tuin Token work for you"</h3>
+          <p class="text-center text-dark"><strong>-Tuin Fund with crypto standard-
+            </strong></p>  
+          </div>
+          <!-- <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div> -->
+        </div>
+      </div>
+    </section><!-- End Cta Section -->
+
+     <!-- ======= Why Us Section ======= -->
+     <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+
+        <div class="section-title">
+          <h4><strong><a style="display: inline-block; padding-left: 30px; padding-right: 30px;" class="nav-link scrollto btn btn-outline-secondary wide-button" href="#team">Meet The Team</a></strong></h4>
+          <h4><strong><a style="display: inline-block; padding-left: 30px; padding-right: 30px;" class="nav-link scrollto btn btn-outline-secondary wide-button" href="#team">Read Whitepaper</a></strong></h4><br>
+
+          <i><strong>"Let's growth with Tuin."</strong></i>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1">Our Value <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      To be ethical, fair, and transparent in Tuin Token missions and to always be accountable to Tuin community members.
+                    </p>
+                  </div>
+                </li>
+
+             
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-5">Our Vision <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-5" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      The Tuin vision goes beyond providing a bridge for the Tuin investment ecosystem. It is also intended that Tuin token capital will provide a contribution to the world since it will be the first venture capital to have a crypto standard, which is similar to what the USD dollar and its gold standard were before they were changed into fiat money. All the businesses that operate within Tuin's ecosystem will be fundamental to the price of Tuin Token in the market as long as Tuin helps people grow their businesses. Not only that, Tuin is also hoping to provide an online marketplace for start-ups and established companies to market and sell their products, using Tuin Tokens as the currency in order to avoid inflationary pressures. The outreach component is part of the long-term roadmap for Tuin.
+                    </p>
+                    <p>Your support will enable Tuin Token to transform the fortunes of the investment ecosystem throughout the world, while creating a new entrepreneur, boosting existing business growth, and producing great investors as well as giving everyone the right to grow together.</p>
+                  </div>
+                </li>
+
+               
+
+              </ul>
+            </div>
+
+          </div>
+
+       </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>News</h2>
+          <p>Keep in update</p>
+        </div>
+
+        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">Market</li>
+          <li data-filter=".filter-card">Comunity</li>
+          <li data-filter=".filter-web">Development</li>
+        </ul>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
 
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us section-bg">
@@ -212,7 +511,7 @@ to driving the adoption of digital currencies and empowering individuals to take
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
             <div class="content">
-              <h3><strong>What We Offer</strong></h3>
+              <h3><strong>How to Buy Tuin Token</strong></h3>
               <!-- <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
               </p> -->
@@ -221,37 +520,48 @@ to driving the adoption of digital currencies and empowering individuals to take
             <div class="accordion-list">
               <ul>
                 <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Secure and User-Friendly Platform <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Create a Wallet <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                     <p>
-                      We prioritize the security and privacy of our users. Our platform utilizes advanced encryption and security measures to ensure that your funds and personal information are protected at all times. We also strive to provide a seamless and intuitive user experience, making it easy for users of all levels of experience to navigate and engage with our platform  
-                    </p>
+                      Go to metamask.io, install the extension in your browser (or install the mobile app on your iPhone or Android device) and follow the steps to set up your Ethereum wallet. It is important to pay close attention to your unique "Seed Phrase". Ideally, you should write the phrase down and store it in a safe, secure, and memorable location.  
+                    </p> <br>
+                    <a href="https://www.youtube.com/watch?v=8UAz1FyK3-4" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>  
                   </div>
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Reliable and Transparent Transactions <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> To up your wallet <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      Transparency is at the core of our operations. With the power of blockchain technology, we enable secure and transparent transactions, providing users with a clear and auditable record of their transactions.  
-                    </p>
+                      Buy Ethereum directly from Metamask or transfer funds from an exchange (Binance, Crypto.com, Coinbase).  
+                    </p> <br>
+                    <a href="https://www.youtube.com/watch?v=FMTYAMPQzSk" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>  
                   </div>
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Comprehensive Analytics <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Connect Your Wallet to The DEX <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      Stay ahead of the curve with our comprehensive analytics tools.We provide real-time market data, price charts, and insights to help you make informed decisions and maximize your investing and trading strategies.
+                      You must be connected to TuinSwap. Visit the (Tuin Website link) in Google Chrome or in the browser within the Metamask application. Ensure that your wallet is connected. Paste the $Tuin token address into TuinSwap, select Tuin, and confirm the transaction. If Metamask prompts you to sign your wallet, please do so.
                     </p>
                   </div>
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>04</span> Exceptional Customer Support <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>04</span> Trade USDT/BUSD/USDC to Tuin Token <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      We pride ourselves on delivering exceptional customer support. Our dedicated support team is available to assist you with any questions, concerns, or technical issues you may encounter on our platform. We are committed to providing timely and personalized assistance to ensure a smooth and hassle-free experience.
+                      Input the amount of USDT/BSUD/USDC you would want to trade. Remember to leave some funds in your wallet for “GAS Fees” which is the fuel of the transaction. Then click “Swap”
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>05</span> You have swapped your USDT/BUSD/USDC to Tuin Token! <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Congratulations! You are now a holder of Tuin Token!A transaction may take between 30 seconds and an hour. If you have any questions, please feel free to contact us via telegram or discord
                     </p>
                   </div>
                 </li>
@@ -264,6 +574,114 @@ to driving the adoption of digital currencies and empowering individuals to take
           <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/tuin_g.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
         </div>
 
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h3>Sign the Tuin Token Manifesto on Twitter!</h3>
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          
+          </div>
+          <div class="col-lg-5 cta-btn-container text-justify">
+            <p> <div style="font-weight: normal;">We are Tuin Token, one of the most influential contributors to the crypto-movement and mankind's advancement. <br> <br>
+
+              We are engaged in the development of a fair people's currency on which anyone can have a business and participate in the venture capital market. Our engagement has led us to value: <br> <br>
+         
+              <div style="font-weight: 	Bold;">Being trustworthy,</div> we always trust others, as trust is the cornerstone of any successful business. <br> 
+             
+              <div style="font-weight: 	Bold;">Being optimistic,</div> we value having a positive outlook, expectation, or attitude towards life, events, or the future. <br> 
+              
+              <div style="font-weight: 	Bold;">Being resilient,</div> we value being able to bounce back, recover, or adapt to adversity. <br> <br>
+              
+              To put it another way, we value both sides equally.
+            </div>
+              </strong>
+            
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+     <!-- ======= Why Us Section ======= -->
+     <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          
+
+          <div class="col-lg-5 text-center">&nbsp; <img src="assets/img/ggg.png" class="img-fluid" alt=""></div>
+        
+        <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  ">
+
+          <div class="content">
+            <h3><strong>Tokenomics</strong></h3>
+            <!-- <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+            </p> -->
+            <h1>Token Supply: 7B of Tuin Token</h1>
+            <p>It is tax-free and does not incur bank interest. As easy as flipping your hand, you can start your own business. A total of 5B tokens have been sent to the liquidity pool, LP tokens have been burnt, and the contract has been renounced. Tuin's remaining 2B are reserved for dedicated team members, visionary advisors, and early investors who believe in the project's transformative potential.</p>
+          </div>
+         
+         <!--  <div class="accordion-list">
+            <ul>
+              <li>
+                <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Create a Wallet <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                  <p>
+                    Go to metamask.io, install the extension in your browser (or install the mobile app on your iPhone or Android device) and follow the steps to set up your Ethereum wallet. It is important to pay close attention to your unique "Seed Phrase". Ideally, you should write the phrase down and store it in a safe, secure, and memorable location.  
+                  </p> <br>
+                  <a href="https://www.youtube.com/watch?v=8UAz1FyK3-4" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>  
+                </div>
+              </li>
+
+              <li>
+                <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> To up your wallet <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                  <p>
+                    Buy Ethereum directly from Metamask or transfer funds from an exchange (Binance, Crypto.com, Coinbase).  
+                  </p> <br>
+                  <a href="https://www.youtube.com/watch?v=FMTYAMPQzSk" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>  
+                </div>
+              </li>
+
+              <li>
+                <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Connect Your Wallet to The DEX <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                  <p>
+                    You must be connected to TuinSwap. Visit the (Tuin Website link) in Google Chrome or in the browser within the Metamask application. Ensure that your wallet is connected. Paste the $Tuin token address into TuinSwap, select Tuin, and confirm the transaction. If Metamask prompts you to sign your wallet, please do so.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>04</span> Trade USDT/BUSD/USDC to Tuin Token <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                  <p>
+                    Input the amount of USDT/BSUD/USDC you would want to trade. Remember to leave some funds in your wallet for “GAS Fees” which is the fuel of the transaction. Then click “Swap”
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>05</span> You have swapped your USDT/BUSD/USDC to Tuin Token! <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                  <p>
+                    Congratulations! You are now a holder of Tuin Token!A transaction may take between 30 seconds and an hour. If you have any questions, please feel free to contact us via telegram or discord
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+          </div> -->
+
+        </div>
       </div>
     </section><!-- End Why Us Section -->
 
@@ -614,118 +1032,7 @@ Our transparent fee structure ensures that you can maximize your trading profits
       </div>
     </section><!-- End Skills Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-card">Card</li>
-          <li data-filter=".filter-web">Web</li>
-        </ul>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
+    
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
