@@ -126,7 +126,7 @@
                </a>
               </div>
     
-              <div class="col-lg-1 d-flex align-items-center justify-content-center"><a href="">
+              <div class="col-lg-1 d-flex align-items-center justify-content-center"><a href="https://discord.gg/DxQvEGrZcJ">
                 <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="80%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x39_1-discord"><g><path d="M447.249,82.455V474.57c-55.065-48.661-37.454-32.553-101.418-92.018L350,422.987H109.557    c-24.698,0-44.806-20.106-44.806-45.026V82.455c0-24.917,20.107-45.025,44.806-45.025H402.44    C427.14,37.43,447.249,57.538,447.249,82.455z" style="fill:#8A9CFE;"/><path d="M353.481,162.233c-31.474-23.605-61.418-22.95-61.418-22.95l-3.06,3.498    c37.157,11.365,54.425,27.758,54.425,27.758c-51.921-28.456-112.91-28.46-163.273-6.338c-8.088,3.715-12.896,6.338-12.896,6.338    s18.142-17.267,57.485-28.632l-2.185-2.624c0,0-29.945-0.655-61.419,22.95c0,0-31.474,57.047-31.474,127.426    c0,0,18.361,31.692,66.663,33.223c0,0,8.088-9.834,14.645-18.142c-27.759-8.306-38.249-25.789-38.249-25.789    c3.215,2.248,8.517,5.168,8.961,5.463c36.892,20.662,89.295,27.43,136.388,7.65c7.648-2.841,16.174-6.995,25.135-12.896    c0,0-10.929,17.924-39.562,26.01c6.559,8.305,14.427,17.703,14.427,17.703c48.304-1.53,66.881-33.223,66.881-33.223    C384.955,219.28,353.481,162.233,353.481,162.233z M216.438,269.333c-12.24,0-22.295-10.928-22.295-24.262    c0-13.333,9.836-24.261,22.295-24.261c12.458,0,22.513,10.928,22.294,24.261C238.732,258.405,228.896,269.333,216.438,269.333z     M296.216,269.333c-12.239,0-22.294-10.928-22.294-24.262c0-13.333,9.836-24.261,22.294-24.261    c12.459,0,22.295,10.928,22.295,24.261C318.511,258.405,308.675,269.333,296.216,269.333z" style="fill:#FDFDFD;"/></g></g><g id="Layer_1"/></svg>
                </a>
               </div>
@@ -188,34 +188,70 @@
         <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
           <img src="assets/img/tuin.png" class="img-fluid animated mb-4" alt="" style="width:auto;height:auto;">
           <div class="justify-content-center text-center">
-            <button type="button" class="text-center btn btn-outline-light"><strong>BUY $ TUIN</strong></button><br><br>
-            <?xml version="1.0" ?><svg height="30px" viewBox="0 0 256 256" width="30px" xmlns="http://www.w3.org/2000/svg"><defs><style>
-              .cls-1 {
-                fill: #acb7dd;
+          <button type="button" class="btn btn-outline-light"><strong>BUY $ TUIN</strong></button><br><br>
+        </div>
+          <div class="justify-content-left text-start">
+            
+            <img style="max-width: 40px; height: auto;" src="assets/img/tuin_logo.png" class="img-fluid logo-image" alt="">
+            <span class="text-light">Tuin Pool Address <button class="ml copy-button rounded-pill" onclick="copyToClipboarda()">Copy Address</button></span>
+            <span style="background-color: #5d5d5d; color: #fffefe;" class="border border-light rounded-pill"><strong> 0xf376c4e00ff6e475de07b483a17fd6cf35cd62cb </strong></span><br><br>
+            <style>
+                .copy-button {
+                    display: inline-block;
+                    padding: 5px 10px;
+                    background-color: #4CAF50;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
+            </style>
+            <script>
+                function copyToClipboarda() {
+                    const value = '0xf376c4e00ff6e475de07b483a17fd6cf35cd62cb';
+                    const tempInput = document.createElement('input');
+                    tempInput.value = value;
+                    document.body.appendChild(tempInput);
+                    tempInput.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(tempInput);
+                    alert('Value copied to clipboard: ' + value);
+                }
+            </script>
+            
+        </div>
+
+
+        <div class="justify-content-left text-start">
+          <img style="max-width: 40px; height: auto;" src="assets/img/tuin_logo.png" class="img-fluid logo-image" alt="">
+          <span class="text-light">Tuin Token Address <button class="ml copy-button rounded-pill" onclick="copyToClipboard()">Copy Address</button></span><br>
+          <span style="background-color: #5d5d5d; color: #fffefe;" class="border border-light rounded-pill"><strong> 0x6fd1be00b243bfa75f8cc4421f53c02f79c7bb60 </strong></span><br><br>
+          <style>
+              .copy-button {
+                  display: inline-block;
+                  padding: 5px 10px;
+                  background-color: #4CAF50;
+                  color: white;
+                  border: none;
+                  cursor: pointer;
               }
+          </style>
+          <script>
+              function copyToClipboard() {
+                  const value = '0x6fd1be00b243bfa75f8cc4421f53c02f79c7bb60';
+                  const tempInput = document.createElement('input');
+                  tempInput.value = value;
+                  document.body.appendChild(tempInput);
+                  tempInput.select();
+                  document.execCommand('copy');
+                  document.body.removeChild(tempInput);
+                  alert('Value copied to clipboard: ' + value);
+              }
+          </script>
+      </div>
+      
         
-              .cls-2 {
-                fill: #828384;
-              }
-        
-              .cls-2, .cls-3, .cls-4 {
-                fill-rule: evenodd;
-              }
-        
-              .cls-3 {
-                fill: #2f3030;
-              }
-        
-              .cls-4 {
-                fill: #131313;
-                opacity: 0.8;
-              }
-            </style></defs><g data-name="etherium eth ethcoin crypto" id="etherium_eth_ethcoin_crypto"><g data-name="etherium eth" id="etherium_eth"><circle class="cls-1" cx="128" cy="128" data-name="Эллипс 9" id="Эллипс_9" r="128"/><path class="cls-2" d="M1144.2,652L1080,758.641l64.2,38.144,63.8-38.144ZM1080,771.355l64.2,37.735,63.8-37.735L1144.2,862Z" data-name="Фигура 2" id="Фигура_2" transform="translate(-1016 -629)"/><path class="cls-3" d="M1144.2,796.539V652l63.62,106.339Zm63.41-25.044L1144.2,862V809.256Z" data-name="Фигура 4" id="Фигура_4" transform="translate(-1016 -629)"/><path class="cls-4" d="M1144.2,729.93L1080,758.641l64.2,38.144,63.8-38.144Z" data-name="Фигура 3" id="Фигура_3" transform="translate(-1016 -629)"/></g></g></svg>
-          <span class="text-light">Contract Address (ETH)</span>
-          <br><br>
-           <?xml version="1.0" ?><svg style="height: 30px; width:30px;" data-name="Layer 1" id="Layer_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><title/><rect height="18.36" transform="translate(-13.86 94.54) rotate(-45)" width="18.36" x="98.02" y="54.82"/><rect height="18.36" transform="translate(-39.16 33.46) rotate(-45)" width="18.36" x="11.63" y="54.82"/><polygon points="64 94.22 42.48 72.7 29.5 85.68 64 120.18 98.5 85.68 85.52 72.7 64 94.22"/><polygon points="64 33.78 85.52 55.3 98.5 42.32 64 7.82 29.5 42.32 42.48 55.3 64 33.78"/><rect  height="18.13" transform="translate(-26.51 64) rotate(-45)" width="18.13" x="54.93" y="54.93"/></svg>
-          <span class="text-light">Contract Address (BSC)</span>
-          </div>
+          
+          
         </div>
         
       </div>
