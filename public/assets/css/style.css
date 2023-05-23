@@ -386,7 +386,8 @@ h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: #F5C862;
+  background: rgb(150,75,0);
+background: linear-gradient(0deg, rgba(150,75,0,1) 0%, rgba(245,200,98,1) 100%);
 }
 
 #hero .container {
