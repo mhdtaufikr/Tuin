@@ -11,9 +11,6 @@
     <h1>From</h1>
     <h1 id="USDTBalance"></h1>
     <input type="number" id="USDTAmount" placeholder="0.1"><br>
-    <select name="" id="fromToken">
-      <option value=""></option>
-    </select>
     <h1>TT</h1>
     <h1>To</h1>
     <h1 id="TTBalance"></h1>
