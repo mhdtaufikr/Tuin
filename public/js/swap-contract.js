@@ -59,7 +59,6 @@ async function getBalance() {
 
 async function fund() {
     if (typeof window.ethereum !== "undefined") {
-        const amount = TTAmount.value.toString();
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
         const contract = new ethers.Contract(
@@ -70,10 +69,12 @@ async function fund() {
         console.log(contract);
 
         try {
-            // await contract.setAcceptedToken1(USDTContractAddress.toString());
-            await contract.estimateGas.setAcceptedToken1(
-                USDTContractAddress.toString()
-            );
+            // const response = await contract.swapIn(
+            //     parseFloat(TTAmount.value),
+            //     USDTContractAddress,
+            //     contractAddress
+            // );
+            // console.log(response);
         } catch (error) {
             console.log(error);
         }
