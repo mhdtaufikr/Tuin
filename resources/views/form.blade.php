@@ -6,16 +6,21 @@
 </head>
 <body>
   <div class="container" >
-    <!-- HAPUS NANTI -->
+    <!-- Pakai yang ini -->
     <h1>USDT</h1>
-    <h1 id="USDTAmountTitle"></h1>
+    <h1>From</h1>
+    <h1 id="USDTBalance"></h1>
     <input type="number" id="USDTAmount" placeholder="0.1"><br>
+    <select name="" id="fromToken">
+      <option value=""></option>
+    </select>
     <h1>TT</h1>
-    <h1 id="TTAmountTitle"></h1>
+    <h1>To</h1>
+    <h1 id="TTBalance"></h1>
     <input type="number" id="TTAmount" placeholder="0.1"><br>
     <button id="fundButton">Swap</button>
 
-    <form>
+    <!-- <form>
       <div class="form-group">
         <label for="fromBalance">From Balance:</label>
         <input type="text" class="form-control" id="fromBalance" value="0">
@@ -25,7 +30,7 @@
         <input type="text" class="form-control" id="toBalance" value="0">
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </form> -->
   </div>
 
   <!-- Include Bootstrap JS (Optional if you don't need any JavaScript functionality) -->
