@@ -5,6 +5,9 @@ import {
     balanceWording,
     USDTContractAddress,
 } from "./constants.js";
+import { TUINabi } from "./constants.js";
+
+const connectWalletButton = document.getElementById("connectWallet");
 
 // const USDTBalance = document.getElementById("USDTBalance");
 const TTBalance = document.getElementById("TTBalance");
@@ -15,10 +18,9 @@ const TTAmount = document.getElementById("TTAmount");
 const fundButton = document.getElementById("fundButton");
 
 fundButton.onclick = fund;
+connectWalletButton.onclick = connect;
 
 let initBalance, USDTAmountVar, TTAmountVar, account;
-
-document.addEventListener("DOMContentLoaded", connect());
 
 // USDTAmount.addEventListener("change", USDTInputListener);
 // TTAmount.addEventListener("change", TTInputListener);
@@ -26,15 +28,13 @@ document.addEventListener("DOMContentLoaded", connect());
 async function connect() {
     if (window.ethereum !== "undefined") {
         try {
-            await window.ethereum
-                .request({ method: "eth_requestAccounts" })
-                .then((value) => {
-                    account = value;
-                });
+            await window.ethereum.request({ method: "eth_requestAccounts" });
         } catch (error) {
             console.log(error);
         }
-        await getBalance();
+
+        connectWalletButton.innerHTML = "Connected";
+        // await getBalance();
     }
 }
 
@@ -61,12 +61,18 @@ async function fund() {
     if (typeof window.ethereum !== "undefined") {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
-        const contract = new ethers.Contract(
+        const poolContract = new ethers.Contract(
             contractAddress,
             TUINPOOLabi,
             signer
         );
-        console.log(contract);
+        const tokenContract = new ethers.Contract(
+            contractAddress,
+            TUINabi,
+            signer
+        );
+        console.log(poolContract);
+        console.log(tokenContract);
 
         try {
             // const response = await contract.swapIn(
