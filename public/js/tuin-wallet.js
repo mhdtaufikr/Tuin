@@ -36,6 +36,7 @@ async function onWebLoad() {
 const connectWalletButton = document.getElementById("connectWallet");
 const tuinTokenSupply = document.getElementById("tuinTokenSupply");
 const tuinBscSupply = document.getElementById("tuinBscSupply");
+const tuinEthHeld = document.getElementById("tuiEthHeld");
 connectWalletButton.onclick = connect;
 
 async function connect() {
@@ -91,11 +92,11 @@ async function data() {
             const supplyTuinToken = ethers.utils.formatEther(
                 tuinToken.toString()
             );
-            const tuinBsc = await tokenContract.getChainTotalSupply(false);
-            const supplyTuinBsc = ethers.utils.formatEther(tuinBsc.toString());
-
             tuinTokenSupply.innerHTML =
                 "TUIN ETH: " + supplyTuinToken.toString();
+
+            const tuinBsc = await tokenContract.getChainTotalSupply(false);
+            const supplyTuinBsc = ethers.utils.formatEther(tuinBsc.toString());
             tuinBscSupply.innerHTML = "TUIN BSC: " + supplyTuinBsc.toString();
 
             const maxSupply = await tokenContract.maxSupply();
@@ -110,6 +111,13 @@ async function data() {
             );
             console.log("pool contract: ");
             console.log(poolContract);
+
+            const tuinHeld = await poolContract.tuinHeld(tokenContractAddress);
+            console.log(tuinHeld.value);
+            const tuinHeldFormat = ethers.utils.formatEther(
+                tuinHeld.value.toString()
+            );
+            tuinEthHeld.innerHTML = "TUIN HELD: " + tuinHeldFormat.toString();
 
             // WALLET
             const walletContract = new ethers.Contract(

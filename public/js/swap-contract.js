@@ -130,13 +130,6 @@ async function swap() {
                     poolABI,
                     signer
                 );
-
-                const tokenContract = new ethers.Contract(
-                    tokenContractAddress,
-                    tokenABI,
-                    signer
-                );
-
                 // console.log("poolContract: ");
                 // console.log(poolContract);
                 // console.log("tokenContract: ");
@@ -154,23 +147,24 @@ async function swap() {
                 // console.log("acceptedToken1: ");
                 // console.log(acceptedToken1);
 
-                // console.log(toValue);
                 if (toValue !== "undefined" && toValue >= 1) {
                     if (fromValue !== "undefined" && fromValue >= 1) {
-                        const response = await poolContract
+                        await poolContract
                             .swapIn(
                                 ethers.utils.parseEther(toValue.toString()),
                                 selectedToken,
                                 tokenContractAddress
                             )
                             .then((res) => {
-                                console.log(
-                                    ethers.utils.formatEther(res.value)
-                                );
+                                window.location.reload();
                             });
-                        console.log("response: ");
-                        console.log(response);
+                    } else {
+                        const errorFrom = document.getElementById("errorFrom");
+                        errorFrom.innerHTML = "minimum purchased is 1";
                     }
+                } else {
+                    const errorTo = document.getElementById("errorTo");
+                    errorTo.innerHTML = "minimum purchased is 1";
                 }
             } catch (error) {
                 console.log(error);
@@ -192,6 +186,7 @@ FromInput.addEventListener("input", FromInputListener);
 ToInput.addEventListener("input", ToInputListener);
 
 function FromInputListener(e) {
+    fromValue = parseFloat(e.target.value);
     toValue =
         parseFloat(e.target.value != "" ? e.target.value : 0) *
         parseFloat(exchangeRate);
@@ -199,13 +194,9 @@ function FromInputListener(e) {
 }
 
 function ToInputListener(e) {
-    console.log("e: ");
-    console.log(e.target.value);
+    toValue = parseFloat(e.target.value);
     fromValue =
         parseFloat(e.target.value != "" ? e.target.value : 0) /
         parseFloat(exchangeRate);
-
-    console.log("toValue: ");
-    console.log(toValue);
     FromInput.value = fromValue;
 }

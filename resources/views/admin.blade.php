@@ -10,6 +10,7 @@
     <p>HELD</p>
     <p id="tuinTokenSupply"></p>
     <p id="tuinBscSupply"></p>
+    <p id="tuinEthHeld"></p>
 
     <button class="btn btn-info btn-block" id="connectWallet">Connect to Wallet</button><br>
 
