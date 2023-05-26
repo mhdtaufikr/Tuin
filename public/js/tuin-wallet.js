@@ -73,6 +73,11 @@ async function connect() {
                 // Get TUIN held
                 //
                 await getTuinHeld(value);
+
+                //
+                // Get exchange rate
+                //
+                await getExchangeRate(value);
             });
 
             await walletTTContract().then(async (value) => {});
@@ -156,6 +161,12 @@ async function getTuinHeld(contract) {
     const held = await contract.tuinHeld(tokenContractAddress);
     tuinHeld.innerHTML =
         "TUIN HELD: " + ethers.utils.formatEther(held.value).toString();
+}
+
+async function getExchangeRate(contract) {
+    const exchangeRate = document.getElementById("exchangeRate");
+    const response = await contract.exchangeRate();
+    exchangeRate.innerHTML = "EXCHANGE RATE: " + response;
 }
 
 //

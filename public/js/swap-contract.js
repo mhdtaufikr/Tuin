@@ -14,7 +14,9 @@ import {
 // Declare variables
 //
 //
-let fromValue, toValue, exchangeRate;
+let fromValue,
+    toValue,
+    exchangeRate = 1000;
 
 //
 //
@@ -62,7 +64,6 @@ $(".dropdown-item").click(function () {
 //
 //
 const TTBalance = document.getElementById("TTBalance");
-// const fromBalance = document.getElementById("fromBalance");
 const connectWalletButton = document.getElementById("connectWallet");
 connectWalletButton.onclick = connect;
 

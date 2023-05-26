@@ -12,6 +12,7 @@
     <p id="tuinTokenSupply"></p>
     <p id="tuinBscSupply"></p>
     <p id="tuinHeld"></p>
+    <p id="exchangeRate"></p>
     <p id="acceptedToken1"></p>
     <p id="acceptedToken2"></p>
     <p id="acceptedToken3"></p>
