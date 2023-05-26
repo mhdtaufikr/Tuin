@@ -73,6 +73,7 @@ background-repeat: repeat;" >
                 </div>
                 
                 <div id="selectedCurrency">
+                  <p id="selectCurrencyMessage"></p>
                   <p>Selected Token: <span id="selectedCurrencyText">Default</span></p>
                   <img id="selectedCurrencyImage" src="{{ asset('assets/img/tuin_logo.png') }}" alt="Default" class="currency-icon">
                 </div>
@@ -109,9 +110,9 @@ background-repeat: repeat;" >
                     });
                   });
                 </script>
-                
-                <h1 id="USDTBalance"></h1>
-                <input  class="form-control" type="number" id="USDTAmount" placeholder="0.1"><br>
+
+                <p class="form-label" id="fromBalance"></p>
+                <input  class="form-control" type="number" id="FromInput" placeholder="0.1"><br>
               
               </div>
 
@@ -120,8 +121,8 @@ background-repeat: repeat;" >
                 
                 <img style="max-width: 20px; height: auto;" src="assets/img/arrow.png" class="img-fluid logo-image" alt=""><br><br><br>
                 <p class="form-label" for="form1Example2"><img style="max-width: 50px; height: auto;" src="assets/img/tuin_logo.png" class="img-fluid logo-image" alt=""> Tuin Token</p>
-                <h1 id="TTBalance"></h1>
-              <input  class="form-control"  type="number" id="TTAmount" placeholder="0.1"><br>
+                <p class="form-label" id="TTBalance"></p>
+              <input  class="form-control"  type="number" id="ToInput" placeholder="0.1"><br>
                 
               </div>
 
@@ -140,7 +141,7 @@ background-repeat: repeat;" >
               </div>
               <!-- Submit button -->
               <button class="btn btn-info btn-block" id="connectWallet">Connect to Wallet</button>
-              <button class="btn btn-primary btn-block" id="fundButton">Swap</button>
+              <button class="btn btn-primary btn-block" id="swapButton">Swap</button>
             </div>
         </div>
       </div>

@@ -1,102 +1,198 @@
 import { ethers } from "./ethers-5.6.esm.min.js";
 import {
-    TUINPOOLabi,
-    contractAddress,
+    poolABI,
+    tokenContractAddress,
     balanceWording,
     USDTContractAddress,
+    USDCContractAddress,
+    BUSDContractAddress,
+    poolContractAddress,
+    tokenABI,
 } from "./constants.js";
-import { TUINabi } from "./constants.js";
 
-const connectWalletButton = document.getElementById("connectWallet");
+//
+//
+// Declare variables
+//
+//
+let fromValue, toValue, exchangeRate;
 
-// const USDTBalance = document.getElementById("USDTBalance");
+//
+//
+// Check if user connected when page loaded
+//
+//
+window.addEventListener("DOMContentLoaded", onWebLoad);
+async function onWebLoad() {
+    TTBalance.innerHTML = "Balance: 0";
+    fromBalance.innerHTML = "Balance: 0";
+    if (typeof window.ethereum !== "undefined") {
+        const account = await window.ethereum.request({
+            method: "eth_accounts",
+        });
+        if (account != "") {
+            await connect();
+        }
+    }
+}
+
+//
+//
+// Handle Token Changing
+//
+//
+var selectedToken = "";
+
+$(".dropdown-item").click(function () {
+    var selectedOption = $(this);
+    var value = selectedOption.data("value");
+    if (value == "usdc") {
+        selectedToken = USDCContractAddress;
+    } else if (value == "usdt") {
+        selectedToken = USDTContractAddress;
+    } else if (value == "busd") {
+        selectedToken = BUSDContractAddress;
+    } else {
+        selectedToken = "default";
+    }
+});
+
+//
+//
+// Handle 'Connect' Button and Display Balance
+//
+//
 const TTBalance = document.getElementById("TTBalance");
-
-const USDTAmount = document.getElementById("USDTAmount");
-const TTAmount = document.getElementById("TTAmount");
-
-const fundButton = document.getElementById("fundButton");
-
-fundButton.onclick = fund;
+const fromBalance = document.getElementById("fromBalance");
+const connectWalletButton = document.getElementById("connectWallet");
 connectWalletButton.onclick = connect;
 
-let initBalance, USDTAmountVar, TTAmountVar, account;
-
-// USDTAmount.addEventListener("change", USDTInputListener);
-// TTAmount.addEventListener("change", TTInputListener);
-
 async function connect() {
-    if (window.ethereum !== "undefined") {
+    if (typeof window.ethereum !== "undefined") {
         try {
             await window.ethereum.request({ method: "eth_requestAccounts" });
+            const provider = new ethers.providers.Web3Provider(window.ethereum);
+            const signer = provider.getSigner();
+            const tokenContract = new ethers.Contract(
+                tokenContractAddress,
+                tokenABI,
+                signer
+            );
+
+            const account = await window.ethereum.request({
+                method: "eth_accounts",
+            });
+
+            await tokenContract.balanceOf(account.toString()).then((value) => {
+                const balance = ethers.utils.formatEther(value);
+                TTBalance.innerHTML = "Balance: " + balance.toString();
+            });
+
+            const poolContract = new ethers.Contract(
+                poolContractAddress,
+                poolABI,
+                signer
+            );
+
+            const tmpExchangeRate = await poolContract.exchangeRate();
+            exchangeRate = tmpExchangeRate;
         } catch (error) {
             console.log(error);
         }
 
         connectWalletButton.innerHTML = "Connected";
-        // await getBalance();
     }
 }
 
-async function getBalance() {
-    if (window.ethereum !== "undefined") {
-        try {
-            const provider = new ethers.providers.Web3Provider(window.ethereum);
-            provider.getBalance(contractAddress).then((balance) => {
-                initBalance = ethers.utils.formatEther(balance);
-
-                USDTAmountVar = initBalance;
-                TTAmountVar = initBalance;
-
-                // USDTBalance.innerHTML = balanceWording + initBalance;
-                TTBalance.innerHTML = balanceWording + initBalance;
-            });
-        } catch (error) {
-            console.log(error);
-        }
-    }
-}
-
-async function fund() {
+//
+//
+// Handle 'Swap' Button
+//
+//
+const swapButton = document.getElementById("swapButton");
+swapButton.onclick = swap;
+async function swap() {
     if (typeof window.ethereum !== "undefined") {
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
-        const signer = provider.getSigner();
-        const poolContract = new ethers.Contract(
-            contractAddress,
-            TUINPOOLabi,
-            signer
+        const selectCurrencyMessage = document.getElementById(
+            "selectCurrencyMessage"
         );
-        const tokenContract = new ethers.Contract(
-            contractAddress,
-            TUINabi,
-            signer
-        );
-        console.log(poolContract);
-        console.log(tokenContract);
+        if (selectedToken != "" && selectedToken != "default") {
+            selectCurrencyMessage.innerHTML = "";
+            try {
+                const account = await window.ethereum.request({
+                    method: "eth_accounts",
+                });
+                const provider = new ethers.providers.Web3Provider(
+                    window.ethereum
+                );
 
-        try {
-            // const response = await contract.swapIn(
-            //     parseFloat(TTAmount.value),
-            //     USDTContractAddress,
-            //     contractAddress
-            // );
-            // console.log(response);
-        } catch (error) {
-            console.log(error);
+                const signer = provider.getSigner();
+                const poolContract = new ethers.Contract(
+                    poolContractAddress,
+                    poolABI,
+                    signer
+                );
+
+                const tokenContract = new ethers.Contract(
+                    tokenContractAddress,
+                    tokenABI,
+                    signer
+                );
+
+                // console.log("poolContract: ");
+                // console.log(poolContract);
+                // console.log("tokenContract: ");
+                // console.log(tokenContract);
+                // console.log("poolContractOwner: ");
+                // console.log(poolContract.owner());
+                // console.log("tokenContractOwner: ");
+                // console.log(tokenContract.owner());
+                // console.log("currentAccount: ");
+                // console.log(account);
+                // console.log("exchangeRate: ");
+                // const exchangeRate = await poolContract.exchangeRate();
+                // console.log(exchangeRate.toString());
+                // const acceptedToken1 = await poolContract.acceptedToken1();
+                // console.log("acceptedToken1: ");
+                // console.log(acceptedToken1);
+
+                // const response = await poolContract.setAcceptedToken2(
+                //     USDCContractAddress.toString()
+                // );
+
+                const response = await poolContract.swapIn(
+                    ethers.utils.parseEther(toValue.toString()),
+                    selectedToken,
+                    tokenContractAddress
+                );
+                console.log("response: ");
+                console.log(response);
+            } catch (error) {
+                console.log(error);
+            }
+        } else if (selectedToken == "" || selectedToken == "default") {
+            selectCurrencyMessage.innerHTML = "Please choose a token!";
         }
     }
 }
 
-async function getETHPrice() {}
+//
+//
+// Handle Input Value
+//
+//
+const FromInput = document.getElementById("FromInput");
+const ToInput = document.getElementById("ToInput");
+FromInput.addEventListener("input", FromInputListener);
+ToInput.addEventListener("input", ToInputListener);
 
-// function USDTInputListener(e) {
-//     USDTAmountVar =
-//         parseFloat(e.target.value) + parseFloat(initBalance.toNumber());
-//     TTAmount.value = parseFloat(USDTAmountVar);
-// }
+function FromInputListener(e) {
+    toValue = parseFloat(e.target.value) * parseFloat(exchangeRate);
+    ToInput.value = toValue;
+    console.log(parseFloat(exchangeRate));
+}
 
-// function TTInputListener(e) {
-//     TTAmountVar =
-//         parseFloat(e.target.value) + parseFloat(initBalance.toNumber());
-//     USDTAmount.value = parseFloat(TTAmountVar);
-// }
+function ToInputListener(e) {
+    fromValue = parseFloat(e.target.value) / parseFloat(exchangeRate);
+    FromInput.value = fromValue;
+}

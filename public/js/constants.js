@@ -1,7 +1,12 @@
 export const balanceWording = "Balance: ";
-export const contractAddress = "0x6fd1be00b243bfa75f8cc4421f53c02f79c7bb60";
-export const USDTContractAddress = "0xdac17f958d2ee523a2206206994597c13d831ec7";
-export const TUINabi = [
+export const tokenContractAddress =
+    "0x6fd1be00b243bfa75f8cc4421f53c02f79c7bb60";
+export const poolContractAddress = "0xf376c4e00ff6e475de07b483a17fd6cf35cd62cb";
+export const USDTContractAddress = "default";
+export const USDCContractAddress = "0x07865c6e87b9f70255377e024ace6630c1eaa37f";
+export const BUSDContractAddress = "default";
+
+export const tokenABI = [
     {
         inputs: [
             {
@@ -538,7 +543,7 @@ export const TUINabi = [
         type: "function",
     },
 ];
-export const TUINPOOLabi = [
+export const poolABI = [
     {
         inputs: [],
         stateMutability: "nonpayable",
