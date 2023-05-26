@@ -34,32 +34,48 @@ async function onWebLoad() {
 //
 //
 const connectWalletButton = document.getElementById("connectWallet");
-const tuinTokenSupply = document.getElementById("tuinTokenSupply");
-const tuinBscSupply = document.getElementById("tuinBscSupply");
-const tuinEthHeld = document.getElementById("tuiEthHeld");
 connectWalletButton.onclick = connect;
 
 async function connect() {
     if (typeof window.ethereum !== "undefined") {
         try {
             await window.ethereum.request({ method: "eth_requestAccounts" });
-            const provider = new ethers.providers.Web3Provider(window.ethereum);
-            const signer = provider.getSigner();
-            const tokenContract = new ethers.Contract(
-                tokenContractAddress,
-                tokenABI,
-                signer
-            );
 
-            const account = await window.ethereum.request({
-                method: "eth_accounts",
+            await tokenTTContract().then(async (value) => {
+                //
+                // Get tuin token supply and display it
+                //
+                await getChainTokenTotalSupply(value);
+
+                //
+                // Get tuin token bsc supply and display it
+                //
+                await getChainBscTotalSupply(value);
             });
 
-            const poolContract = new ethers.Contract(
-                poolContractAddress,
-                poolABI,
-                signer
-            );
+            await poolTTContract().then(async (value) => {
+                //
+                // Get accepted token 1
+                //
+                await getAcceptedToken1(value);
+
+                //
+                // Get accepted token 2
+                //
+                await getAcceptedToken2(value);
+
+                //
+                // Get accepted token 3
+                //
+                await getAcceptedToken3(value);
+
+                //
+                // Get TUIN held
+                //
+                await getTuinHeld(value);
+            });
+
+            await walletTTContract().then(async (value) => {});
         } catch (error) {
             console.log(error);
         }
@@ -68,73 +84,78 @@ async function connect() {
     }
 }
 
-const showDataButton = document.getElementById("showData");
-showDataButton.onclick = data;
+function getSigner() {
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const signer = provider.getSigner();
+    return signer;
+}
 
-async function data() {
-    if (typeof window.ethereum !== "undefined") {
-        try {
-            await window.ethereum.request({ method: "eth_requestAccounts" });
-            const provider = new ethers.providers.Web3Provider(window.ethereum);
-            const signer = provider.getSigner();
+async function poolTTContract() {
+    const contract = new ethers.Contract(
+        poolContractAddress,
+        poolABI,
+        getSigner()
+    );
+    return contract;
+}
 
-            // token
-            const tokenContract = new ethers.Contract(
-                tokenContractAddress,
-                tokenABI,
-                signer
-            );
+async function walletTTContract() {
+    const contract = new ethers.Contract(
+        walletContractAddress,
+        walletABI,
+        getSigner()
+    );
+    return contract;
+}
 
-            console.log("token contract: ");
-            console.log(tokenContract);
+async function tokenTTContract() {
+    const contract = new ethers.Contract(
+        tokenContractAddress,
+        tokenABI,
+        getSigner()
+    );
+    return contract;
+}
 
-            const tuinToken = await tokenContract.getChainTotalSupply(true);
-            const supplyTuinToken = ethers.utils.formatEther(
-                tuinToken.toString()
-            );
-            tuinTokenSupply.innerHTML =
-                "TUIN ETH: " + supplyTuinToken.toString();
+async function getChainTokenTotalSupply(contract) {
+    const tuinTokenSupply = document.getElementById("tuinTokenSupply");
+    const tuinToken = await contract.getChainTotalSupply(true);
+    const supplyTuinToken = ethers.utils.formatEther(tuinToken.toString());
+    tuinTokenSupply.innerHTML =
+        "TOTAL SUPPLY TUIN ETH: " + supplyTuinToken.toString();
+}
 
-            const tuinBsc = await tokenContract.getChainTotalSupply(false);
-            const supplyTuinBsc = ethers.utils.formatEther(tuinBsc.toString());
-            tuinBscSupply.innerHTML = "TUIN BSC: " + supplyTuinBsc.toString();
+async function getChainBscTotalSupply(contract) {
+    const tuinBscSupply = document.getElementById("tuinBscSupply");
+    const tuinBSC = await contract.getChainTotalSupply(false);
+    const supplyTuinBsc = ethers.utils.formatEther(tuinBSC.toString());
+    tuinBscSupply.innerHTML =
+        "TOTAL SUPPLY TUIN BSC: " + supplyTuinBsc.toString();
+}
 
-            const maxSupply = await tokenContract.maxSupply();
-            const maxSupplyRT = ethers.utils.formatEther(maxSupply.toString());
-            console.log(maxSupplyRT);
+async function getAcceptedToken1(contract) {
+    const acceptedToken1 = document.getElementById("acceptedToken1");
+    const acceptedToken = await contract.acceptedToken1();
+    acceptedToken1.innerHTML = "ACCEPTED TOKEN 1: " + acceptedToken.toString();
+}
 
-            // pool
-            const poolContract = new ethers.Contract(
-                poolContractAddress,
-                poolABI,
-                signer
-            );
-            console.log("pool contract: ");
-            console.log(poolContract);
+async function getAcceptedToken2(contract) {
+    const acceptedToken2 = document.getElementById("acceptedToken2");
+    const acceptedToken = await contract.acceptedToken2();
+    acceptedToken2.innerHTML = "ACCEPTED TOKEN 2: " + acceptedToken.toString();
+}
 
-            const tuinHeld = await poolContract.tuinHeld(tokenContractAddress);
-            console.log(tuinHeld.value);
-            const tuinHeldFormat = ethers.utils.formatEther(
-                tuinHeld.value.toString()
-            );
-            tuinEthHeld.innerHTML = "TUIN HELD: " + tuinHeldFormat.toString();
+async function getAcceptedToken3(contract) {
+    const acceptedToken3 = document.getElementById("acceptedToken3");
+    const acceptedToken = await contract.acceptedToken3();
+    acceptedToken3.innerHTML = "ACCEPTED TOKEN 3: " + acceptedToken.toString();
+}
 
-            // WALLET
-            const walletContract = new ethers.Contract(
-                walletContractAddress,
-                walletABI,
-                signer
-            );
-            console.log("wallet contract: ");
-            console.log(walletContract);
-
-            console.log(balance.toString());
-        } catch (error) {
-            console.log(error);
-        }
-
-        connectWalletButton.innerHTML = "Connected";
-    }
+async function getTuinHeld(contract) {
+    const tuinHeld = document.getElementById("tuinHeld");
+    const held = await contract.tuinHeld(tokenContractAddress);
+    tuinHeld.innerHTML =
+        "TUIN HELD: " + ethers.utils.formatEther(held.value).toString();
 }
 
 //
@@ -159,8 +180,9 @@ async function setExchangeRate() {
                 signer
             );
             const value = exchangeRateInput.value;
-            const response = await contract.setExchangeRate(value);
-            console.log(response);
+            await contract.setExchangeRate(value).then((value) => {
+                window.location.reload();
+            });
         } catch (error) {
             console.log(error);
         }
@@ -189,7 +211,9 @@ async function setAcceptedToken1() {
                 signer
             );
             const value = acceptedToken1Input.value;
-            const response = await contract.setAcceptedToken1(value);
+            await contract.setAcceptedToken1(value).then((value) => {
+                window.location.reload();
+            });
             console.log(response);
         } catch (error) {
             console.log(error);
@@ -219,7 +243,11 @@ async function setAcceptedToken2() {
                 signer
             );
             const value = acceptedToken2Input.value;
-            const response = await contract.setAcceptedToken2(value);
+            const response = await contract
+                .setAcceptedToken2(value)
+                .then((value) => {
+                    window.location.reload();
+                });
             console.log(response);
         } catch (error) {
             console.log(error);
@@ -249,7 +277,11 @@ async function setAcceptedToken3() {
                 signer
             );
             const value = acceptedToken3Input.value;
-            const response = await contract.setAcceptedToken3(value);
+            const response = await contract
+                .setAcceptedToken3(value)
+                .then((value) => {
+                    window.location.reload();
+                });
             console.log(response);
         } catch (error) {
             console.log(error);

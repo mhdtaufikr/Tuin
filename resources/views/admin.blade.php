@@ -7,16 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <p>HELD</p>
-    <p id="tuinTokenSupply"></p>
-    <p id="tuinBscSupply"></p>
-    <p id="tuinEthHeld"></p>
-
     <button class="btn btn-info btn-block" id="connectWallet">Connect to Wallet</button><br>
 
-    <button class="btn btn-info btn-block" id="showData">Show Data</button><br>
+    <p id="tuinTokenSupply"></p>
+    <p id="tuinBscSupply"></p>
+    <p id="tuinHeld"></p>
+    <p id="acceptedToken1"></p>
+    <p id="acceptedToken2"></p>
+    <p id="acceptedToken3"></p>
     
-    <input type="number" id="exchangeRateInput">
+    <input type="number" id="exchangeRateInput" min="1">
     <button id="setExchangeRateSubmitButton">Set Exchange Rate</button><br>
 
     <input type="text" id="acceptedToken1Input">
