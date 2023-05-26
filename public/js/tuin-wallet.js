@@ -191,9 +191,7 @@ async function setExchangeRate() {
                 signer
             );
             const value = exchangeRateInput.value;
-            await contract.setExchangeRate(value).then((value) => {
-                window.location.reload();
-            });
+            await contract.setExchangeRate(value);
         } catch (error) {
             console.log(error);
         }
@@ -222,9 +220,7 @@ async function setAcceptedToken1() {
                 signer
             );
             const value = acceptedToken1Input.value;
-            await contract.setAcceptedToken1(value).then((value) => {
-                window.location.reload();
-            });
+            await contract.setAcceptedToken1(value);
             console.log(response);
         } catch (error) {
             console.log(error);
@@ -254,11 +250,7 @@ async function setAcceptedToken2() {
                 signer
             );
             const value = acceptedToken2Input.value;
-            const response = await contract
-                .setAcceptedToken2(value)
-                .then((value) => {
-                    window.location.reload();
-                });
+            const response = await contract.setAcceptedToken2(value);
             console.log(response);
         } catch (error) {
             console.log(error);
@@ -288,11 +280,7 @@ async function setAcceptedToken3() {
                 signer
             );
             const value = acceptedToken3Input.value;
-            const response = await contract
-                .setAcceptedToken3(value)
-                .then((value) => {
-                    window.location.reload();
-                });
+            const response = await contract.setAcceptedToken3(value);
             console.log(response);
         } catch (error) {
             console.log(error);
