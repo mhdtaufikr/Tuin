@@ -1497,7 +1497,7 @@ Our transparent fee structure ensures that you can maximize your trading profits
 
         <div class="row">
 
-          <div class="col-lg-5 d-flex align-items-stretch">
+          <div class="col-lg-12 d-flex align-items-stretch">
             <div class="info">
              <!--  <div class="address">
                 <i class="bi bi-geo-alt"></i>
