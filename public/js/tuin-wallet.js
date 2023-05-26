@@ -70,14 +70,14 @@ async function connect() {
                 await getAcceptedToken3(value);
 
                 //
-                // Get TUIN held
-                //
-                await getTuinHeld(value);
-
-                //
                 // Get exchange rate
                 //
                 await getExchangeRate(value);
+
+                //
+                // Get TUIN held
+                //
+                await getTuinHeld(value);
             });
 
             await walletTTContract().then(async (value) => {});
