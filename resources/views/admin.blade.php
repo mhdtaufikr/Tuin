@@ -26,6 +26,11 @@
 
     <input type="text" id="acceptedToken3Input">
     <button id="setAcceptedToken3SubmitButton">Set Accepted Token 3</button><br>
+
+    <a href="{{ url('/logout') }}" class="dropdown-item dropdown-footer">
+      <i class="fas fa-sign-out-alt"></i> Logout
+  </a>
+
 </body>
   <!--  -->
   <script src="js/tuin-wallet.js" type="module"></script>
