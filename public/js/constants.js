@@ -1,10 +1,14 @@
-export const balanceWording = "Balance: ";
 export const tokenContractAddress =
-    "0x6fd1be00b243bfa75f8cc4421f53c02f79c7bb60";
-export const poolContractAddress = "0xf376c4e00ff6e475de07b483a17fd6cf35cd62cb";
-export const USDTContractAddress = "default";
-export const USDCContractAddress = "0x07865c6e87b9f70255377e024ace6630c1eaa37f";
-export const BUSDContractAddress = "default";
+    "0xc1cfea398905990b25191b184b152ebec6cd869e";
+export const walletContractAddress =
+    "0x92b5a7b8fe239c6f1f62443320959e830a5f9b2f";
+export const poolContractAddress = "0x047090139a1473263ddd711068ca10a476ca6bbf";
+export const USDTContractAddress = "0xdAC17F958D2ee523a2206206994597C13D831ec7";
+export const USDCContractAddress = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48";
+export const BUSDContractAddress = "0x4Fabb145d64652a948d72533023f6E7A623C7C53";
+// export const USDTContractAddress = "default";
+// export const USDCContractAddress = "0x07865c6e87b9f70255377e024ace6630c1eaa37f";
+// export const BUSDContractAddress = "default";
 
 export const tokenABI = [
     {
@@ -909,6 +913,304 @@ export const poolABI = [
             },
         ],
         stateMutability: "view",
+        type: "function",
+    },
+];
+export const walletABI = [
+    {
+        inputs: [],
+        stateMutability: "nonpayable",
+        type: "constructor",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "tuinToken",
+                type: "address",
+            },
+            {
+                internalType: "address",
+                name: "_to",
+                type: "address",
+            },
+            {
+                internalType: "uint256",
+                name: "_amount",
+                type: "uint256",
+            },
+            {
+                internalType: "bool",
+                name: "isEth",
+                type: "bool",
+            },
+        ],
+        name: "newMint",
+        outputs: [
+            {
+                internalType: "bool",
+                name: "success",
+                type: "bool",
+            },
+        ],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [],
+        name: "owner",
+        outputs: [
+            {
+                internalType: "address",
+                name: "",
+                type: "address",
+            },
+        ],
+        stateMutability: "view",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "tuinPool",
+                type: "address",
+            },
+            {
+                internalType: "address",
+                name: "_yieldAddress",
+                type: "address",
+            },
+            {
+                internalType: "uint256",
+                name: "amountIn",
+                type: "uint256",
+            },
+        ],
+        name: "putDepositYield",
+        outputs: [
+            {
+                internalType: "bool",
+                name: "success",
+                type: "bool",
+            },
+        ],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "tuinPool",
+                type: "address",
+            },
+            {
+                internalType: "address",
+                name: "_token",
+                type: "address",
+            },
+            {
+                internalType: "uint8",
+                name: "_funcNo",
+                type: "uint8",
+            },
+        ],
+        name: "setAcceptedToken",
+        outputs: [
+            {
+                internalType: "bool",
+                name: "success",
+                type: "bool",
+            },
+        ],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "tuinPool",
+                type: "address",
+            },
+            {
+                internalType: "bool",
+                name: "_approved",
+                type: "bool",
+            },
+        ],
+        name: "setApproveYield",
+        outputs: [
+            {
+                internalType: "bool",
+                name: "success",
+                type: "bool",
+            },
+        ],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "tuinPool",
+                type: "address",
+            },
+            {
+                internalType: "uint256",
+                name: "_newRate",
+                type: "uint256",
+            },
+        ],
+        name: "setExchangeRate",
+        outputs: [
+            {
+                internalType: "bool",
+                name: "success",
+                type: "bool",
+            },
+        ],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "tuinToken",
+                type: "address",
+            },
+            {
+                internalType: "uint256",
+                name: "_newMaxSupply",
+                type: "uint256",
+            },
+            {
+                internalType: "bool",
+                name: "isEth",
+                type: "bool",
+            },
+        ],
+        name: "setNewSupply",
+        outputs: [
+            {
+                internalType: "bool",
+                name: "success",
+                type: "bool",
+            },
+        ],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "_newOwner",
+                type: "address",
+            },
+        ],
+        name: "setOwner",
+        outputs: [],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "tuinPool",
+                type: "address",
+            },
+            {
+                internalType: "string",
+                name: "_date",
+                type: "string",
+            },
+        ],
+        name: "setRedeemableDate",
+        outputs: [
+            {
+                internalType: "bool",
+                name: "success",
+                type: "bool",
+            },
+        ],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "tuinPool",
+                type: "address",
+            },
+            {
+                internalType: "address",
+                name: "_newOwner",
+                type: "address",
+            },
+        ],
+        name: "setTUINPoolOwner",
+        outputs: [
+            {
+                internalType: "bool",
+                name: "success",
+                type: "bool",
+            },
+        ],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "tuinToken",
+                type: "address",
+            },
+            {
+                internalType: "address",
+                name: "_newOwner",
+                type: "address",
+            },
+        ],
+        name: "setTuinOwner",
+        outputs: [
+            {
+                internalType: "bool",
+                name: "success",
+                type: "bool",
+            },
+        ],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "tuinPool",
+                type: "address",
+            },
+            {
+                internalType: "address",
+                name: "_token",
+                type: "address",
+            },
+        ],
+        name: "setYieldAddress",
+        outputs: [
+            {
+                internalType: "bool",
+                name: "success",
+                type: "bool",
+            },
+        ],
+        stateMutability: "nonpayable",
         type: "function",
     },
 ];

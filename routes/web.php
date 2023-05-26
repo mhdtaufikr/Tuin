@@ -15,6 +15,9 @@ use App\Http\Controllers\IndexController;
 
 Route::get('/', [IndexController::class, 'index']);
 Route::get('/buy', [IndexController::class,'buy']);
+Route::get('/admin', function(){
+    return view('admin');
+});
 
 /* Route::get('/', function () {
     return view('index');

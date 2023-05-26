@@ -112,7 +112,7 @@ background-repeat: repeat;" >
                 </script>
 
                 <p class="form-label" id="fromBalance"></p>
-                <input  class="form-control" type="number" id="FromInput" placeholder="0.1"><br>
+                <input  class="form-control" type="number" id="FromInput" placeholder="0.1" min="1"><br>
               
               </div>
 
@@ -122,7 +122,7 @@ background-repeat: repeat;" >
                 <img style="max-width: 20px; height: auto;" src="assets/img/arrow.png" class="img-fluid logo-image" alt=""><br><br><br>
                 <p class="form-label" for="form1Example2"><img style="max-width: 50px; height: auto;" src="assets/img/tuin_logo.png" class="img-fluid logo-image" alt=""> Tuin Token</p>
                 <p class="form-label" id="TTBalance"></p>
-              <input  class="form-control"  type="number" id="ToInput" placeholder="0.1"><br>
+              <input  class="form-control"  type="number" id="ToInput" placeholder="0.1" min="1"><br>
                 
               </div>
 

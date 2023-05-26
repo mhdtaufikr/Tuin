@@ -2,7 +2,6 @@ import { ethers } from "./ethers-5.6.esm.min.js";
 import {
     poolABI,
     tokenContractAddress,
-    balanceWording,
     USDTContractAddress,
     USDCContractAddress,
     BUSDContractAddress,
@@ -25,7 +24,7 @@ let fromValue, toValue, exchangeRate;
 window.addEventListener("DOMContentLoaded", onWebLoad);
 async function onWebLoad() {
     TTBalance.innerHTML = "Balance: 0";
-    fromBalance.innerHTML = "Balance: 0";
+    // fromBalance.innerHTML = "Balance: 0";
     if (typeof window.ethereum !== "undefined") {
         const account = await window.ethereum.request({
             method: "eth_accounts",
@@ -63,7 +62,7 @@ $(".dropdown-item").click(function () {
 //
 //
 const TTBalance = document.getElementById("TTBalance");
-const fromBalance = document.getElementById("fromBalance");
+// const fromBalance = document.getElementById("fromBalance");
 const connectWalletButton = document.getElementById("connectWallet");
 connectWalletButton.onclick = connect;
 
@@ -82,7 +81,6 @@ async function connect() {
             const account = await window.ethereum.request({
                 method: "eth_accounts",
             });
-
             await tokenContract.balanceOf(account.toString()).then((value) => {
                 const balance = ethers.utils.formatEther(value);
                 TTBalance.innerHTML = "Balance: " + balance.toString();
@@ -156,17 +154,24 @@ async function swap() {
                 // console.log("acceptedToken1: ");
                 // console.log(acceptedToken1);
 
-                // const response = await poolContract.setAcceptedToken2(
-                //     USDCContractAddress.toString()
-                // );
-
-                const response = await poolContract.swapIn(
-                    ethers.utils.parseEther(toValue.toString()),
-                    selectedToken,
-                    tokenContractAddress
-                );
-                console.log("response: ");
-                console.log(response);
+                // console.log(toValue);
+                if (toValue !== "undefined" && toValue >= 1) {
+                    if (fromValue !== "undefined" && fromValue >= 1) {
+                        const response = await poolContract
+                            .swapIn(
+                                ethers.utils.parseEther(toValue.toString()),
+                                selectedToken,
+                                tokenContractAddress
+                            )
+                            .then((res) => {
+                                console.log(
+                                    ethers.utils.formatEther(res.value)
+                                );
+                            });
+                        console.log("response: ");
+                        console.log(response);
+                    }
+                }
             } catch (error) {
                 console.log(error);
             }
@@ -187,12 +192,20 @@ FromInput.addEventListener("input", FromInputListener);
 ToInput.addEventListener("input", ToInputListener);
 
 function FromInputListener(e) {
-    toValue = parseFloat(e.target.value) * parseFloat(exchangeRate);
+    toValue =
+        parseFloat(e.target.value != "" ? e.target.value : 0) *
+        parseFloat(exchangeRate);
     ToInput.value = toValue;
-    console.log(parseFloat(exchangeRate));
 }
 
 function ToInputListener(e) {
-    fromValue = parseFloat(e.target.value) / parseFloat(exchangeRate);
+    console.log("e: ");
+    console.log(e.target.value);
+    fromValue =
+        parseFloat(e.target.value != "" ? e.target.value : 0) /
+        parseFloat(exchangeRate);
+
+    console.log("toValue: ");
+    console.log(toValue);
     FromInput.value = fromValue;
 }
