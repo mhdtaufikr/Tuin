@@ -1611,6 +1611,8 @@ Our transparent fee structure ensures that you can maximize your trading profits
             </ul>
           </div>
 
+          test
+
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Social Networks</h4>
             <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
