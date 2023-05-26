@@ -190,64 +190,64 @@
           <div class="justify-content-center text-center">
           <a class="nav-link scrollto" href="#buy" type="button" class="btn btn-outline-light"><strong>BUY $ TUIN</strong></a><br><br>
         </div>
-          <div class="justify-content-left text-start">
+        <!--  <div class="justify-content-left text-start">-->
             
-            <img style="max-width: 40px; height: auto;" src="assets/img/tuin_logo.png" class="img-fluid logo-image" alt="">
-            <span class="text-light">Tuin Pool Address <button class="ml copy-button rounded-pill" onclick="copyToClipboarda()">Copy Address</button></span>
-            <span style="background-color: #5d5d5d; color: #fffefe;" class="border border-light rounded-pill"><strong> 0xf376c4e00ff6e475de07b483a17fd6cf35cd62cb </strong></span><br><br>
-            <style>
-                .copy-button {
-                    display: inline-block;
-                    padding: 5px 10px;
-                    background-color: #4CAF50;
-                    color: white;
-                    border: none;
-                    cursor: pointer;
-                }
-            </style>
-            <script>
-                function copyToClipboarda() {
-                    const value = '0xf376c4e00ff6e475de07b483a17fd6cf35cd62cb';
-                    const tempInput = document.createElement('input');
-                    tempInput.value = value;
-                    document.body.appendChild(tempInput);
-                    tempInput.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(tempInput);
-                    alert('Value copied to clipboard: ' + value);
-                }
-            </script>
+        <!--    <img style="max-width: 40px; height: auto;" src="assets/img/tuin_logo.png" class="img-fluid logo-image" alt="">-->
+        <!--    <span class="text-light">Tuin Pool Address <button class="ml copy-button rounded-pill" onclick="copyToClipboarda()">Copy Address</button></span>-->
+        <!--    <span style="background-color: #5d5d5d; color: #fffefe;" class="border border-light rounded-pill"><strong> 0xf376c4e00ff6e475de07b483a17fd6cf35cd62cb </strong></span><br><br>-->
+        <!--    <style>-->
+        <!--        .copy-button {-->
+        <!--            display: inline-block;-->
+        <!--            padding: 5px 10px;-->
+        <!--            background-color: #4CAF50;-->
+        <!--            color: white;-->
+        <!--            border: none;-->
+        <!--            cursor: pointer;-->
+        <!--        }-->
+        <!--    </style>-->
+        <!--    <script>-->
+        <!--        function copyToClipboarda() {-->
+        <!--            const value = '0xf376c4e00ff6e475de07b483a17fd6cf35cd62cb';-->
+        <!--            const tempInput = document.createElement('input');-->
+        <!--            tempInput.value = value;-->
+        <!--            document.body.appendChild(tempInput);-->
+        <!--            tempInput.select();-->
+        <!--            document.execCommand('copy');-->
+        <!--            document.body.removeChild(tempInput);-->
+        <!--            alert('Value copied to clipboard: ' + value);-->
+        <!--        }-->
+        <!--    </script>-->
             
-        </div>
+        <!--</div>-->
 
 
-        <div class="justify-content-left text-start">
-          <img style="max-width: 40px; height: auto;" src="assets/img/tuin_logo.png" class="img-fluid logo-image" alt="">
-          <span class="text-light">Tuin Token Address <button class="ml copy-button rounded-pill" onclick="copyToClipboard()">Copy Address</button></span><br>
-          <span style="background-color: #5d5d5d; color: #fffefe;" class="border border-light rounded-pill"><strong> 0x6fd1be00b243bfa75f8cc4421f53c02f79c7bb60 </strong></span><br><br>
-          <style>
-              .copy-button {
-                  display: inline-block;
-                  padding: 5px 10px;
-                  background-color: #4CAF50;
-                  color: white;
-                  border: none;
-                  cursor: pointer;
-              }
-          </style>
-          <script>
-              function copyToClipboard() {
-                  const value = '0x6fd1be00b243bfa75f8cc4421f53c02f79c7bb60';
-                  const tempInput = document.createElement('input');
-                  tempInput.value = value;
-                  document.body.appendChild(tempInput);
-                  tempInput.select();
-                  document.execCommand('copy');
-                  document.body.removeChild(tempInput);
-                  alert('Value copied to clipboard: ' + value);
-              }
-          </script>
-      </div>
+      <!--  <div class="justify-content-left text-start">-->
+      <!--    <img style="max-width: 40px; height: auto;" src="assets/img/tuin_logo.png" class="img-fluid logo-image" alt="">-->
+      <!--    <span class="text-light">Tuin Token Address <button class="ml copy-button rounded-pill" onclick="copyToClipboard()">Copy Address</button></span><br>-->
+      <!--    <span style="background-color: #5d5d5d; color: #fffefe;" class="border border-light rounded-pill"><strong> 0x6fd1be00b243bfa75f8cc4421f53c02f79c7bb60 </strong></span><br><br>-->
+      <!--    <style>-->
+      <!--        .copy-button {-->
+      <!--            display: inline-block;-->
+      <!--            padding: 5px 10px;-->
+      <!--            background-color: #4CAF50;-->
+      <!--            color: white;-->
+      <!--            border: none;-->
+      <!--            cursor: pointer;-->
+      <!--        }-->
+      <!--    </style>-->
+      <!--    <script>-->
+      <!--        function copyToClipboard() {-->
+      <!--            const value = '0x6fd1be00b243bfa75f8cc4421f53c02f79c7bb60';-->
+      <!--            const tempInput = document.createElement('input');-->
+      <!--            tempInput.value = value;-->
+      <!--            document.body.appendChild(tempInput);-->
+      <!--            tempInput.select();-->
+      <!--            document.execCommand('copy');-->
+      <!--            document.body.removeChild(tempInput);-->
+      <!--            alert('Value copied to clipboard: ' + value);-->
+      <!--        }-->
+      <!--    </script>-->
+      <!--</div>-->
       
         
           
@@ -762,7 +762,7 @@ to driving the adoption of digital currencies and empowering individuals to take
         <div class="row">
           <div class="col-lg-7 text-center ">
             <h3>Sign the Tuin Token Manifesto on Twitter!</h3>
-            <a target="_blank" class="cta-btn align-middle" href="https://twitter.com/intent/tweet?text='I'm signing the TuinToken Manifesto! @TuinToken @TT https://dogecoin.com/ #TuinTokenManifesto '"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg enable-background="new 0 0 32 32" height="100%" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="10%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M31.993,6.077C30.816,6.6,29.552,6.953,28.223,7.11c1.355-0.812,2.396-2.098,2.887-3.63  c-1.269,0.751-2.673,1.299-4.168,1.592C25.744,3.797,24.038,3,22.149,3c-3.625,0-6.562,2.938-6.562,6.563  c0,0.514,0.057,1.016,0.169,1.496C10.301,10.785,5.465,8.172,2.227,4.201c-0.564,0.97-0.888,2.097-0.888,3.3  c0,2.278,1.159,4.286,2.919,5.464c-1.075-0.035-2.087-0.329-2.972-0.821c-0.001,0.027-0.001,0.056-0.001,0.082  c0,3.181,2.262,5.834,5.265,6.437c-0.55,0.149-1.13,0.23-1.729,0.23c-0.424,0-0.834-0.041-1.234-0.117  c0.834,2.606,3.259,4.504,6.13,4.558c-2.245,1.76-5.075,2.811-8.15,2.811c-0.53,0-1.053-0.031-1.566-0.092  C2.905,27.913,6.355,29,10.062,29c12.072,0,18.675-10.001,18.675-18.675c0-0.284-0.008-0.568-0.02-0.85  C30,8.55,31.112,7.395,31.993,6.077z" fill="#55ACEE"/><g/><g/><g/><g/><g/><g/></svg>Tweet!</a>
+            <a target="_blank" class="cta-btn align-middle" href="https://twitter.com/intent/tweet?text='I'm signing the TuinToken Manifesto! @TuinToken @TT https://tuintoken.com/ #TuinTokenManifesto '"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg enable-background="new 0 0 32 32" height="100%" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="10%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M31.993,6.077C30.816,6.6,29.552,6.953,28.223,7.11c1.355-0.812,2.396-2.098,2.887-3.63  c-1.269,0.751-2.673,1.299-4.168,1.592C25.744,3.797,24.038,3,22.149,3c-3.625,0-6.562,2.938-6.562,6.563  c0,0.514,0.057,1.016,0.169,1.496C10.301,10.785,5.465,8.172,2.227,4.201c-0.564,0.97-0.888,2.097-0.888,3.3  c0,2.278,1.159,4.286,2.919,5.464c-1.075-0.035-2.087-0.329-2.972-0.821c-0.001,0.027-0.001,0.056-0.001,0.082  c0,3.181,2.262,5.834,5.265,6.437c-0.55,0.149-1.13,0.23-1.729,0.23c-0.424,0-0.834-0.041-1.234-0.117  c0.834,2.606,3.259,4.504,6.13,4.558c-2.245,1.76-5.075,2.811-8.15,2.811c-0.53,0-1.053-0.031-1.566-0.092  C2.905,27.913,6.355,29,10.062,29c12.072,0,18.675-10.001,18.675-18.675c0-0.284-0.008-0.568-0.02-0.85  C30,8.55,31.112,7.395,31.993,6.077z" fill="#55ACEE"/><g/><g/><g/><g/><g/><g/></svg>Tweet!</a>
           
           </div>
           <div class="col-lg-5 cta-btn-container text-justify">
