@@ -188,7 +188,7 @@
         <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
           <img src="assets/img/tuin.png" class="img-fluid animated mb-4" alt="" style="width:auto;height:auto;">
           <div class="justify-content-center text-center">
-          <a class="nav-link scrollto" href="#buy" type="button" class="btn btn-outline-light"><strong>BUY $ TUIN</strong></a><br><br>
+          <a class="nav-link scrollto" href="#buy" type="button" ><button  class="btn btn-outline-secondary"><strong>BUY $ TUIN</strong></button> </a><br><br>
         </div>
         <!--  <div class="justify-content-left text-start">-->
             
