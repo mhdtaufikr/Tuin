@@ -52,7 +52,7 @@
   
 
   <!-- ======= Header ======= -->
-<header id="header" class="fixed-top">
+<header id="header" >
   <style>
     @media (max-width: 767px) {
       .hide-padding-mobile {
