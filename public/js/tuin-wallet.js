@@ -70,14 +70,14 @@ async function connect() {
                 await getAcceptedToken3(value);
 
                 //
-                // Get TUIN held
-                //
-                await getTuinHeld(value);
-
-                //
                 // Get exchange rate
                 //
                 await getExchangeRate(value);
+
+                //
+                // Get TUIN held
+                //
+                // await getTuinHeld(value);
             });
 
             await walletTTContract().then(async (value) => {});
@@ -166,7 +166,7 @@ async function getTuinHeld(contract) {
 async function getExchangeRate(contract) {
     const exchangeRate = document.getElementById("exchangeRate");
     const response = await contract.exchangeRate();
-    exchangeRate.innerHTML = "EXCHANGE RATE: " + response;
+    exchangeRate.innerHTML = "EXCHANGE RATE: " + response.toString();
 }
 
 //
