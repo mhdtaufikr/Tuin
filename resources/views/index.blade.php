@@ -51,21 +51,27 @@
   </style>
   
 
- <!-- ======= Header ======= -->
+  <!-- ======= Header ======= -->
 <header id="header" class="fixed-top">
+  <style>
+    @media (max-width: 767px) {
+      .hide-padding-mobile {
+        padding-left: 12px !important;
+      }
+      
+    }
+  </style>
   <div class="align-items-center">
-  <div class="row">
-    <div style="padding-left: 200px;" class="col-md-3">
-      <div  class="pic">
-        <h1 class="logo me-auto">
-          <img style="max-width: 50px; height: auto;" src="assets/img/tuin_logo.png" class="img-fluid logo-image" alt="">
-          <a href="index.html">Tuin</a>
-        </h1>
-    
-    </div>
-    </div>
-    <div class="col-md-6">
-     
+    <div class="row">
+      <div class="col-md-4 col-6 hide-padding-mobile" style="padding-left: 200px;">
+        <div class="pic">
+          <h1 class="logo me-auto">
+            <img style="max-width: 50px; height: auto;" src="assets/img/tuin_logo.png" class="img-fluid logo-image" alt="">
+            <a href="index.html">Tuin</a>
+          </h1>
+        </div>
+      </div>
+      <div class="col-md-4 col-2">
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -85,22 +91,31 @@
           </div>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
-     
-    </div>
-    <div style="padding-left: 100PX;" class="col-md-3">
-    
-      <div class="pic">
-        <h1 class="logo me-auto">
-          <img style="max-width: 50px; height: auto;" src="assets/img/pancakeswap.png" class="img-fluid logo-image" alt="">
-          <img style="max-width: 50px; height: auto;" src="assets/img/Uniswap.png" class="img-fluid logo-image" alt="">
-        </h1>
       </div>
-
+      <div class="col-md-4 col-4" style="padding-left: 200px;">
+        <style>
+          @media (max-width: 767px) {
+            .col-4 {
+              padding-left: 0 !important;
+            }
+          }
+        </style>
+        
+        <div class="pic">
+          <h1 class="logo me-auto">
+            <img style="max-width: 50px; height: auto;" src="assets/img/pancakeswap.png" class="img-fluid logo-image" alt="">
+            <img style="max-width: 50px; height: auto;" src="assets/img/Uniswap.png" class="img-fluid logo-image" alt="">
+          </h1>
+        </div>
+      </div>
+      
+      
     </div>
-  </div>
+    
 </div>
   
 </header><!-- End Header -->
+
 
 
   <!-- ======= Hero Section ======= -->
@@ -108,10 +123,10 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/tuin_g.png" class="img-fluid animated" alt="" style="width:auto;height:auto;">
+        <div class="col-lg-4 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-lg-1" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/tuin_g.png" class="img-fluid animated" alt="" style="width:100%; max-width: 500px; height:auto;">
         </div>
-        <div class="col-lg-4 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-4 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-lg-2" data-aos="fade-up" data-aos-delay="200">
           <h1 class="text-center">Bridging Revolution Of The Funding Gap</h1>
           <h2 class="text-center"> With Tuin Token and Web 3.0 Ecosystem</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
@@ -261,41 +276,38 @@
 
   <main id="main">
 
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
-      <div class="">
-
-        <div class="row" data-aos="zoom-in">
-          <div class="d-flex justify-content-center">
-            <div class="col-lg-2 d-flex align-items-center justify-content-center">
-              <img src="assets/img/1.png" class="img-fluid animated mb-4" alt="" style="width:auto;height:auto;">  
-            </div>
-
-            <div class="col-lg-2 d-flex align-items-center justify-content-center">
-              <img src="assets/img/2.png" class="img-fluid animated mb-4" alt="" style="width:auto;height:auto;">  
-            </div>
-
-            <div class="col-lg-2 d-flex align-items-center justify-content-center">
-              <img src="assets/img/3.png" class="img-fluid animated mb-4" alt="" style="width:auto;height:auto;">  
-            </div>
-
-            <div class="col-lg-2 d-flex align-items-center justify-content-center">
-              <img src="assets/img/4.png" class="img-fluid animated mb-4" alt="" style="width:auto;height:auto;">  
-            </div>
-
-            <div class="col-lg-2 d-flex align-items-center justify-content-center">
-              <img src="assets/img/5.png" class="img-fluid animated mb-4" alt="" style="width:auto;height:auto;">  
-            </div>
-
-            <div class="col-lg-2 d-flex align-items-center justify-content-center">
-              <img src="assets/img/6.png" class="img-fluid animated mb-4" alt="" style="width:auto;height:auto;">  
-            </div>
-  
-          </div>
+   <!-- ======= Clients Section ======= -->
+   <section id="clients" class="clients section-bg">
+    <div class="container">
+      <div class="row" data-aos="zoom-in">
+        <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
+          <img src="assets/img/1.png" class="img-fluid mb-4" alt="" style="max-width: auto; height: auto;">
         </div>
-
+  
+        <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
+          <img src="assets/img/2.png" class="img-fluid mb-4" alt="" style="max-width: auto; height: auto;">
+        </div>
+  
+        <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
+          <img src="assets/img/3.png" class="img-fluid mb-4" alt="" style="max-width: auto; height: auto;">
+        </div>
+  
+        <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
+          <img src="assets/img/4.png" class="img-fluid mb-4" alt="" style="max-width: auto; height: auto;">
+        </div>
+  
+        <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
+          <img src="assets/img/5.png" class="img-fluid mb-4" alt="" style="max-width: auto; height: auto;">
+        </div>
+  
+        <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
+          <img src="assets/img/6.png" class="img-fluid mb-4" alt="" style="max-width: auto; height: auto;">
+        </div>
       </div>
-    </section><!-- End Cliens Section -->
+    </div>
+  </section>
+  <!-- End Clients Section -->
+
 
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
