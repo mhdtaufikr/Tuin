@@ -156,11 +156,16 @@ async function getAcceptedToken3(contract) {
     acceptedToken3.innerHTML = "ACCEPTED TOKEN 3: " + acceptedToken.toString();
 }
 
-async function getTuinHeld(contract) {
-    const tuinHeld = document.getElementById("tuinHeld");
-    const held = await contract.tuinHeld(tokenContractAddress);
-    tuinHeld.innerHTML =
-        "TUIN HELD: " + ethers.utils.formatEther(held.value).toString();
+const tuinHeld = document.getElementById("tuinHeldButton");
+tuinHeld.onclick = getTuinHeld;
+
+async function getTuinHeld() {
+    await poolTTContract().then(async (value) => {
+        console.log(value.address.toString());
+        const held = await value.tuinHeld(value.address.toString());
+        tuinHeld.innerHTML =
+            "TUIN HELD: " + ethers.utils.formatEther(held.value).toString();
+    });
 }
 
 async function getExchangeRate(contract) {
