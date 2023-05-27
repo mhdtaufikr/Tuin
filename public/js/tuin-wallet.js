@@ -73,11 +73,6 @@ async function connect() {
                 // Get exchange rate
                 //
                 await getExchangeRate(value);
-
-                //
-                // Get TUIN held
-                //
-                // await getTuinHeld(value);
             });
 
             await walletTTContract().then(async (value) => {});
