@@ -284,7 +284,7 @@
     <div class="container">
       <div class="row" data-aos="zoom-in">
         <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
-          <img src="assets/img/1.png" class="img-fluid mb-4" alt="" style="max-width: auto; height: auto;">
+          <a href="https://bscscan.com/token/0xaf67e3278f7e6c19f905181144f9a6f9b503d997"><img src="assets/img/1.png" class="img-fluid mb-4" alt="" style="max-width: auto; height: auto;"></a>
         </div>
   
         <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
@@ -1512,7 +1512,7 @@ Our transparent fee structure ensures that you can maximize your trading profits
 
         <div class="row">
 
-          <div class="col-lg-12 d-flex align-items-stretch">
+          <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
              <!--  <div class="address">
                 <i class="bi bi-geo-alt"></i>
@@ -1536,7 +1536,7 @@ Our transparent fee structure ensures that you can maximize your trading profits
 
           </div>
 
-         {{--  <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
@@ -1563,7 +1563,7 @@ Our transparent fee structure ensures that you can maximize your trading profits
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-          </div> --}}
+          </div> 
 
         </div>
 
