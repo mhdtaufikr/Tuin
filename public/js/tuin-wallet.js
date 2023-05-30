@@ -146,21 +146,6 @@ async function connect() {
                     await getAcceptedToken3(value);
 
                     //
-                    // Get amount deposited accepted token 1
-                    //
-                    await getAmountDepositedAcceptedToken1(value);
-
-                    // //
-                    // // Get amount deposited accepted token 2
-                    // //
-                    // await getAmountDepositedAcceptedToken2(value);
-
-                    // //
-                    // // Get amount deposited accepted token 3
-                    // //
-                    // await getAmountDepositedAcceptedToken3(value);
-
-                    //
                     // Get amount withdrawn accepted token 1
                     //
                     await getAmountWithdrawnacceptedToken1(value);
@@ -327,20 +312,32 @@ async function getPoolAddress(contract) {
 
 async function getAcceptedToken1(contract) {
     const acceptedToken1 = document.getElementById("acceptedToken1");
-    const acceptedToken = await contract.acceptedToken1();
-    acceptedToken1.innerHTML += acceptedToken.toString();
+    await contract.acceptedToken1().then(async (value) => {
+        acceptedToken1.innerHTML += value.toString();
+        if (value.toString() != "0x0000000000000000000000000000000000000000") {
+            await getAmountDepositedAcceptedToken1(contract);
+        }
+    });
 }
 
 async function getAcceptedToken2(contract) {
     const acceptedToken2 = document.getElementById("acceptedToken2");
-    const acceptedToken = await contract.acceptedToken2();
-    acceptedToken2.innerHTML += acceptedToken.toString();
+    await contract.acceptedToken2().then(async (value) => {
+        acceptedToken2.innerHTML += value.toString();
+        if (value.toString() != "0x0000000000000000000000000000000000000000") {
+            await getAmountDepositedAcceptedToken2(contract);
+        }
+    });
 }
 
 async function getAcceptedToken3(contract) {
     const acceptedToken3 = document.getElementById("acceptedToken3");
-    const acceptedToken = await contract.acceptedToken3();
-    acceptedToken3.innerHTML += acceptedToken.toString();
+    await contract.acceptedToken3().then(async (value) => {
+        acceptedToken3.innerHTML += value.toString();
+        if (value.toString() != "0x0000000000000000000000000000000000000000") {
+            await getAmountDepositedAcceptedToken3(contract);
+        }
+    });
 }
 
 async function getAmountDepositedAcceptedToken1(contract) {
@@ -349,39 +346,45 @@ async function getAmountDepositedAcceptedToken1(contract) {
         tokenABI
     );
     const decimals = await acceptedToken1Contract.decimals();
+    const symbol = await acceptedToken1Contract.symbol();
 
     const html = document.getElementById("amountDepositedAcceptedToken1");
     const response = await contract.amountDepositedacceptedToken1();
-    html.innerHTML += formatNumber(
-        ethers.utils.formatUnits(response, decimals)
-    );
+    html.innerHTML +=
+        formatNumber(ethers.utils.formatUnits(response, decimals)) +
+        " " +
+        symbol.toString();
 }
 
-// async function getAmountDepositedAcceptedToken2(contract) {
-//     const acceptedToken1Contract = await getContract(
-//         USDTContractAddress,
-//         tokenABI
-//     );
-//     const decimals = await acceptedToken1Contract.decimals();
-//     const html = document.getElementById("amountDepositedAcceptedToken2");
-//     const response = await contract.amountDepositedacceptedToken2();
-//     html.innerHTML += formatNumber(
-//         ethers.utils.formatUnits(response, decimals)
-//     );
-// }
+async function getAmountDepositedAcceptedToken2(contract) {
+    const acceptedToken1Contract = await getContract(
+        USDTContractAddress,
+        tokenABI
+    );
+    const decimals = await acceptedToken1Contract.decimals();
+    const symbol = await acceptedToken1Contract.symbol();
+    const html = document.getElementById("amountDepositedAcceptedToken2");
+    const response = await contract.amountDepositedacceptedToken2();
+    html.innerHTML +=
+        formatNumber(ethers.utils.formatUnits(response, decimals)) +
+        " " +
+        symbol;
+}
 
-// async function getAmountDepositedAcceptedToken3(contract) {
-//     const acceptedToken1Contract = await getContract(
-//         BUSDContractAddress,
-//         tokenABI
-//     );
-//     const decimals = await acceptedToken1Contract.decimals();
-//     const html = document.getElementById("amountDepositedAcceptedToken3");
-//     const response = await contract.amountDepositedacceptedToken3();
-//     html.innerHTML += formatNumber(
-//         ethers.utils.formatUnits(response, decimals)
-//     );
-// }
+async function getAmountDepositedAcceptedToken3(contract) {
+    const acceptedToken1Contract = await getContract(
+        BUSDContractAddress,
+        tokenABI
+    );
+    const decimals = await acceptedToken1Contract.decimals();
+    const symbol = await acceptedToken1Contract.symbol();
+    const html = document.getElementById("amountDepositedAcceptedToken3");
+    const response = await contract.amountDepositedacceptedToken3();
+    html.innerHTML +=
+        formatNumber(ethers.utils.formatUnits(response, decimals)) +
+        " " +
+        symbol;
+}
 
 async function getAmountWithdrawnacceptedToken1(contract) {
     const html = document.getElementById("amountWithdrawnacceptedToken1");
