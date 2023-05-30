@@ -189,6 +189,7 @@ async function connect() {
 
             await getContract(walletContractAddress, walletABI).then(
                 async (value) => {
+                    console.log(value);
                     //
                     // Get wallet address
                     //
@@ -592,12 +593,16 @@ async function setAcceptedToken1() {
     if (typeof window.ethereum !== "undefined") {
         try {
             await window.ethereum.request({ method: "eth_requestAccounts" });
-            const poolContract = await getContract(
-                poolContractAddress,
-                poolABI
+            const walletContract = await getContract(
+                walletContractAddress,
+                walletABI
             );
             const value = acceptedToken1Input.value;
-            const response = await poolContract.setAcceptedToken1(value);
+            const response = await walletContract.setAcceptedToken(
+                poolContractAddress,
+                value,
+                1
+            );
             await response.wait();
             window.location.reload();
         } catch (error) {
@@ -620,12 +625,16 @@ async function setAcceptedToken2() {
     if (typeof window.ethereum !== "undefined") {
         try {
             await window.ethereum.request({ method: "eth_requestAccounts" });
-            const poolContract = await getContract(
-                poolContractAddress,
-                poolABI
+            const walletContract = await getContract(
+                walletContractAddress,
+                walletABI
             );
             const value = acceptedToken2Input.value;
-            const response = await poolContract.setAcceptedToken2(value);
+            const response = await walletContract.setAcceptedToken(
+                poolContractAddress,
+                value,
+                1
+            );
             await response.wait();
             window.location.reload();
         } catch (error) {
@@ -648,12 +657,16 @@ async function setAcceptedToken3() {
     if (typeof window.ethereum !== "undefined") {
         try {
             await window.ethereum.request({ method: "eth_requestAccounts" });
-            const poolContract = await getContract(
-                poolContractAddress,
-                poolABI
+            const walletContract = await getContract(
+                walletContractAddress,
+                walletABI
             );
             const value = acceptedToken3Input.value;
-            const response = await poolContract.setAcceptedToken3(value);
+            const response = await walletContract.setAcceptedToken(
+                poolContractAddress,
+                value,
+                1
+            );
             await response.wait();
             window.location.reload();
         } catch (error) {

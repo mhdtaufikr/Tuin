@@ -29,16 +29,10 @@
     <h3 id="deploymentChainId">DEPLOYMENT CHAIN ID: </h3>
     <p id="tuinHeld">TUIN HELD: </p>
     <p id="acceptedToken1">ACCEPTED TOKEN 1: </p>
-    <input type="text" id="acceptedToken1Input">
-    <button id="setAcceptedToken1SubmitButton">Set Accepted Token 1</button><br>
 
     <p id="acceptedToken2">ACCEPTED TOKEN 2: </p>
-    <input type="text" id="acceptedToken2Input">
-    <button id="setAcceptedToken2SubmitButton">Set Accepted Token 2</button><br>
 
     <p id="acceptedToken3">ACCEPTED TOKEN 3: </p>
-    <input type="text" id="acceptedToken3Input">
-    <button id="setAcceptedToken3SubmitButton">Set Accepted Token 3</button><br>
 
     <p id="amountDepositedAcceptedToken1">AMOUNT DEPOSITED ACCEPTED TOKEN 1: </p>
     <p id="amountDepositedAcceptedToken2">AMOUNT DEPOSITED ACCEPTED TOKEN 2: </p>
@@ -62,6 +56,15 @@
     <h1>Wallet Contract</h1>
     <h3 id="walletAddress">ADDRESS: </h3>
     <h3 id="walletOwner">OWNER: </h3>
+
+    <input type="text" id="acceptedToken1Input">
+    <button id="setAcceptedToken1SubmitButton">Set Accepted Token 1</button><br>
+
+    <input type="text" id="acceptedToken2Input">
+    <button id="setAcceptedToken2SubmitButton">Set Accepted Token 2</button><br>
+
+    <input type="text" id="acceptedToken3Input">
+    <button id="setAcceptedToken3SubmitButton">Set Accepted Token 3</button><br>
 
     <!-- <input type="text" id="poolOwnerInput">
     <button id="setPoolOwnerSubmitButton">Set Pool Owner</button><br> -->
