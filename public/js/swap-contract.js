@@ -15,10 +15,7 @@ import { formatNumber } from "./helper.js";
 // Declare variables
 //
 //
-let fromValue,
-    toValue,
-    exchangeRate,
-    isProcessing = false;
+let fromValue, toValue, exchangeRate;
 
 //
 //
@@ -160,10 +157,7 @@ async function swap() {
                     selectedToken,
                     tokenContractAddress
                 );
-                // isProcessing = true;
-                // document.body.innerHTML = "Processing";
                 await swapin.wait();
-                // isProcessing = false;
                 window.location.reload();
             } catch (error) {
                 console.log(error);
