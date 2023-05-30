@@ -1,14 +1,14 @@
 export const tokenContractAddress =
-    "0xc1cfea398905990b25191b184b152ebec6cd869e";
+    "0xb54eaa2d03919229b6010fc0810aebff69f1debc";
 export const walletContractAddress =
     "0x92b5a7b8fe239c6f1f62443320959e830a5f9b2f";
-export const poolContractAddress = "0x047090139a1473263ddd711068ca10a476ca6bbf";
-export const USDTContractAddress = "0xdAC17F958D2ee523a2206206994597C13D831ec7";
-export const USDCContractAddress = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48";
-export const BUSDContractAddress = "0x4Fabb145d64652a948d72533023f6E7A623C7C53";
-// export const USDTContractAddress = "default";
-// export const USDCContractAddress = "0x07865c6e87b9f70255377e024ace6630c1eaa37f";
-// export const BUSDContractAddress = "default";
+export const poolContractAddress = "0x7ce6b6f6f337b1f36e70f00a749048006c6028cc";
+// export const USDTContractAddress = "0xdAC17F958D2ee523a2206206994597C13D831ec7";
+// export const USDCContractAddress = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48";
+// export const BUSDContractAddress = "0x4Fabb145d64652a948d72533023f6E7A623C7C53";
+export const USDTContractAddress = "default";
+export const USDCContractAddress = "0xf01f9372D9CE5d4B04E314b2e3F18C1b199ca783";
+export const BUSDContractAddress = "default";
 
 export const tokenABI = [
     {
@@ -17,11 +17,6 @@ export const tokenABI = [
                 internalType: "address",
                 name: "_poolContract",
                 type: "address",
-            },
-            {
-                internalType: "bool",
-                name: "isEth",
-                type: "bool",
             },
         ],
         stateMutability: "nonpayable",
@@ -156,11 +151,6 @@ export const tokenABI = [
                 name: "amount",
                 type: "uint256",
             },
-            {
-                internalType: "bool",
-                name: "isEth",
-                type: "bool",
-            },
         ],
         name: "burn",
         outputs: [
@@ -184,11 +174,6 @@ export const tokenABI = [
                 internalType: "uint256",
                 name: "_amount",
                 type: "uint256",
-            },
-            {
-                internalType: "bool",
-                name: "isEth",
-                type: "bool",
             },
         ],
         name: "burnFrom",
@@ -279,14 +264,8 @@ export const tokenABI = [
         type: "function",
     },
     {
-        inputs: [
-            {
-                internalType: "bool",
-                name: "isEth",
-                type: "bool",
-            },
-        ],
-        name: "getChainTotalSupply",
+        inputs: [],
+        name: "getChainMaxSupply",
         outputs: [
             {
                 internalType: "uint256",
@@ -398,11 +377,6 @@ export const tokenABI = [
                 name: "amount",
                 type: "uint256",
             },
-            {
-                internalType: "bool",
-                name: "isEth",
-                type: "bool",
-            },
         ],
         name: "mint",
         outputs: [
@@ -463,6 +437,19 @@ export const tokenABI = [
             },
         ],
         name: "setOwner",
+        outputs: [],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "_poolContract",
+                type: "address",
+            },
+        ],
+        name: "setPool",
         outputs: [],
         stateMutability: "nonpayable",
         type: "function",
@@ -593,6 +580,126 @@ export const poolABI = [
         type: "function",
     },
     {
+        inputs: [],
+        name: "amountDepositedacceptedToken1",
+        outputs: [
+            {
+                internalType: "uint256",
+                name: "",
+                type: "uint256",
+            },
+        ],
+        stateMutability: "view",
+        type: "function",
+    },
+    {
+        inputs: [],
+        name: "amountDepositedacceptedToken2",
+        outputs: [
+            {
+                internalType: "uint256",
+                name: "",
+                type: "uint256",
+            },
+        ],
+        stateMutability: "view",
+        type: "function",
+    },
+    {
+        inputs: [],
+        name: "amountDepositedacceptedToken3",
+        outputs: [
+            {
+                internalType: "uint256",
+                name: "",
+                type: "uint256",
+            },
+        ],
+        stateMutability: "view",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "_tokenIn",
+                type: "address",
+            },
+            {
+                internalType: "address",
+                name: "_tokenOut",
+                type: "address",
+            },
+            {
+                internalType: "uint256",
+                name: "_amountIn",
+                type: "uint256",
+            },
+        ],
+        name: "amountTuinOut",
+        outputs: [
+            {
+                internalType: "uint256",
+                name: "_amountTuinOut",
+                type: "uint256",
+            },
+        ],
+        stateMutability: "view",
+        type: "function",
+    },
+    {
+        inputs: [],
+        name: "amountWithdrawnacceptedToken1",
+        outputs: [
+            {
+                internalType: "uint256",
+                name: "",
+                type: "uint256",
+            },
+        ],
+        stateMutability: "view",
+        type: "function",
+    },
+    {
+        inputs: [],
+        name: "amountWithdrawnacceptedToken2",
+        outputs: [
+            {
+                internalType: "uint256",
+                name: "",
+                type: "uint256",
+            },
+        ],
+        stateMutability: "view",
+        type: "function",
+    },
+    {
+        inputs: [],
+        name: "amountWithdrawnacceptedToken3",
+        outputs: [
+            {
+                internalType: "uint256",
+                name: "",
+                type: "uint256",
+            },
+        ],
+        stateMutability: "view",
+        type: "function",
+    },
+    {
+        inputs: [],
+        name: "amountYieldDepositedacceptedToken",
+        outputs: [
+            {
+                internalType: "uint256",
+                name: "",
+                type: "uint256",
+            },
+        ],
+        stateMutability: "view",
+        type: "function",
+    },
+    {
         inputs: [
             {
                 internalType: "bool",
@@ -622,23 +729,36 @@ export const poolABI = [
         inputs: [
             {
                 internalType: "address",
-                name: "_yieldAddress",
+                name: "_tokenIn",
                 type: "address",
             },
             {
                 internalType: "uint256",
-                name: "amountIn",
+                name: "_amountIn",
                 type: "uint256",
             },
         ],
-        name: "depositYield",
+        name: "depositYieldToken",
         outputs: [],
         stateMutability: "nonpayable",
         type: "function",
     },
     {
         inputs: [],
-        name: "exchangeRate",
+        name: "exchangeRateTuin",
+        outputs: [
+            {
+                internalType: "uint256",
+                name: "",
+                type: "uint256",
+            },
+        ],
+        stateMutability: "view",
+        type: "function",
+    },
+    {
+        inputs: [],
+        name: "exchangeRateUsd",
         outputs: [
             {
                 internalType: "uint256",
@@ -652,6 +772,19 @@ export const poolABI = [
     {
         inputs: [],
         name: "isApproved",
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
+                type: "bool",
+            },
+        ],
+        stateMutability: "view",
+        type: "function",
+    },
+    {
+        inputs: [],
+        name: "isPaused",
         outputs: [
             {
                 internalType: "bool",
@@ -679,23 +812,18 @@ export const poolABI = [
         inputs: [
             {
                 internalType: "uint256",
-                name: "amountIn",
+                name: "_amountIn",
                 type: "uint256",
             },
             {
                 internalType: "address",
-                name: "tuinToken",
+                name: "_tuinToken",
                 type: "address",
             },
             {
                 internalType: "address",
                 name: "_yieldAddress",
                 type: "address",
-            },
-            {
-                internalType: "bool",
-                name: "isEth",
-                type: "bool",
             },
         ],
         name: "redeem",
@@ -711,6 +839,54 @@ export const poolABI = [
                 internalType: "string",
                 name: "",
                 type: "string",
+            },
+        ],
+        stateMutability: "view",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "_tokenIn",
+                type: "address",
+            },
+            {
+                internalType: "uint256",
+                name: "_amountIn",
+                type: "uint256",
+            },
+        ],
+        name: "scaleYieldTo18",
+        outputs: [
+            {
+                internalType: "uint256",
+                name: "",
+                type: "uint256",
+            },
+        ],
+        stateMutability: "view",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "_tokenIn",
+                type: "address",
+            },
+            {
+                internalType: "uint256",
+                name: "_amountIn",
+                type: "uint256",
+            },
+        ],
+        name: "scaleYieldToDecimal",
+        outputs: [
+            {
+                internalType: "uint256",
+                name: "",
+                type: "uint256",
             },
         ],
         stateMutability: "view",
@@ -763,7 +939,26 @@ export const poolABI = [
                 type: "uint256",
             },
         ],
-        name: "setExchangeRate",
+        name: "setExchangeRateTuin",
+        outputs: [
+            {
+                internalType: "bool",
+                name: "success",
+                type: "bool",
+            },
+        ],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "uint256",
+                name: "_rate",
+                type: "uint256",
+            },
+        ],
+        name: "setExchangeRateUsd",
         outputs: [
             {
                 internalType: "bool",
@@ -790,6 +985,19 @@ export const poolABI = [
     {
         inputs: [
             {
+                internalType: "bool",
+                name: "_isPaused",
+                type: "bool",
+            },
+        ],
+        name: "setPaused",
+        outputs: [],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
                 internalType: "string",
                 name: "_date",
                 type: "string",
@@ -804,11 +1012,11 @@ export const poolABI = [
         inputs: [
             {
                 internalType: "address",
-                name: "_yieldAddress",
+                name: "_yieldToken",
                 type: "address",
             },
         ],
-        name: "setYieldAddress",
+        name: "setYieldToken",
         outputs: [],
         stateMutability: "nonpayable",
         type: "function",
@@ -834,30 +1042,12 @@ export const poolABI = [
         name: "swapIn",
         outputs: [
             {
-                internalType: "uint256",
-                name: "amountOut",
-                type: "uint256",
-            },
-            {
-                internalType: "uint256",
-                name: "amountIn",
-                type: "uint256",
+                internalType: "bool",
+                name: "",
+                type: "bool",
             },
         ],
         stateMutability: "nonpayable",
-        type: "function",
-    },
-    {
-        inputs: [],
-        name: "totalYieldDerived",
-        outputs: [
-            {
-                internalType: "uint256",
-                name: "",
-                type: "uint256",
-            },
-        ],
-        stateMutability: "view",
         type: "function",
     },
     {
@@ -876,14 +1066,19 @@ export const poolABI = [
                 type: "uint256",
             },
         ],
-        stateMutability: "nonpayable",
+        stateMutability: "view",
         type: "function",
     },
     {
         inputs: [
             {
                 internalType: "address",
-                name: "_token",
+                name: "_tokenIn",
+                type: "address",
+            },
+            {
+                internalType: "address",
+                name: "_to",
                 type: "address",
             },
             {
@@ -891,20 +1086,33 @@ export const poolABI = [
                 name: "_amountOut",
                 type: "uint256",
             },
+        ],
+        name: "withdrawAcceptedToken",
+        outputs: [],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
             {
                 internalType: "address",
-                name: "_wdrAddr",
+                name: "_tokenIn",
+                type: "address",
+            },
+            {
+                internalType: "address",
+                name: "_to",
                 type: "address",
             },
         ],
-        name: "withdrawTksSent",
+        name: "withdrawBalanceAcceptedToken",
         outputs: [],
         stateMutability: "nonpayable",
         type: "function",
     },
     {
         inputs: [],
-        name: "yieldAddress",
+        name: "yieldToken",
         outputs: [
             {
                 internalType: "address",
