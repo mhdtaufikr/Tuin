@@ -59,6 +59,44 @@ export const tokenABI = [
         inputs: [
             {
                 indexed: true,
+                internalType: "bool",
+                name: "success",
+                type: "bool",
+            },
+            {
+                indexed: true,
+                internalType: "address",
+                name: "newOwner",
+                type: "address",
+            },
+        ],
+        name: "OwnerSet",
+        type: "event",
+    },
+    {
+        anonymous: false,
+        inputs: [
+            {
+                indexed: true,
+                internalType: "bool",
+                name: "success",
+                type: "bool",
+            },
+            {
+                indexed: true,
+                internalType: "address",
+                name: "newPool",
+                type: "address",
+            },
+        ],
+        name: "PoolSet",
+        type: "event",
+    },
+    {
+        anonymous: false,
+        inputs: [
+            {
+                indexed: true,
                 internalType: "address",
                 name: "from",
                 type: "address",
@@ -203,7 +241,13 @@ export const tokenABI = [
             },
         ],
         name: "changeSupplyOnBsc",
-        outputs: [],
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
+                type: "bool",
+            },
+        ],
         stateMutability: "nonpayable",
         type: "function",
     },
@@ -216,7 +260,13 @@ export const tokenABI = [
             },
         ],
         name: "changeSupplyOnEth",
-        outputs: [],
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
+                type: "bool",
+            },
+        ],
         stateMutability: "nonpayable",
         type: "function",
     },
@@ -439,12 +489,18 @@ export const tokenABI = [
         inputs: [
             {
                 internalType: "address",
-                name: "_surryWallet",
+                name: "_newOwner",
                 type: "address",
             },
         ],
         name: "setOwner",
-        outputs: [],
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
+                type: "bool",
+            },
+        ],
         stateMutability: "nonpayable",
         type: "function",
     },
@@ -452,12 +508,18 @@ export const tokenABI = [
         inputs: [
             {
                 internalType: "address",
-                name: "_poolContract",
+                name: "_newPool",
                 type: "address",
             },
         ],
         name: "setPool",
-        outputs: [],
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
+                type: "bool",
+            },
+        ],
         stateMutability: "nonpayable",
         type: "function",
     },
@@ -715,8 +777,33 @@ export const poolABI = [
             },
         ],
         name: "approveYield",
-        outputs: [],
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
+                type: "bool",
+            },
+        ],
         stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "_tokenIn",
+                type: "address",
+            },
+        ],
+        name: "balanceTknIn",
+        outputs: [
+            {
+                internalType: "uint256",
+                name: "",
+                type: "uint256",
+            },
+        ],
+        stateMutability: "view",
         type: "function",
     },
     {
@@ -746,7 +833,13 @@ export const poolABI = [
             },
         ],
         name: "depositYieldToken",
-        outputs: [],
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
+                type: "bool",
+            },
+        ],
         stateMutability: "nonpayable",
         type: "function",
     },
@@ -908,7 +1001,13 @@ export const poolABI = [
             },
         ],
         name: "setAcceptedToken1",
-        outputs: [],
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
+                type: "bool",
+            },
+        ],
         stateMutability: "nonpayable",
         type: "function",
     },
@@ -921,7 +1020,13 @@ export const poolABI = [
             },
         ],
         name: "setAcceptedToken2",
-        outputs: [],
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
+                type: "bool",
+            },
+        ],
         stateMutability: "nonpayable",
         type: "function",
     },
@@ -934,7 +1039,13 @@ export const poolABI = [
             },
         ],
         name: "setAcceptedToken3",
-        outputs: [],
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
+                type: "bool",
+            },
+        ],
         stateMutability: "nonpayable",
         type: "function",
     },
@@ -950,7 +1061,7 @@ export const poolABI = [
         outputs: [
             {
                 internalType: "bool",
-                name: "success",
+                name: "",
                 type: "bool",
             },
         ],
@@ -969,7 +1080,7 @@ export const poolABI = [
         outputs: [
             {
                 internalType: "bool",
-                name: "success",
+                name: "",
                 type: "bool",
             },
         ],
@@ -985,7 +1096,13 @@ export const poolABI = [
             },
         ],
         name: "setOwner",
-        outputs: [],
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
+                type: "bool",
+            },
+        ],
         stateMutability: "nonpayable",
         type: "function",
     },
@@ -998,7 +1115,13 @@ export const poolABI = [
             },
         ],
         name: "setPaused",
-        outputs: [],
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
+                type: "bool",
+            },
+        ],
         stateMutability: "nonpayable",
         type: "function",
     },
@@ -1011,7 +1134,13 @@ export const poolABI = [
             },
         ],
         name: "setRedeemableDate",
-        outputs: [],
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
+                type: "bool",
+            },
+        ],
         stateMutability: "nonpayable",
         type: "function",
     },
@@ -1024,7 +1153,13 @@ export const poolABI = [
             },
         ],
         name: "setYieldToken",
-        outputs: [],
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
+                type: "bool",
+            },
+        ],
         stateMutability: "nonpayable",
         type: "function",
     },
@@ -1095,25 +1230,13 @@ export const poolABI = [
             },
         ],
         name: "withdrawAcceptedToken",
-        outputs: [],
-        stateMutability: "nonpayable",
-        type: "function",
-    },
-    {
-        inputs: [
+        outputs: [
             {
-                internalType: "address",
-                name: "_tokenIn",
-                type: "address",
-            },
-            {
-                internalType: "address",
-                name: "_to",
-                type: "address",
+                internalType: "bool",
+                name: "",
+                type: "bool",
             },
         ],
-        name: "withdrawBalanceAcceptedToken",
-        outputs: [],
         stateMutability: "nonpayable",
         type: "function",
     },
@@ -1154,17 +1277,12 @@ export const walletABI = [
                 name: "_amount",
                 type: "uint256",
             },
-            {
-                internalType: "bool",
-                name: "isEth",
-                type: "bool",
-            },
         ],
         name: "newMint",
         outputs: [
             {
                 internalType: "bool",
-                name: "success",
+                name: "",
                 type: "bool",
             },
         ],
@@ -1206,7 +1324,7 @@ export const walletABI = [
         outputs: [
             {
                 internalType: "bool",
-                name: "success",
+                name: "",
                 type: "bool",
             },
         ],
@@ -1235,7 +1353,7 @@ export const walletABI = [
         outputs: [
             {
                 internalType: "bool",
-                name: "success",
+                name: "",
                 type: "bool",
             },
         ],
@@ -1259,7 +1377,7 @@ export const walletABI = [
         outputs: [
             {
                 internalType: "bool",
-                name: "success",
+                name: "",
                 type: "bool",
             },
         ],
@@ -1279,11 +1397,35 @@ export const walletABI = [
                 type: "uint256",
             },
         ],
-        name: "setExchangeRate",
+        name: "setExchangeRateTuin",
         outputs: [
             {
                 internalType: "bool",
-                name: "success",
+                name: "",
+                type: "bool",
+            },
+        ],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "tuinPool",
+                type: "address",
+            },
+            {
+                internalType: "uint256",
+                name: "_newRate",
+                type: "uint256",
+            },
+        ],
+        name: "setExchangeRateUsd",
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
                 type: "bool",
             },
         ],
@@ -1302,17 +1444,12 @@ export const walletABI = [
                 name: "_newMaxSupply",
                 type: "uint256",
             },
-            {
-                internalType: "bool",
-                name: "isEth",
-                type: "bool",
-            },
         ],
         name: "setNewSupply",
         outputs: [
             {
                 internalType: "bool",
-                name: "success",
+                name: "",
                 type: "bool",
             },
         ],
@@ -1340,6 +1477,30 @@ export const walletABI = [
                 type: "address",
             },
             {
+                internalType: "bool",
+                name: "_paused",
+                type: "bool",
+            },
+        ],
+        name: "setPaused",
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
+                type: "bool",
+            },
+        ],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "tuinPool",
+                type: "address",
+            },
+            {
                 internalType: "string",
                 name: "_date",
                 type: "string",
@@ -1349,7 +1510,7 @@ export const walletABI = [
         outputs: [
             {
                 internalType: "bool",
-                name: "success",
+                name: "",
                 type: "bool",
             },
         ],
@@ -1373,7 +1534,7 @@ export const walletABI = [
         outputs: [
             {
                 internalType: "bool",
-                name: "success",
+                name: "",
                 type: "bool",
             },
         ],
@@ -1394,13 +1555,25 @@ export const walletABI = [
             },
         ],
         name: "setTuinOwner",
-        outputs: [
+        outputs: [],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
             {
-                internalType: "bool",
-                name: "success",
-                type: "bool",
+                internalType: "address",
+                name: "tuinToken",
+                type: "address",
+            },
+            {
+                internalType: "address",
+                name: "_newPool",
+                type: "address",
             },
         ],
+        name: "setTuinPoolAddress",
+        outputs: [],
         stateMutability: "nonpayable",
         type: "function",
     },
@@ -1417,11 +1590,45 @@ export const walletABI = [
                 type: "address",
             },
         ],
-        name: "setYieldAddress",
+        name: "setYieldToken",
         outputs: [
             {
                 internalType: "bool",
-                name: "success",
+                name: "",
+                type: "bool",
+            },
+        ],
+        stateMutability: "nonpayable",
+        type: "function",
+    },
+    {
+        inputs: [
+            {
+                internalType: "address",
+                name: "tuinPool",
+                type: "address",
+            },
+            {
+                internalType: "address",
+                name: "_tokenIn",
+                type: "address",
+            },
+            {
+                internalType: "address",
+                name: "_to",
+                type: "address",
+            },
+            {
+                internalType: "uint256",
+                name: "_amountOut",
+                type: "uint256",
+            },
+        ],
+        name: "withdraw",
+        outputs: [
+            {
+                internalType: "bool",
+                name: "",
                 type: "bool",
             },
         ],

@@ -531,16 +531,19 @@ async function setExchangeRateTuin() {
     if (typeof window.ethereum !== "undefined") {
         try {
             await window.ethereum.request({ method: "eth_requestAccounts" });
-            const poolContract = await getContract(
-                poolContractAddress,
-                poolABI
+            const walletContract = await getContract(
+                walletContractAddress,
+                walletABI
             );
 
             const value = ethers.utils.parseUnits(
                 exchangeRateTuinInput.value.toString(),
                 0
             );
-            const response = await poolContract.setExchangeRateTuin(value);
+            const response = await walletContract.setExchangeRateTuin(
+                poolContractAddress,
+                value
+            );
             await response.wait();
             window.location.reload();
         } catch (error) {
@@ -563,14 +566,18 @@ async function setExchangeRateUsd() {
     if (typeof window.ethereum !== "undefined") {
         try {
             await window.ethereum.request({ method: "eth_requestAccounts" });
-            const poolContract = await getContract(
+            const walletContract = await getContract(
+                walletContractAddress,
+                walletABI
+            );
+            const value = ethers.utils.parseUnits(
+                exchangeRateUsdInput.value.toString(),
+                0
+            );
+            const response = await walletContract.setExchangeRateUsd(
                 poolContractAddress,
-                poolABI
+                value
             );
-            const value = ethers.utils.parseEther(
-                exchangeRateUsdInput.value.toString()
-            );
-            const response = await poolContract.setExchangeRateUsd(value);
             await response.wait();
             window.location.reload();
         } catch (error) {
@@ -633,7 +640,7 @@ async function setAcceptedToken2() {
             const response = await walletContract.setAcceptedToken(
                 poolContractAddress,
                 value,
-                1
+                2
             );
             await response.wait();
             window.location.reload();
@@ -665,7 +672,7 @@ async function setAcceptedToken3() {
             const response = await walletContract.setAcceptedToken(
                 poolContractAddress,
                 value,
-                1
+                3
             );
             await response.wait();
             window.location.reload();
