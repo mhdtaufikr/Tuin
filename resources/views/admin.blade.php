@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>Tuin Token</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="assets/img/tuin_logo.png" rel="icon">
+    <link href="assets/img/tuin_logo.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+  
+    <!-- =======================================================
+    * Template Name: Arsha
+    * Updated: Mar 10 2023 with Bootstrap v5.2.3
+    * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+  </head>
 <body>
     <button class="btn btn-info btn-block" id="connectWallet">Connect to Wallet</button><br>
 
@@ -65,6 +94,61 @@
 
     <input type="text" id="acceptedToken3Input">
     <button id="setAcceptedToken3SubmitButton">Set Accepted Token 3</button><br>
+
+    <div  class="dropdown">
+                  <button class="btn btn-warning dropdown-toggle" type="button" id="currencyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select Token
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="currencyDropdown">
+                    <a class="dropdown-item" href="#" data-value="default">
+                      <img src="{{ asset('assets/img/tuin_logo.png') }}" alt="Default" class="currency-icon"> -
+                    </a>
+                    <a id='usdc' class="dropdown-item" href="#" data-value="usdc">
+                      <img src="{{ asset('assets/img/usdc.png') }}" alt="USDC" class="currency-icon"> USDC
+                    </a>
+                    <a id='usdt' class="dropdown-item" href="#" data-value="usdt">
+                      <img src="{{ asset('assets/img/Usdt.png') }}" alt="USDT" class="currency-icon"> USDT
+                    </a>
+                    <a id='busd' class="dropdown-item" href="#" data-value="busd">
+                      <img src="{{ asset('assets/img/Busd.png') }}" alt="BUSD" class="currency-icon"> BUSD
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Add the necessary Bootstrap CSS and JavaScript -->
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+                <!-- Add the necessary CSS -->
+                <style>
+                  .currency-icon {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 5px;
+                  }
+                </style>
+                <!-- Include Bootstrap JS (Optional if you don't need any JavaScript functionality) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+                <!-- Add the JavaScript code -->
+                <script>
+                  $(document).ready(function() {
+                    $('.dropdown-item').click(function() {
+                      var selectedOption = $(this);
+                      var value = selectedOption.data('value');
+                      var text = selectedOption.text();
+                      var imageUrl = selectedOption.find('img').attr('src');
+                
+                      $('#selectedCurrencyText').text(text);
+                      $('#selectedCurrencyImage').attr('src', imageUrl);
+                
+                      // You can also use the 'value' variable to perform additional actions based on the selected option
+                      console.log('Selected value: ' + value);
+                    });
+                  });
+                </script>
+    <button id="withdrawSubmitButton">Withdraw</button><br>
 
     <!-- <input type="text" id="poolOwnerInput">
     <button id="setPoolOwnerSubmitButton">Set Pool Owner</button><br> -->

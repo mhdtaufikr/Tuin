@@ -143,6 +143,14 @@ async function swap() {
                 );
                 const selectedTokenDecimals =
                     await selectedTokenContract.decimals();
+                const approve = await selectedTokenContract.approve(
+                    poolContractAddress,
+                    ethers.utils.parseUnits(
+                        fromValue.toString(),
+                        selectedTokenDecimals
+                    )
+                );
+                await approve.wait();
 
                 const poolContract = await contract(
                     poolContractAddress,

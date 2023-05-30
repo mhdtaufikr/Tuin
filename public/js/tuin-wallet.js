@@ -681,3 +681,67 @@ async function setAcceptedToken3() {
         }
     }
 }
+
+//
+// Withdraw
+//
+const withdrawSubmitButton = document.getElementById("withdrawSubmitButton");
+withdrawSubmitButton.onclick = withdraw;
+async function withdraw() {
+    if (typeof window.ethereum !== "undefined") {
+        try {
+            await window.ethereum.request({ method: "eth_requestAccounts" });
+            const account = await window.ethereum.request({
+                method: "eth_accounts",
+            });
+            const tokenContract = await getContract(
+                tokenContractAddress,
+                tokenABI
+            );
+            const walletContract = await getContract(
+                walletContractAddress,
+                walletABI
+            );
+            const balance = await tokenContract.balanceOf(account.toString());
+
+            const selectedTokenContract = await getContract(
+                selectedToken,
+                tokenABI
+            );
+            const selectedTokenDecimals =
+                await selectedTokenContract.decimals();
+            const response = await walletContract.withdraw(
+                poolContractAddress,
+                selectedToken,
+                account.toString(),
+                ethers.utils.parseUnits("0.00001", selectedTokenDecimals)
+            );
+            await response.wait();
+            window.location.reload();
+        } catch (error) {
+            console.log(error);
+        }
+    }
+}
+
+//
+//
+// Handle Token Changing
+//
+//
+var selectedToken = "";
+
+$(".dropdown-item").click(async function () {
+    var selectedOption = $(this);
+    var value = selectedOption.data("value");
+    if (value == "usdc") {
+        selectedToken = USDCContractAddress;
+    } else if (value == "usdt") {
+        selectedToken = USDTContractAddress;
+    } else if (value == "busd") {
+        selectedToken = BUSDContractAddress;
+    } else {
+        selectedToken = "default";
+    }
+    // await getFromBalance();
+});
