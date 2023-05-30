@@ -111,7 +111,7 @@ background-repeat: repeat;" >
                   });
                 </script>
 
-                <p class="form-label" id="fromBalance">Balance: 0</p>
+                <!-- <p class="form-label" id="fromBalance">Balance: 0</p> -->
                 <p class="form-label" id="errorFrom"></p>
                 <input  class="form-control" type="number" id="FromInput" placeholder="0.1" min="0"><br>
               

@@ -53,7 +53,7 @@ $(".dropdown-item").click(async function () {
     } else {
         selectedToken = "default";
     }
-    await getFromBalance();
+    // await getFromBalance();
 });
 
 //
