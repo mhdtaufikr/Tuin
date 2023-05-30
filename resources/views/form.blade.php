@@ -60,14 +60,14 @@ background-repeat: repeat;" >
                     <a class="dropdown-item" href="#" data-value="default">
                       <img src="{{ asset('assets/img/tuin_logo.png') }}" alt="Default" class="currency-icon"> -
                     </a>
+                    <a id='usdc' class="dropdown-item" href="#" data-value="usdc">
+                      <img src="{{ asset('assets/img/usdc.png') }}" alt="USDC" class="currency-icon"> USDC
+                    </a>
                     <a id='usdt' class="dropdown-item" href="#" data-value="usdt">
                       <img src="{{ asset('assets/img/Usdt.png') }}" alt="USDT" class="currency-icon"> USDT
                     </a>
                     <a id='busd' class="dropdown-item" href="#" data-value="busd">
                       <img src="{{ asset('assets/img/Busd.png') }}" alt="BUSD" class="currency-icon"> BUSD
-                    </a>
-                    <a id='usdc' class="dropdown-item" href="#" data-value="usdc">
-                      <img src="{{ asset('assets/img/usdc.png') }}" alt="USDC" class="currency-icon"> USDC
                     </a>
                   </div>
                 </div>
@@ -111,9 +111,9 @@ background-repeat: repeat;" >
                   });
                 </script>
 
-                <p class="form-label" id="fromBalance">Balance: </p>
+                <p class="form-label" id="fromBalance">Balance: 0</p>
                 <p class="form-label" id="errorFrom"></p>
-                <input  class="form-control" type="number" id="FromInput" placeholder="0.1" min="1"><br>
+                <input  class="form-control" type="number" id="FromInput" placeholder="0.1" min="0"><br>
               
               </div>
 
@@ -123,7 +123,7 @@ background-repeat: repeat;" >
                 <img style="max-width: 20px; height: auto;" src="assets/img/arrow.png" class="img-fluid logo-image" alt=""><br><br><br>
                 <p class="form-label" for="form1Example2"><img style="max-width: 50px; height: auto;" src="assets/img/tuin_logo.png" class="img-fluid logo-image" alt=""> Tuin Token</p>
                 <p class="form-label" id="TTBalance">Balance: </p>
-              <input  class="form-control"  type="number" id="ToInput" placeholder="0.1" min="1"><br>
+              <input  class="form-control"  type="number" id="ToInput" placeholder="0.1" min="0"><br>
                 
               </div>
 
