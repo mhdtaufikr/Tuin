@@ -1,21 +1,17 @@
 export const tokenContractAddress =
-    "0x5ff39141b1f20e2f34a36c5fa8fed88a3dc298ba";
+    "0xb54eaa2d03919229b6010fc0810aebff69f1debc";
 export const walletContractAddress =
-    "0xc68446f1ae943f1c79acfbdeb83f35f57a9fd45f";
-export const poolContractAddress = "0xf08d2c5a0e26ed839e804871c5a0ea3db0d52c01";
+    "0x92b5a7b8fe239c6f1f62443320959e830a5f9b2f";
+export const poolContractAddress = "0x7ce6b6f6f337b1f36e70f00a749048006c6028cc";
 // export const USDTContractAddress = "0xdAC17F958D2ee523a2206206994597C13D831ec7";
 // export const USDCContractAddress = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48";
 // export const BUSDContractAddress = "0x4Fabb145d64652a948d72533023f6E7A623C7C53";
-
-//
-// BSC
-//
 // Token 1
-export const USDCContractAddress = "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d";
+export const USDCContractAddress = "0xf01f9372D9CE5d4B04E314b2e3F18C1b199ca783";
 // Token 2
-export const USDTContractAddress = "0x55d398326f99059fF775485246999027B3197955";
+export const USDTContractAddress = "default";
 // Token 3
-export const BUSDContractAddress = "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56";
+export const BUSDContractAddress = "default";
 
 export const tokenABI = [
     {
