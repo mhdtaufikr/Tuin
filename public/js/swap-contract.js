@@ -8,6 +8,7 @@ import {
     poolContractAddress,
     tokenABI,
 } from "./constants.js";
+import { formatNumber } from "./helper.js";
 
 //
 //
@@ -16,7 +17,8 @@ import {
 //
 let fromValue,
     toValue,
-    exchangeRate = 1000;
+    exchangeRate,
+    isProcessing = false;
 
 //
 //
@@ -25,8 +27,6 @@ let fromValue,
 //
 window.addEventListener("DOMContentLoaded", onWebLoad);
 async function onWebLoad() {
-    TTBalance.innerHTML = "Balance: 0";
-    // fromBalance.innerHTML = "Balance: 0";
     if (typeof window.ethereum !== "undefined") {
         const account = await window.ethereum.request({
             method: "eth_accounts",
@@ -44,7 +44,7 @@ async function onWebLoad() {
 //
 var selectedToken = "";
 
-$(".dropdown-item").click(function () {
+$(".dropdown-item").click(async function () {
     var selectedOption = $(this);
     var value = selectedOption.data("value");
     if (value == "usdc") {
@@ -56,6 +56,7 @@ $(".dropdown-item").click(function () {
     } else {
         selectedToken = "default";
     }
+    await getFromBalance();
 });
 
 //
@@ -63,7 +64,6 @@ $(".dropdown-item").click(function () {
 // Handle 'Connect' Button and Display Balance
 //
 //
-const TTBalance = document.getElementById("TTBalance");
 const connectWalletButton = document.getElementById("connectWallet");
 connectWalletButton.onclick = connect;
 
@@ -71,35 +71,57 @@ async function connect() {
     if (typeof window.ethereum !== "undefined") {
         try {
             await window.ethereum.request({ method: "eth_requestAccounts" });
-            const provider = new ethers.providers.Web3Provider(window.ethereum);
-            const signer = provider.getSigner();
-            const tokenContract = new ethers.Contract(
+            const tokenContract = await contract(
                 tokenContractAddress,
-                tokenABI,
-                signer
+                tokenABI
             );
 
             const account = await window.ethereum.request({
                 method: "eth_accounts",
             });
-            await tokenContract.balanceOf(account.toString()).then((value) => {
-                const balance = ethers.utils.formatEther(value);
-                TTBalance.innerHTML = "Balance: " + balance.toString();
-            });
 
-            const poolContract = new ethers.Contract(
-                poolContractAddress,
-                poolABI,
-                signer
+            const TTBalance = document.getElementById("TTBalance");
+            const getBalance = await tokenContract.balanceOf(
+                account.toString()
             );
+            const balance = ethers.utils.formatEther(getBalance);
+            TTBalance.innerHTML += formatNumber(balance);
 
-            const tmpExchangeRate = await poolContract.exchangeRate();
-            exchangeRate = tmpExchangeRate;
+            const poolContract = await contract(poolContractAddress, poolABI);
+            const tmpExchangeRate = await poolContract.exchangeRateTuin();
+            exchangeRate = ethers.utils.formatUnits(tmpExchangeRate, 0);
         } catch (error) {
             console.log(error);
         }
 
         connectWalletButton.innerHTML = "Connected";
+    }
+}
+
+//
+// Get Balance
+//
+async function getFromBalance() {
+    const FromBalance = document.getElementById("fromBalance");
+    if (typeof window.ethereum !== "undefined") {
+        try {
+            const account = await window.ethereum.request({
+                method: "eth_accounts",
+            });
+            const selectedTokenContract = await contract(
+                selectedToken,
+                tokenABI
+            );
+            const getBalance = await selectedTokenContract.balanceOf(
+                account.toString()
+            );
+
+            FromBalance.innerHTML =
+                "Balance: " +
+                formatNumber(ethers.utils.formatUnits(getBalance, 6));
+        } catch (error) {
+            console.log(error);
+        }
     }
 }
 
@@ -118,55 +140,31 @@ async function swap() {
         if (selectedToken != "" && selectedToken != "default") {
             selectCurrencyMessage.innerHTML = "";
             try {
-                const account = await window.ethereum.request({
-                    method: "eth_accounts",
-                });
-                const provider = new ethers.providers.Web3Provider(
-                    window.ethereum
+                const selectedTokenContract = await contract(
+                    selectedToken,
+                    tokenABI
                 );
+                const selectedTokenDecimals =
+                    await selectedTokenContract.decimals();
 
-                const signer = provider.getSigner();
-                const poolContract = new ethers.Contract(
+                const poolContract = await contract(
                     poolContractAddress,
-                    poolABI,
-                    signer
+                    poolABI
                 );
-                // console.log("poolContract: ");
-                // console.log(poolContract);
-                // console.log("tokenContract: ");
-                // console.log(tokenContract);
-                // console.log("poolContractOwner: ");
-                // console.log(poolContract.owner());
-                // console.log("tokenContractOwner: ");
-                // console.log(tokenContract.owner());
-                // console.log("currentAccount: ");
-                // console.log(account);
-                // console.log("exchangeRate: ");
-                // const exchangeRate = await poolContract.exchangeRate();
-                // console.log(exchangeRate.toString());
-                // const acceptedToken1 = await poolContract.acceptedToken1();
-                // console.log("acceptedToken1: ");
-                // console.log(acceptedToken1);
 
-                if (toValue !== "undefined" && toValue >= 1) {
-                    if (fromValue !== "undefined" && fromValue >= 1) {
-                        await poolContract
-                            .swapIn(
-                                ethers.utils.parseEther(toValue.toString()),
-                                selectedToken,
-                                tokenContractAddress
-                            )
-                            .then((res) => {
-                                window.location.reload();
-                            });
-                    } else {
-                        const errorFrom = document.getElementById("errorFrom");
-                        errorFrom.innerHTML = "minimum purchased is 1";
-                    }
-                } else {
-                    const errorTo = document.getElementById("errorTo");
-                    errorTo.innerHTML = "minimum purchased is 1";
-                }
+                const swapin = await poolContract.swapIn(
+                    ethers.utils.parseUnits(
+                        fromValue.toString(),
+                        selectedTokenDecimals
+                    ),
+                    selectedToken,
+                    tokenContractAddress
+                );
+                // isProcessing = true;
+                // document.body.innerHTML = "Processing";
+                await swapin.wait();
+                // isProcessing = false;
+                window.location.reload();
             } catch (error) {
                 console.log(error);
             }
@@ -200,4 +198,23 @@ function ToInputListener(e) {
         parseFloat(e.target.value != "" ? e.target.value : 0) /
         parseFloat(exchangeRate);
     FromInput.value = fromValue;
+}
+
+//
+// Contract
+//
+async function contract(contractAddress, abi) {
+    const contract = new ethers.Contract(contractAddress, abi, getSigner());
+    return contract;
+}
+
+//
+//
+// Get Signer
+//
+//
+function getSigner() {
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const signer = provider.getSigner();
+    return signer;
 }

@@ -7,6 +7,7 @@ import {
     poolContractAddress,
     walletContractAddress,
 } from "./constants.js";
+import { formatNumber } from "./helper.js";
 
 //
 //
@@ -41,41 +42,176 @@ async function connect() {
         try {
             await window.ethereum.request({ method: "eth_requestAccounts" });
 
-            await tokenTTContract().then(async (value) => {
-                //
-                // Get tuin token supply and display it
-                //
-                await getChainTokenTotalSupply(value);
+            await getContract(tokenContractAddress, tokenABI).then(
+                async (value) => {
+                    //
+                    // Get token address
+                    //
+                    await getTokenAddress(value);
 
-                //
-                // Get tuin token bsc supply and display it
-                //
-                await getChainBscTotalSupply(value);
-            });
+                    //
+                    // Get token owner
+                    //
+                    await getTokenOwner(value);
 
-            await poolTTContract().then(async (value) => {
-                //
-                // Get accepted token 1
-                //
-                await getAcceptedToken1(value);
+                    //
+                    // Get pool
+                    //
+                    await getPool(value);
 
-                //
-                // Get accepted token 2
-                //
-                await getAcceptedToken2(value);
+                    //
+                    // Get name
+                    //
+                    await getName(value);
 
-                //
-                // Get accepted token 3
-                //
-                await getAcceptedToken3(value);
+                    //
+                    // Get symbol
+                    //
+                    await getSymbol(value);
 
-                //
-                // Get exchange rate
-                //
-                await getExchangeRate(value);
-            });
+                    //
+                    // Get init max supply on ETH
+                    //
+                    await getInit_maxsupply_on_eth(value);
 
-            await walletTTContract().then(async (value) => {});
+                    //
+                    // Get init max supply on BSC
+                    //
+                    await getInit_maxsupply_on_bsc(value);
+
+                    //
+                    // Get max supply
+                    //
+                    await getMaxSupply(value);
+
+                    //
+                    // Get total supply
+                    //
+                    await getTotalSupply(value);
+                    //
+                    // Get tuin token supply and display it
+                    //
+                    await getMaxsupply_on_eth(value);
+
+                    //
+                    // Get tuin token bsc supply and display it
+                    //
+                    await getMaxsupply_on_bsc(value);
+
+                    //
+                    // Get decimals
+                    //
+                    await getDecimals(value);
+                }
+            );
+
+            await getContract(poolContractAddress, poolABI).then(
+                async (value) => {
+                    //
+                    // Get pool address
+                    //
+                    await getPoolAddress(value);
+
+                    //
+                    // Get pool owner
+                    //
+                    await getPoolOwner(value);
+
+                    //
+                    // Get deployment chain ID
+                    //
+                    await getDeploymentChainId(value);
+
+                    //
+                    // Get tuin held
+                    //
+                    await getTuinHeld(value);
+
+                    //
+                    // Get accepted token 1
+                    //
+                    await getAcceptedToken1(value);
+
+                    //
+                    // Get accepted token 2
+                    //
+                    await getAcceptedToken2(value);
+
+                    //
+                    // Get accepted token 3
+                    //
+                    await getAcceptedToken3(value);
+
+                    //
+                    // Get amount deposited accepted token 1
+                    //
+                    await getAmountDepositedAcceptedToken1(value);
+
+                    //
+                    // Get amount deposited accepted token 2
+                    //
+                    await getAmountDepositedAcceptedToken2(value);
+
+                    //
+                    // Get amount deposited accepted token 3
+                    //
+                    await getAmountDepositedAcceptedToken3(value);
+
+                    //
+                    // Get amount withdrawn accepted token 1
+                    //
+                    await getAmountWithdrawnacceptedToken1(value);
+
+                    //
+                    // Get amount withdrawn accepted token 2
+                    //
+                    await getAmountWithdrawnacceptedToken2(value);
+
+                    //
+                    // Get amount withdrawn accepted token 3
+                    //
+                    await getAmountWithdrawnacceptedToken3(value);
+
+                    //
+                    // Get exchange rate TUIN
+                    //
+                    await getExchangeRateTuin(value);
+
+                    //
+                    // Get exchange rate USD
+                    //
+                    await getExchangeRateUsd(value);
+
+                    //
+                    // Get yield token
+                    //
+                    await getYieldToken(value);
+
+                    //
+                    // Get is approved
+                    //
+                    await getIsApproved(value);
+
+                    //
+                    // Get is paused
+                    //
+                    await getIsPaused(value);
+                }
+            );
+
+            await getContract(walletContractAddress, walletABI).then(
+                async (value) => {
+                    //
+                    // Get wallet address
+                    //
+                    await getWalletAddress(value);
+
+                    //
+                    // Get wallet owner
+                    //
+                    await getWalletOwner(value);
+                }
+            );
         } catch (error) {
             console.log(error);
         }
@@ -90,108 +226,324 @@ function getSigner() {
     return signer;
 }
 
-async function poolTTContract() {
-    const contract = new ethers.Contract(
-        poolContractAddress,
-        poolABI,
-        getSigner()
-    );
+async function getContract(contractAddress, abi) {
+    const contract = new ethers.Contract(contractAddress, abi, getSigner());
     return contract;
 }
+//
+//
+// Token Contract
+//
+//
+async function getTokenOwner(contract) {
+    const html = document.getElementById("tokenOwner");
+    const response = await contract.owner();
+    html.innerHTML += response.toString();
+}
 
-async function walletTTContract() {
-    const contract = new ethers.Contract(
-        walletContractAddress,
-        walletABI,
-        getSigner()
+async function getTokenAddress(contract) {
+    const tokenAddress = document.getElementById("tokenAddress");
+    const response = await contract.address;
+    tokenAddress.innerHTML += response.toString();
+}
+
+async function getMaxsupply_on_eth(contract) {
+    const html = document.getElementById("maxsupply_on_eth");
+    const response = await contract.maxsupply_on_eth();
+    html.innerHTML += formatNumber(ethers.utils.formatEther(response));
+}
+
+async function getMaxsupply_on_bsc(contract) {
+    const html = document.getElementById("maxsupply_on_bsc");
+    const response = await contract.maxsupply_on_bsc();
+    html.innerHTML += formatNumber(ethers.utils.formatEther(response));
+}
+
+async function getInit_maxsupply_on_eth(contract) {
+    const initMaxSupplyOnEth = document.getElementById("init_maxsupply_on_eth");
+    const response = await contract.init_maxsupply_on_eth();
+    initMaxSupplyOnEth.innerHTML += formatNumber(
+        ethers.utils.formatEther(response)
     );
-    return contract;
 }
 
-async function tokenTTContract() {
-    const contract = new ethers.Contract(
-        tokenContractAddress,
-        tokenABI,
-        getSigner()
+async function getInit_maxsupply_on_bsc(contract) {
+    const initMaxSupplyOnBsc = document.getElementById("init_maxsupply_on_bsc");
+    const response = await contract.init_maxsupply_on_bsc();
+    initMaxSupplyOnBsc.innerHTML += formatNumber(
+        ethers.utils.formatEther(response)
     );
-    return contract;
 }
 
-async function getChainTokenTotalSupply(contract) {
-    const tuinTokenSupply = document.getElementById("tuinTokenSupply");
-    const tuinToken = await contract.getChainTotalSupply(true);
-    const supplyTuinToken = ethers.utils.formatEther(tuinToken.toString());
-    tuinTokenSupply.innerHTML =
-        "TOTAL SUPPLY TUIN ETH: " + supplyTuinToken.toString();
+async function getTotalSupply(contract) {
+    const totalSupply = document.getElementById("totalSupply");
+    const response = await contract.totalSupply();
+    totalSupply.innerHTML += formatNumber(ethers.utils.formatEther(response));
 }
 
-async function getChainBscTotalSupply(contract) {
-    const tuinBscSupply = document.getElementById("tuinBscSupply");
-    const tuinBSC = await contract.getChainTotalSupply(false);
-    const supplyTuinBsc = ethers.utils.formatEther(tuinBSC.toString());
-    tuinBscSupply.innerHTML =
-        "TOTAL SUPPLY TUIN BSC: " + supplyTuinBsc.toString();
+async function getMaxSupply(contract) {
+    const html = document.getElementById("maxSupply");
+    const response = await contract.maxSupply();
+    html.innerHTML += formatNumber(ethers.utils.formatEther(response));
+}
+
+async function getPool(contract) {
+    const html = document.getElementById("pool");
+    const response = await contract.pool();
+    html.innerHTML += response.toString();
+}
+
+async function getName(contract) {
+    const html = document.getElementById("name");
+    const response = await contract.name();
+    html.innerHTML += response.toString();
+}
+
+async function getSymbol(contract) {
+    const html = document.getElementById("symbol");
+    const response = await contract.symbol();
+    html.innerHTML += response.toString();
+}
+
+async function getDecimals(contract) {
+    const html = document.getElementById("decimals");
+    const response = await contract.decimals();
+    html.innerHTML += response.toString();
+}
+
+//
+//
+// Pool Contract
+//
+//
+async function getPoolAddress(contract) {
+    const poolAddress = document.getElementById("poolAddress");
+    const response = await contract.address;
+    poolAddress.innerHTML += response.toString();
 }
 
 async function getAcceptedToken1(contract) {
     const acceptedToken1 = document.getElementById("acceptedToken1");
     const acceptedToken = await contract.acceptedToken1();
-    acceptedToken1.innerHTML = "ACCEPTED TOKEN 1: " + acceptedToken.toString();
+    acceptedToken1.innerHTML += acceptedToken.toString();
 }
 
 async function getAcceptedToken2(contract) {
     const acceptedToken2 = document.getElementById("acceptedToken2");
     const acceptedToken = await contract.acceptedToken2();
-    acceptedToken2.innerHTML = "ACCEPTED TOKEN 2: " + acceptedToken.toString();
+    acceptedToken2.innerHTML += acceptedToken.toString();
 }
 
 async function getAcceptedToken3(contract) {
     const acceptedToken3 = document.getElementById("acceptedToken3");
     const acceptedToken = await contract.acceptedToken3();
-    acceptedToken3.innerHTML = "ACCEPTED TOKEN 3: " + acceptedToken.toString();
+    acceptedToken3.innerHTML += acceptedToken.toString();
 }
 
-const tuinHeld = document.getElementById("tuinHeldButton");
-tuinHeld.onclick = getTuinHeld;
-
-async function getTuinHeld() {
-    await poolTTContract().then(async (value) => {
-        console.log(value.address.toString());
-        const held = await value.tuinHeld(value.address.toString());
-        tuinHeld.innerHTML =
-            "TUIN HELD: " + ethers.utils.formatEther(held.value).toString();
-    });
+async function getAmountDepositedAcceptedToken1(contract) {
+    const html = document.getElementById("amountDepositedAcceptedToken1");
+    const response = await contract.amountDepositedacceptedToken1();
+    html.innerHTML += ethers.utils.formatEther(response);
 }
 
-async function getExchangeRate(contract) {
-    const exchangeRate = document.getElementById("exchangeRate");
-    const response = await contract.exchangeRate();
-    exchangeRate.innerHTML = "EXCHANGE RATE: " + response.toString();
+async function getAmountDepositedAcceptedToken2(contract) {
+    const html = document.getElementById("amountDepositedAcceptedToken2");
+    const response = await contract.amountDepositedacceptedToken2();
+    html.innerHTML += response.toString();
+}
+
+async function getAmountDepositedAcceptedToken3(contract) {
+    const html = document.getElementById("amountDepositedAcceptedToken3");
+    const response = await contract.amountDepositedacceptedToken3();
+    html.innerHTML += response.toString();
+}
+
+async function getAmountWithdrawnacceptedToken1(contract) {
+    const html = document.getElementById("amountWithdrawnacceptedToken1");
+    const response = await contract.amountWithdrawnacceptedToken1();
+    html.innerHTML += response.toString();
+}
+
+async function getAmountWithdrawnacceptedToken2(contract) {
+    const html = document.getElementById("amountWithdrawnacceptedToken2");
+    const response = await contract.amountWithdrawnacceptedToken2();
+    html.innerHTML += response.toString();
+}
+
+async function getAmountWithdrawnacceptedToken3(contract) {
+    const html = document.getElementById("amountWithdrawnacceptedToken3");
+    const response = await contract.amountWithdrawnacceptedToken3();
+    html.innerHTML += response.toString();
+}
+
+async function getTuinHeld(contract) {
+    const html = document.getElementById("tuinHeld");
+    const response = await contract.tuinHeld(tokenContractAddress);
+    html.innerHTML += formatNumber(ethers.utils.formatEther(response));
+}
+
+async function getExchangeRateTuin(contract) {
+    const exchangeRate = document.getElementById("exchangeRateTuin");
+    const response = await contract.exchangeRateTuin();
+    exchangeRate.innerHTML += formatNumber(
+        ethers.utils.formatUnits(response, 0)
+    );
+}
+
+async function getExchangeRateUsd(contract) {
+    const exchangeRate = document.getElementById("exchangeRateUsd");
+    const response = await contract.exchangeRateUsd();
+    exchangeRate.innerHTML += formatNumber(
+        ethers.utils.formatUnits(response, 0)
+    );
+}
+
+async function getDeploymentChainId(contract) {
+    const html = document.getElementById("deploymentChainId");
+    const response = await contract.deploymentChainId();
+    html.innerHTML += response.toString();
+}
+
+async function getPoolOwner(contract) {
+    const html = document.getElementById("poolOwner");
+    const response = await contract.owner();
+    html.innerHTML += response.toString();
+}
+
+async function getYieldToken(contract) {
+    const html = document.getElementById("yieldToken");
+    const response = await contract.yieldToken();
+    html.innerHTML += response.toString();
+}
+
+async function getIsApproved(contract) {
+    const html = document.getElementById("isApproved");
+    const response = await contract.isApproved();
+    html.innerHTML += response.toString();
+}
+
+async function getIsPaused(contract) {
+    const html = document.getElementById("isPaused");
+    const response = await contract.isPaused();
+    html.innerHTML += response.toString();
 }
 
 //
 //
-// Set Exchange Rate
+// Wallet Contract
 //
 //
-const exchangeRateInput = document.getElementById("exchangeRateInput");
-const exchangeRateSubmitButton = document.getElementById(
-    "setExchangeRateSubmitButton"
+async function getWalletOwner(contract) {
+    const html = document.getElementById("walletOwner");
+    const response = await contract.owner();
+    html.innerHTML += response.toString();
+}
+
+async function getWalletAddress(contract) {
+    const html = document.getElementById("walletAddress");
+    const response = await contract.address;
+    html.innerHTML += response.toString();
+}
+
+// const poolOwnerInput = document.getElementById("poolOwnerInput");
+// const poolOwnerSubmitButton = document.getElementById(
+//     "setPoolOwnerSubmitButton"
+// );
+// poolOwnerSubmitButton.onclick = setPoolOwner;
+
+// async function setPoolOwner() {
+//     if (typeof window.ethereum !== "undefined") {
+//         try {
+//             await window.ethereum.request({ method: "eth_requestAccounts" });
+//             const walletContract = await walletTTContract();
+//             const setTUINPoolOwner = await walletContract.setTUINPoolOwner(
+//                 poolContractAddress,
+//                 poolOwnerInput.value,
+//             );
+//             await setTUINPoolOwner.wait();
+//         } catch (error) {
+//             console.log(error);
+//         }
+//     }
+// }
+
+// const tokenOwnerInput = document.getElementById("tokenOwnerInput");
+// const tokenOwnerSubmitButton = document.getElementById(
+//     "setTokenOwnerSubmitButton"
+// );
+// tokenOwnerSubmitButton.onclick = setTokenOwner;
+
+// async function setTokenOwner() {
+//     if (typeof window.ethereum !== undefined) {
+//         try {
+//             await window.ethereum.request({ method: "eth_requestAccounts" });
+//             const tokenContract = await tokenTTContract();
+//             const tokenSetOwner = await tokenContract.setOwner(
+//                 tokenOwnerInput.value
+//             );
+//             await tokenSetOwner.wait();
+//         } catch (error) {
+//             console.log(error);
+//         }
+//     }
+// }
+
+//
+//
+// Set Exchange Rate TUIN
+//
+//
+const exchangeRateTuinInput = document.getElementById("exchangeRateTuinInput");
+const exchangeRateTuinSubmitButton = document.getElementById(
+    "setExchangeRateTuinSubmitButton"
 );
-exchangeRateSubmitButton.onclick = setExchangeRate;
-async function setExchangeRate() {
+exchangeRateTuinSubmitButton.onclick = setExchangeRateTuin;
+async function setExchangeRateTuin() {
     if (typeof window.ethereum !== "undefined") {
         try {
             await window.ethereum.request({ method: "eth_requestAccounts" });
-            const provider = new ethers.providers.Web3Provider(window.ethereum);
-            const signer = provider.getSigner();
-            const contract = new ethers.Contract(
+            const poolContract = await getContract(
                 poolContractAddress,
-                poolABI,
-                signer
+                poolABI
             );
-            const value = exchangeRateInput.value;
-            await contract.setExchangeRate(value);
+
+            const value = ethers.utils.parseUnits(
+                exchangeRateTuinInput.value.toString(),
+                0
+            );
+            const response = await poolContract.setExchangeRateTuin(value);
+            await response.wait();
+            window.location.reload();
+        } catch (error) {
+            console.log(error);
+        }
+    }
+}
+
+//
+//
+// Set Exchange Rate USD
+//
+//
+const exchangeRateUsdInput = document.getElementById("exchangeRateUsdInput");
+const exchangeRateUsdSubmitButton = document.getElementById(
+    "setExchangeRateUsdSubmitButton"
+);
+exchangeRateUsdSubmitButton.onclick = setExchangeRateUsd;
+async function setExchangeRateUsd() {
+    if (typeof window.ethereum !== "undefined") {
+        try {
+            await window.ethereum.request({ method: "eth_requestAccounts" });
+            const poolContract = await getContract(
+                poolContractAddress,
+                poolABI
+            );
+            const value = ethers.utils.parseEther(
+                exchangeRateUsdInput.value.toString()
+            );
+            const response = await poolContract.setExchangeRateUsd(value);
+            await response.wait();
+            window.location.reload();
         } catch (error) {
             console.log(error);
         }
@@ -212,16 +564,14 @@ async function setAcceptedToken1() {
     if (typeof window.ethereum !== "undefined") {
         try {
             await window.ethereum.request({ method: "eth_requestAccounts" });
-            const provider = new ethers.providers.Web3Provider(window.ethereum);
-            const signer = provider.getSigner();
-            const contract = new ethers.Contract(
+            const poolContract = await getContract(
                 poolContractAddress,
-                poolABI,
-                signer
+                poolABI
             );
             const value = acceptedToken1Input.value;
-            await contract.setAcceptedToken1(value);
-            console.log(response);
+            const response = await poolContract.setAcceptedToken1(value);
+            await response.wait();
+            window.location.reload();
         } catch (error) {
             console.log(error);
         }
@@ -242,16 +592,14 @@ async function setAcceptedToken2() {
     if (typeof window.ethereum !== "undefined") {
         try {
             await window.ethereum.request({ method: "eth_requestAccounts" });
-            const provider = new ethers.providers.Web3Provider(window.ethereum);
-            const signer = provider.getSigner();
-            const contract = new ethers.Contract(
+            const poolContract = await getContract(
                 poolContractAddress,
-                poolABI,
-                signer
+                poolABI
             );
             const value = acceptedToken2Input.value;
-            const response = await contract.setAcceptedToken2(value);
-            console.log(response);
+            const response = await poolContract.setAcceptedToken2(value);
+            await response.wait();
+            window.location.reload();
         } catch (error) {
             console.log(error);
         }
@@ -272,16 +620,14 @@ async function setAcceptedToken3() {
     if (typeof window.ethereum !== "undefined") {
         try {
             await window.ethereum.request({ method: "eth_requestAccounts" });
-            const provider = new ethers.providers.Web3Provider(window.ethereum);
-            const signer = provider.getSigner();
-            const contract = new ethers.Contract(
+            const poolContract = await getContract(
                 poolContractAddress,
-                poolABI,
-                signer
+                poolABI
             );
             const value = acceptedToken3Input.value;
-            const response = await contract.setAcceptedToken3(value);
-            console.log(response);
+            const response = await poolContract.setAcceptedToken3(value);
+            await response.wait();
+            window.location.reload();
         } catch (error) {
             console.log(error);
         }
