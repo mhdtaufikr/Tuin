@@ -320,7 +320,7 @@
           <h2>Tuin Token</h2>
           <div class="col-lg-12">
             <strong>Welcome to Tuin Token</strong><br>
-            <i>a cryptocurrency project designed to bridge start-up entrepreneurs and existing business owners with Tuin Venture Capitalists (TVC). Tuin seeks to provide entrepreneurs with a decentralized, transparent, efficient, and accessible platform where they can pitch their business ideas directly to TVC funding through Tuin Tokens. Most often, people with innovative ideas find it difficult to raise capital in the current investment system due to the difficulty of finding bank loans, VC as angel investors, rigid rules of the stock market, etc. <br><br>Tuin Token was created to address this issue. Through the use of blochain and Web 3 technology, it plans to become the leading disruptor of investment inclusion by bypassing the middleman and providing direct funding from TVC to the innovative business idea around the world.
+            <i>a cryptocurrency project designed to bridge start-up entrepreneurs and existing business owners with Tuin Venture Capitalists (TVC). Tuin seeks to provide entrepreneurs with a decentralized, transparent, efficient, and accessible platform where they can pitch their business ideas directly to TVC funding through Tuin Tokens. Most often, people with innovative ideas find it difficult to raise capital in the current investment system due to the difficulty of finding bank loans, VC as angel investors, rigid rules of the stock market, etc. <br><br>Tuin Token was created to address this issue. Through the use of blockchain and Web 3 technology, it plans to become the leading disruptor of investment inclusion by bypassing the middleman and providing direct funding from TVC to the innovative business idea around the world.
             </i>
           </div>
         </div>
@@ -1338,7 +1338,8 @@ Our transparent fee structure ensures that you can maximize your trading profits
               <div class="pic"><img src="assets/img/surry.png" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Surry Rahmandika</h4>
-                <span>Chief Executive Officer</span>
+                <span>Chief Executive Officer <br><a href = "mailto: surry.rahmandika@tuintoken.com">surry.rahmandika@tuintoken.com</a></span>
+                <p></p>
                 <!-- <p>As the CEO of Tuin Token, Surry brings a wealth of experience in the cryptocurrency industry.
                   With a strong background in finance and a passion for blockchain technology, he leads the company's strategic direction and ensures that Tuin Token remains at the forefront of the market.                  
                   </p> -->
@@ -1357,7 +1358,7 @@ Our transparent fee structure ensures that you can maximize your trading profits
               <div class="pic"><img src="assets/img/taufik.png" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Muhammad Taufik Ramadhan</h4>
-                <span>Chief Technology Officer</span>
+                <span>Chief Technology Officer <br><a href = "mailto: muhammad.ramadhan@tuintoken.com">muhammad.ramadhan@tuintoken.com</a></span>
                 <!-- <p>As our Chief Technology Officer, Taufik is responsible for driving the technical vision and strategy of Tuin Token. With his deep knowledge of blockchain technology and software development, he ensures that our platform remains secure, scalable, and cutting-edge.
                 </p> -->
                 <!-- <div class="social">
@@ -1375,7 +1376,7 @@ Our transparent fee structure ensures that you can maximize your trading profits
               <div class="pic"><img src="assets/img/joe.png" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Zhou Chenxing</h4>
-                <span>Chief Creative Officer</span>
+                <span>Chief Creative Officer <br><a href = "mailto: zhou.chenxing@tuintoken.com">zhou.chenxing@tuintoken.com</a></span>
                 <!-- <p>Joe serves as our Chief Creative Officer, responsible for overseeing the creative direction and brand identity of Tuin Token. With his innovative mindset and artistic vision, he ensures that Tuin Token delivers a compelling and cohesive brand experience to our users.
                 </p> -->
                 <!-- <div class="social">
