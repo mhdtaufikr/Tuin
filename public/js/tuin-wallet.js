@@ -47,6 +47,8 @@ async function connect() {
 
             await getContract(tokenContractAddress, tokenABI).then(
                 async (value) => {
+                    console.log("token: ");
+                    console.log(value);
                     //
                     // Get token address
                     //
@@ -110,6 +112,8 @@ async function connect() {
 
             await getContract(poolContractAddress, poolABI).then(
                 async (value) => {
+                    console.log("pool: ");
+                    console.log(value);
                     //
                     // Get pool address
                     //
@@ -189,6 +193,7 @@ async function connect() {
 
             await getContract(walletContractAddress, walletABI).then(
                 async (value) => {
+                    console.log("wallet: ");
                     console.log(value);
                     //
                     // Get wallet address
@@ -352,9 +357,7 @@ async function getAmountDepositedAcceptedToken1(contract) {
     const html = document.getElementById("amountDepositedAcceptedToken1");
     const response = await contract.amountDepositedacceptedToken1();
     html.innerHTML +=
-        formatNumber(ethers.utils.formatUnits(response, decimals)) +
-        " " +
-        symbol.toString();
+        ethers.utils.formatUnits(response, decimals) + " " + symbol.toString();
 }
 
 async function getAmountDepositedAcceptedToken2(contract) {
@@ -367,9 +370,7 @@ async function getAmountDepositedAcceptedToken2(contract) {
     const html = document.getElementById("amountDepositedAcceptedToken2");
     const response = await contract.amountDepositedacceptedToken2();
     html.innerHTML +=
-        formatNumber(ethers.utils.formatUnits(response, decimals)) +
-        " " +
-        symbol;
+        ethers.utils.formatUnits(response, decimals) + " " + symbol;
 }
 
 async function getAmountDepositedAcceptedToken3(contract) {
@@ -382,27 +383,49 @@ async function getAmountDepositedAcceptedToken3(contract) {
     const html = document.getElementById("amountDepositedAcceptedToken3");
     const response = await contract.amountDepositedacceptedToken3();
     html.innerHTML +=
-        formatNumber(ethers.utils.formatUnits(response, decimals)) +
-        " " +
-        symbol;
+        ethers.utils.formatUnits(response, decimals) + " " + symbol;
 }
 
 async function getAmountWithdrawnacceptedToken1(contract) {
+    const acceptedToken1Contract = await getContract(
+        USDCContractAddress,
+        tokenABI
+    );
+    const decimals = await acceptedToken1Contract.decimals();
+    const symbol = await acceptedToken1Contract.symbol();
+
     const html = document.getElementById("amountWithdrawnacceptedToken1");
     const response = await contract.amountWithdrawnacceptedToken1();
-    html.innerHTML += response.toString();
+    html.innerHTML +=
+        ethers.utils.formatUnits(response, decimals) + " " + symbol;
 }
 
 async function getAmountWithdrawnacceptedToken2(contract) {
+    const acceptedToken1Contract = await getContract(
+        USDTContractAddress,
+        tokenABI
+    );
+    const decimals = await acceptedToken1Contract.decimals();
+    const symbol = await acceptedToken1Contract.symbol();
+
     const html = document.getElementById("amountWithdrawnacceptedToken2");
     const response = await contract.amountWithdrawnacceptedToken2();
-    html.innerHTML += response.toString();
+    html.innerHTML +=
+        ethers.utils.formatUnits(response, decimals) + " " + symbol;
 }
 
 async function getAmountWithdrawnacceptedToken3(contract) {
+    const acceptedToken1Contract = await getContract(
+        BUSDContractAddress,
+        tokenABI
+    );
+    const decimals = await acceptedToken1Contract.decimals();
+    const symbol = await acceptedToken1Contract.symbol();
+
     const html = document.getElementById("amountWithdrawnacceptedToken3");
     const response = await contract.amountWithdrawnacceptedToken3();
-    html.innerHTML += response.toString();
+    html.innerHTML +=
+        ethers.utils.formatUnits(response, decimals) + " " + symbol;
 }
 
 async function getTuinHeld(contract) {
@@ -472,6 +495,62 @@ async function getWalletAddress(contract) {
     const html = document.getElementById("walletAddress");
     const response = await contract.address;
     html.innerHTML += response.toString();
+}
+
+const changeNewSupplyOnBscInput = document.getElementById(
+    "changeSupplyOnBscInput"
+);
+const changeNewSupplyOnBscSubmitButton = document.getElementById(
+    "changeSupplyOnBscSubmitButton"
+);
+changeNewSupplyOnBscSubmitButton.onclick = setNewSupply;
+async function setNewSupply() {
+    if (typeof window.ethereum !== "undefined") {
+        try {
+            await window.ethereum.request({ method: "eth_requestAccounts" });
+            const walletContract = await getContract(
+                walletContractAddress,
+                walletABI
+            );
+            const value = ethers.utils.parseEther(
+                changeNewSupplyOnBscInput.value.toString()
+            );
+            const setNewSupplyFunction = await walletContract.setNewSupply(
+                tokenContractAddress,
+                value
+            );
+            await setNewSupplyFunction.wait();
+            window.location.reload();
+        } catch (error) {
+            console.log(error);
+        }
+    }
+}
+
+const mintTokenInput = document.getElementById("mintTokenInput");
+const addressToBeMinted = document.getElementById("addressToBeMinted");
+const mintTokenSubmitButton = document.getElementById("mintTokenSubmitButton");
+mintTokenSubmitButton.onclick = newMint;
+async function newMint() {
+    if (typeof window.ethereum !== "undefined") {
+        try {
+            await window.ethereum.request({ method: "eth_requestAccounts" });
+            const walletContract = await getContract(
+                walletContractAddress,
+                walletABI
+            );
+
+            const newMintFunction = await walletContract.newMint(
+                tokenContractAddress,
+                addressToBeMinted.value.toString(),
+                ethers.utils.parseEther(mintTokenInput.value.toString())
+            );
+            await newMintFunction.wait();
+            window.location.reload();
+        } catch (error) {
+            console.log(error);
+        }
+    }
 }
 
 // const poolOwnerInput = document.getElementById("poolOwnerInput");
@@ -685,6 +764,7 @@ async function setAcceptedToken3() {
 //
 // Withdraw
 //
+const withdrawAmountInput = document.getElementById("withdrawAmountInput");
 const withdrawSubmitButton = document.getElementById("withdrawSubmitButton");
 withdrawSubmitButton.onclick = withdraw;
 async function withdraw() {
@@ -694,15 +774,10 @@ async function withdraw() {
             const account = await window.ethereum.request({
                 method: "eth_accounts",
             });
-            const tokenContract = await getContract(
-                tokenContractAddress,
-                tokenABI
-            );
             const walletContract = await getContract(
                 walletContractAddress,
                 walletABI
             );
-            const balance = await tokenContract.balanceOf(account.toString());
 
             const selectedTokenContract = await getContract(
                 selectedToken,
@@ -710,11 +785,16 @@ async function withdraw() {
             );
             const selectedTokenDecimals =
                 await selectedTokenContract.decimals();
+
+            const value = ethers.utils.parseUnits(
+                withdrawAmountInput.value.toString(),
+                selectedTokenDecimals
+            );
             const response = await walletContract.withdraw(
                 poolContractAddress,
                 selectedToken,
                 account.toString(),
-                ethers.utils.parseUnits("0.00001", selectedTokenDecimals)
+                value
             );
             await response.wait();
             window.location.reload();

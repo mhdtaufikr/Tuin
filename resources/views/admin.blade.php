@@ -86,69 +86,87 @@
     <h3 id="walletAddress">ADDRESS: </h3>
     <h3 id="walletOwner">OWNER: </h3>
 
+    <h6>Set Accepted Token 1</h6>
     <input type="text" id="acceptedToken1Input">
     <button id="setAcceptedToken1SubmitButton">Set Accepted Token 1</button><br>
 
+    <h6>Set Accepted Token 2</h6>
     <input type="text" id="acceptedToken2Input">
     <button id="setAcceptedToken2SubmitButton">Set Accepted Token 2</button><br>
 
+    <h6>Set Accepted Token 3</h6>
     <input type="text" id="acceptedToken3Input">
     <button id="setAcceptedToken3SubmitButton">Set Accepted Token 3</button><br>
+    
+    <h6>Change Supply on BSC</h6>
+    <input type="number" id="changeSupplyOnBscInput" min="0.0">
+    <button id="changeSupplyOnBscSubmitButton">Change Supply on BSC</button> <br><br>
 
+    <h6>Mint Token</h6>
+    <label for="mintTokenInput">Number of Token To Be Minted</label>
+    <input type="number" min="0.0" id="mintTokenInput"><br>
+    <label for="addressToBeMinted">Destination Address</label>
+    <input type="text" id="addressToBeMinted"> <br>
+    <button id="mintTokenSubmitButton">Mint Token</button> <br> <br>
+
+
+    <h6>Withdraw Token</h6>
     <div  class="dropdown">
-                  <button class="btn btn-warning dropdown-toggle" type="button" id="currencyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select Token
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="currencyDropdown">
-                    <a class="dropdown-item" href="#" data-value="default">
-                      <img src="{{ asset('assets/img/tuin_logo.png') }}" alt="Default" class="currency-icon"> -
-                    </a>
-                    <a id='usdc' class="dropdown-item" href="#" data-value="usdc">
-                      <img src="{{ asset('assets/img/usdc.png') }}" alt="USDC" class="currency-icon"> USDC
-                    </a>
-                    <a id='usdt' class="dropdown-item" href="#" data-value="usdt">
-                      <img src="{{ asset('assets/img/Usdt.png') }}" alt="USDT" class="currency-icon"> USDT
-                    </a>
-                    <a id='busd' class="dropdown-item" href="#" data-value="busd">
-                      <img src="{{ asset('assets/img/Busd.png') }}" alt="BUSD" class="currency-icon"> BUSD
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Add the necessary Bootstrap CSS and JavaScript -->
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-                <!-- Add the necessary CSS -->
-                <style>
-                  .currency-icon {
-                    width: 24px;
-                    height: 24px;
-                    margin-right: 5px;
-                  }
-                </style>
-                <!-- Include Bootstrap JS (Optional if you don't need any JavaScript functionality) -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-                <!-- Add the JavaScript code -->
-                <script>
-                  $(document).ready(function() {
-                    $('.dropdown-item').click(function() {
-                      var selectedOption = $(this);
-                      var value = selectedOption.data('value');
-                      var text = selectedOption.text();
-                      var imageUrl = selectedOption.find('img').attr('src');
-                
-                      $('#selectedCurrencyText').text(text);
-                      $('#selectedCurrencyImage').attr('src', imageUrl);
-                
-                      // You can also use the 'value' variable to perform additional actions based on the selected option
-                      console.log('Selected value: ' + value);
-                    });
-                  });
-                </script>
+      <button class="btn btn-warning dropdown-toggle" type="button" id="currencyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Select Token
+      </button>
+      <div class="dropdown-menu" aria-labelledby="currencyDropdown">
+        <a class="dropdown-item" href="#" data-value="default">
+          <img src="{{ asset('assets/img/tuin_logo.png') }}" alt="Default" class="currency-icon"> -
+        </a>
+        <a id='usdc' class="dropdown-item" href="#" data-value="usdc">
+          <img src="{{ asset('assets/img/usdc.png') }}" alt="USDC" class="currency-icon"> USDC
+        </a>
+        <a id='usdt' class="dropdown-item" href="#" data-value="usdt">
+          <img src="{{ asset('assets/img/Usdt.png') }}" alt="USDT" class="currency-icon"> USDT
+        </a>
+        <a id='busd' class="dropdown-item" href="#" data-value="busd">
+          <img src="{{ asset('assets/img/Busd.png') }}" alt="BUSD" class="currency-icon"> BUSD
+        </a>
+      </div>
+    </div>
+    <label for="withdrawAmountInput">Amount To Withdraw</label>
+    <input type="number" id="withdrawAmountInput"><br>
     <button id="withdrawSubmitButton">Withdraw</button><br>
+
+    <!-- Add the necessary Bootstrap CSS and JavaScript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Add the necessary CSS -->
+    <style>
+      .currency-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+      }
+    </style>
+    <!-- Include Bootstrap JS (Optional if you don't need any JavaScript functionality) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Add the JavaScript code -->
+    <script>
+      $(document).ready(function() {
+        $('.dropdown-item').click(function() {
+          var selectedOption = $(this);
+          var value = selectedOption.data('value');
+          var text = selectedOption.text();
+          var imageUrl = selectedOption.find('img').attr('src');
+    
+          $('#selectedCurrencyText').text(text);
+          $('#selectedCurrencyImage').attr('src', imageUrl);
+    
+          // You can also use the 'value' variable to perform additional actions based on the selected option
+          console.log('Selected value: ' + value);
+        });
+      });
+    </script>
 
     <!-- <input type="text" id="poolOwnerInput">
     <button id="setPoolOwnerSubmitButton">Set Pool Owner</button><br> -->
