@@ -323,7 +323,7 @@
     <div class="container">
       <div class="row" data-aos="zoom-in">
         <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
-          <a href="https://bscscan.com/token/0xaf67e3278f7e6c19f905181144f9a6f9b503d997"><img src="assets/img/1.png" class="img-fluid mb-4" alt="" style="max-width: auto; height: auto;"></a>
+          <a href="https://bscscan.com/token/0x5ff39141b1f20e2f34a36c5fa8fed88a3dc298ba"><img src="assets/img/1.png" class="img-fluid mb-4" alt="" style="max-width: auto; height: auto;"></a>
         </div>
   
         <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center">
