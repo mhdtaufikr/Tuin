@@ -15,6 +15,9 @@ use App\Http\Controllers\AuthController;
 */
 
 Route::get('/', [IndexController::class, 'index']);
+Route::get('/bhs', [IndexController::class, 'bahasa']);
+Route::get('/chn', [IndexController::class, 'china']);
+Route::get('/en', [IndexController::class, 'english']);
 Route::get('/buy', [IndexController::class,'buy']);
 Route::get('/login', [AuthController::class,'login'])->name('login');
 Route::post('/postlogin', [AuthController::class,'postlogin'])->middleware("throttle:5,1");
