@@ -121,45 +121,6 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
-    <!-- Add this in the head section of your HTML -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
-<!-- Add this before the closing body tag -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
-<script>
-  $(document).ready(function() {
-    $('#languageModal').modal('show');
-  });
-</script>
-
-<!-- Modal -->
-<div class="modal fade show" id="languageModal" tabindex="-1" role="dialog" aria-labelledby="languageModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="languageModalLabel">Select Language</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <!-- Add your language selection form or content here -->
-        <!-- For example: -->
-        <div class="text-center">
-          <h3>Select Language</h3>
-          <a href="{{ url('/bhs') }}"> <img style="max-width: 50px; height: auto;" src="assets/img/indo.png" class="img-fluid logo-image" alt=""></a>
-          <a href="{{ url('/en') }}"> <img style="max-width: 50px; height: auto;" src="assets/img/Flag_of_the_United_Kingdom.png" class="img-fluid logo-image" alt=""></a>
-          <a href="{{ url('/chn') }}"> <img style="max-width: 50px; height: auto;" src="assets/img/china.png" class="img-fluid logo-image" alt=""></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
     <div class="container">
       <br>
       <div class="row">
@@ -167,8 +128,8 @@
           <img src="assets/img/tuin_g.png" class="img-fluid animated" alt="" style="width:100%; max-width: 500px; height:auto;">
         </div>
         <div class="col-lg-4 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-          <h1 class="text-center">Bridging Revolution Of The Funding Gap</h1>
-          <h2 class="text-center"> With Tuin Token and Web 3.0 Ecosystem</h2>
+          <h1 class="text-center">Pelopor Revolusi Kesenjangan Pendanaan</h1>
+          <h2 class="text-center"> Dengan Tuin Token dan Ekosistem Web 3.0</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <div class="d-flex justify-content-center">
               <div class="col-lg-1 d-flex align-items-center justify-content-center"><a href="">
@@ -243,7 +204,7 @@
         <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
           <img src="assets/img/tuin.png" class="img-fluid animated mb-4" alt="" style="width:auto;height:auto;">
           <div class="justify-content-center text-center">
-          <a class="nav-link scrollto" href="#buy" type="button" ><button  class="btn btn-outline-secondary"><strong>BUY $ TUIN</strong></button> </a><br><br>
+          <a class="nav-link scrollto" href="#buy" type="button" ><button  class="btn btn-outline-secondary"><strong>BELI $ TUIN</strong></button> </a><br><br>
         </div>
         <!--  <div class="justify-content-left text-start">-->
             
@@ -358,8 +319,8 @@
         <div class="section-title">
           <h2>Tuin Token</h2>
           <div class="col-lg-12">
-            <strong>Welcome to Tuin Token</strong><br>
-            <i>a cryptocurrency project designed to bridge start-up entrepreneurs and existing business owners with Tuin Venture Capitalists (TVC). Tuin seeks to provide entrepreneurs with a decentralized, transparent, efficient, and accessible platform where they can pitch their business ideas directly to TVC funding through Tuin Tokens. Most often, people with innovative ideas find it difficult to raise capital in the current investment system due to the difficulty of finding bank loans, VC as angel investors, rigid rules of the stock market, etc. <br><br>Tuin Token was created to address this issue. Through the use of blockchain and Web 3 technology, it plans to become the leading disruptor of investment inclusion by bypassing the middleman and providing direct funding from TVC to the innovative business idea around the world.
+            <strong>Selamat Datang di Tuin Token</strong><br>
+            <i>Sebuah Proyek Cryptocurrency yang dirancang untuk menghubungkan Pengusaha Perusahaan Rintisan (Start-up)dan pemilik bisnis dengan Tuin Ventur Kapital / Pemilik Modal (TVC). Tuin berupaya untuk melayani Pengusaha dengan platform yang desentralisasi, transparan, efisien, dan mudah diakses yang mana para pengusaha bisa mempresentasikan ide bisnis atau usaha secara langsung kepada pendanaan TVC melalui Tuin Token. Seringkali terjadi, orang orang dengan ide inovatif kesuiltan untuk mendapatkan pemodalan dengan system investasi saat ini yang mana kesulitan dalam peminjaman bank, Venture Capital sebagai “angel investor’, aturan yang baku dari pasar modal, dan hal lainnya.<br><br>Tuin Token diciptakan untuk mengatasi permasalahan ini. Melalui penggunaan teknologi Blochain dan Web 3.0, Tuin Token akan menjadi pelopor solusi baru dalam system investasi dan pendanaan tanpa melalui perantara dan secara langsung menghubungkan pendanaan dari TVC kepada para pemilik ide bisnis inovatif di seluruh dunia.
             </i>
           </div>
         </div>
@@ -374,17 +335,17 @@
         <div class="col-md-4 text-center">
           <img src="assets/img/11.png" class="border border-warning rounded-circle" alt="Cinque Terre" width="304" height="236"> 
           <h1 class="mt-3"> $5M to $5B</h1>
-          <p>Execute your idea with Tuin capital</p>
+          <p>Eksekusi ide mu dengan Pemodalan Tuin </p>
         </div>
         <div class="col-md-4 text-center">
           <img src="assets/img/12.png" class="border border-warning rounded-circle" alt="Cinque Terre" width="304" height="236">
           <h1 class="mt-3">No</h1> 
-          <p>Interest, strict regulation and bank form registrartion</p>
+          <p>bunga, regulasi yang kaku dan formular pendaftaran bank</p>
         </div>
         <div class="col-md-4 text-center">
           <img src="assets/img/13.png" class="border border-warning rounded-circle" alt="Cinque Terre" width="304" height="236"> 
           <h1 class="mt-3">+2,000 </h1> 
-          <p>$Tuin Token Holders</p>
+          <p>Pemegang tuin Token</p>
         </div>
       </div>
        <!--  <div class="row content">
@@ -413,8 +374,8 @@ to driving the adoption of digital currencies and empowering individuals to take
       <div class="container" data-aos="zoom-in">
         <div class="row">
           <div class="col-lg-12 text-center text-lg-start">
-            <h3 class="text-center">"Buy and make your Tuin Token work for you"</h3>
-          <p class="text-center text-dark"><strong>-Tuin Fund with crypto standard-
+            <h3 class="text-center">"Beli dan buatlah Tuin Token mu sendiri bekerja untukmu"</h3>
+          <p class="text-center text-dark"><strong>-Pendanaan Tuin dengan standar crypto-
             </strong></p>  
           </div>
           <!-- <div class="col-lg-3 cta-btn-container text-center">
@@ -430,10 +391,10 @@ to driving the adoption of digital currencies and empowering individuals to take
 
 
         <div class="section-title">
-          <h4><strong><a style="display: inline-block; padding-left: 30px; padding-right: 30px;" class="nav-link scrollto btn btn-outline-secondary wide-button" href="#team">Meet The Team</a></strong></h4>
-          <h4><strong><a href="\assets\file\White_Paper._Tuin_1.pdf" download style="display: inline-block; padding-left: 30px; padding-right: 30px;" class="nav-link scrollto btn btn-outline-secondary wide-button" href="#team">Read Whitepaper</a></strong></h4><br>
+          <h4><strong><a style="display: inline-block; padding-left: 30px; padding-right: 30px;" class="nav-link scrollto btn btn-outline-secondary wide-button" href="#team">Berkenalan dengan Tim</a></strong></h4>
+          <h4><strong><a href="\assets\file\White_Paper._Tuin_1.pdf" download style="display: inline-block; padding-left: 30px; padding-right: 30px;" class="nav-link scrollto btn btn-outline-secondary wide-button" href="#team">Baca Whitepaper</a></strong></h4><br>
 
-          <i><strong>"Let's growth with Tuin."</strong></i>
+          <i><strong>"Mari bertumbuh dengan Tuin"</strong></i>
         </div>
 
         <div class="row">
@@ -441,10 +402,10 @@ to driving the adoption of digital currencies and empowering individuals to take
             <div class="accordion-list">
               <ul>
                 <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1">Our Value <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1">Nilai dan Prinsip Kami <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                     <p>
-                      To be ethical, fair, and transparent in Tuin Token missions and to always be accountable to Tuin community members.
+                        Menjadi etis, adil, dan transparan dalam misi Tuin Token dan untuk selalu dapat bertanggungjawab terhadap anggota komunitas Tuin.
                     </p>
                   </div>
                 </li>
@@ -462,12 +423,12 @@ to driving the adoption of digital currencies and empowering individuals to take
             <div class="accordion-list">
               <ul>
                 <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-5">Our Vision <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-5">Visi Kami <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-5" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      The Tuin vision goes beyond providing a bridge for the Tuin investment ecosystem. It is also intended that Tuin token capital will provide a contribution to the world since it will be the first venture capital to have a crypto standard, which is similar to what the USD dollar and its gold standard were before they were changed into fiat money. All the businesses that operate within Tuin's ecosystem will be fundamental to the price of Tuin Token in the market as long as Tuin helps people grow their businesses. Not only that, Tuin is also hoping to provide an online marketplace for start-ups and established companies to market and sell their products, using Tuin Tokens as the currency in order to avoid inflationary pressures. The outreach component is part of the long-term roadmap for Tuin.
+                        Visi Tuin melampaui dari hanya sekedar sebagai penghubung dalam ekosistem investasi Tuin. Juga dimaksudkan bahwa Pemodalan Tuin Token akan berkontribusi pada dunia sebagai Pemilik Modal usaha pertama yang memiliki standar crypto, yang mana serupa pada standar USD dan emas sebelum menjadi uang fiat. Semua bisnis atau usaha yang beroperasi dalam ekosistem tuin akan menjadi dasar dari harga Tuin Token yang beredar di pasar selama Tuin membantu bisnis mereke berkembang. Namun tidak hanya itu, Tuin juga memiliki harapan untuk menyediakan sebuah marketplace daring untuk perusahaan rintisan dan untuk menjual produk perusahaan itu, menggunakan Tuin Token sebagai mata uang untuk menghindari inflasi dan tekanan. Diluar hal itu adalah bagian dari rencana jangka Panjang Tuin.
                     </p>
-                    <p>Your support will enable Tuin Token to transform the fortunes of the investment ecosystem throughout the world, while creating a new entrepreneur, boosting existing business growth, and producing great investors as well as giving everyone the right to grow together.</p>
+                    <p>Dukungan dan partisipasi anda akan memungkinkan Tuion Token merubah ekosistem investasi masa depan, menciptakan pengusaha baru, meningkatkan pertumbuhan usaha dan bisnis, dan menghasilkan investor besar bersamaan dengan itu memberikan kesempatan kepada semua orang untuk bertumbuh Bersama.</p>
                   </div>
                 </li>
 
@@ -482,23 +443,23 @@ to driving the adoption of digital currencies and empowering individuals to take
             <div class="accordion-list">
               <ul>
                 <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-3">Tuin Token Offer <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-3">Tuin Token Tawaran <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                     
-                    <p> <strong> Token Benefits for Investors</strong> <br><br> 
-                    1. Investment Opportunities: Token holders have access to a diverse range of investment opportunities in various business ideas and projects. <br>
-                    2. Diversification: Investing in the token allows for portfolio diversification across different industries and sectors. <br>
-                    3. Early Access: Investors gain early access to promising business ideas and projects with significant growth potential. <br>
-                    4. Liquidity: The token can be easily bought and sold on open markets, providing liquidity to investors. <br>
-                    5. Transparency: Blockchain technology ensures transparency and traceability of investments.
+                    <p> <strong> Keuntungan Token bagi investor</strong> <br><br> 
+                    1. Kesempatan investasi:Para pemegang token mempunyai akses dan kesempatan investasi dalam beberapa ide bisnis dan project. <br>
+                    2. Diversifikasi: Berinvestasi pada token memberikan kesempatan diversifikasi portofolio pada beberapa industry dan sector usaha. <br>
+                    3. Akses Awal: Para investor mendapatkan akses lebih awal terhadap ide bisnis dan proyek yang menjanjikan dengan potensi pertumbuhan yang signifikan. <br>
+                    4. Likuiditas: Token dapat dengan mudah dibeli dan dijual pada pasar terbuka, menyediakan likuiditas pada investor. <br>
+                    5. Transparansi: Teknologi blockchain memastikan transparansi dan jejak investasi yang dapat ditelusuri.
                     </p><br><br>
                       
-                    <p> <strong> Token Benefits for Entrepreneurs </strong> <br><br> 
-                      1. Access to Capital: Entrepreneurs can raise funds by offering tokens, providing an alternative financing option with a broader investor base. <br>
-                      2. Cost-Effective Fundraising: Token offerings are a cost-effective method compared to traditional fundraising avenues like venture capital or IPOs. <br>
-                      3. Global Reach: Token offerings attract investors globally, expanding the entrepreneur's reach and exposure. <br>
-                      4. Community Building: Token holders form an engaged community that offers feedback, support, and advocacy for the entrepreneur's project. <br>
-                      5. Incentivized Participation: Tokens can incentivize active participation and contribution from holders, boosting the project's success.
+                    <p> <strong> Keuntungan Token bagi Pengusaha </strong> <br><br> 
+                      1. Akses kepada Pemodal: Pengusaha bisa mendapatkan pendanaan dari penawaran token, pembiayaan alternatif dengan basis investor yang lebih luas. <br>
+                      2. Pendanaan hemat biaya: Penawaran token adalah sebuah metoda hemat biaya dibandingkan dengan pendanaan tradisional seperti Venture Capital atau IPO. <br>
+                      3. Jangkauan secara global: Penawaran Token para investor secara global, memperluas jangkauan dan eksposur paraa pengusaha. <br>
+                      4. Komunitas: Para pemegang token membentuk sebuah komunitas yang menawarkan masukan, dukungan, dan pembelaan terhadap proyek sesama pengusaha. <br>
+                      5. Partisipasi berinsentif: Token dapat memberikan insentif berupa konstribusi dan partisipasi secara aktif dari para pemegang token, meningkatkan keberhasilan proyek.
 
                       </p>
                   </div>
@@ -517,29 +478,30 @@ to driving the adoption of digital currencies and empowering individuals to take
             <div class="accordion-list">
               <ul>
                 <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-4">How Tuin Tokens Work <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-4">Cara Kerja Tuin Token <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
                     
-                    <p> <strong> For Investors</strong> <br><br> 
-                    1. Purchase Tokens: Investors need to acquire the tuin tokens through a token sale or exchange. <br>
-                    2. Platform Signup: After acquiring tokens, investors sign up on our platform to gain access to the available business ideas. <br>
-                    3. Explore and Analyze: Investors can search and analyze the business ideas listed on the platform, considering factors such as market potential, growth prospects, and alignment with their investment goals. <br>
-                    4. Communication: Investors can engage in discussions and schedule meetings with the idea owners to gain a deeper understanding of the project. <br>
-                    5. Stake Tokens: Once confident in an idea, investors have the option to stake their tokens on that particular business idea, indicating their interest and commitment to supporting its development. <br>
-                    6. Monitor and Participate: Investors can actively monitor the progress of the project, provide feedback, and contribute their expertise or resources when needed. <br>
-                    7. Potential Returns: If the business idea succeeds, investors may benefit from the growth and success of the project, potentially receiving returns on their investment. <br>
+                    <p> <strong> Untuk Para Investor</strong> <br><br> 
+                    1. Pembelian token : Para Investor perlu mendapatkan tuin token melalui penjualan atau pertukaran token. <br>
+                    2. Pendaftaran Platform: Setelah mendapatkan token, investor melakukan pendaftaran pada platform kami untuk mendapatkan akses pada ide bisnis yang tersedia. <br>
+                    3. Eksplorasi dan Analisa : Para investor dapat mencari dan Analisa ide bisnis yang terdaoat pad aplatform, pertimbangkan beberapa factor seperti potensi  pasar, prospek pertumbuhan, dan kesusuaian dengan tujuan investasi. <br>
+                    4. Komunikasi : Para investor dapat terlibat dalam diskusi dan  pertemuan dengan para pemilik ide bisnis untuk mendapatkan pemahaman yang lebih dalam terhadap proyek tersebut. <br>
+                    5. Pertaruhkan Token : Saat rasa percaya diri terhadap sebuah ide bisnis telah muncul, para investor mempunyai pilihan untuk mempertaruhkan token mereka pada beberapa ide bisnis terpisah, menunjukkan ketertarikan dan komitmen untuk mendukung pengembangan bisnis tersebut. <br>
+                    6. Pengawasan dan Partisipasi : Para investor dapat aktif mengawasi proses pelaksanaan proyek, memberikan masukan dan tanggapan, dan berkontribusi sesuai keahlian dan sumber yang dimiliki Ketika dibutuhkan. <br>
+                    7. Keuntungan potensial : Jika ide bisnis terlaksana dan berhasil, para investor mendapatkan keuntungan dari pertumbuhan dan keberhasilan proyek, potensi imbalan atas investasi mereka. <br>
                     </p><br><br>
                       
-                    <p> <strong> For Entrepreneurs </strong> <br><br> 
-                      1. Purchase Tokens: Entrepreneurs need to acquire the tuin tokens through a token sale or exchange to participate in the platform. <br>
-                      2. Platform Signup: Entrepreneurs sign up on our platform to gain access to upload their business ideas. <br>
-                      3. Idea Submission: Entrepreneurs can upload their business ideas onto the platform, providing detailed information about the concept, market analysis, and growth potential. <br>
-                      4. AI Filtration: The platform employs AI algorithms to analyze and filter the uploaded ideas based on predetermined criteria, ensuring quality and viability. <br>
-                      5. Idea Display: Selected business ideas are showcased on the platform's front page, increasing visibility and attracting potential investors.<br>
-                      6. Investor Interaction: Entrepreneurs engage in discussions and meetings with interested investors, addressing their questions, concerns, and collaborating on further development..<br>
-                      7. Funding and Development: If investors show interest and stake tokens in an idea, entrepreneurs receive the necessary funding to develop and execute their business plan.<br>
-                      8. Progress Updates: Entrepreneurs provide regular updates on the project's progress, keeping investors informed about milestones, achievements, and challenges.<br>
-                      9. Potential Success: Successful implementation of the business idea can lead to growth, revenue generation, and potential rewards for the entrepreneur and investors involved.<br>
+                    <p> <strong> Untuk Para Pengusaha </strong> <br><br> 
+                        1.	Pembelian Token : Para pengusaha perlu mendapatkan tuin token melalui penjualan atau pertukaran token untuk berpartisipasi di dalam platform.<br>
+                        2.	Pendaftaran platform : Para pengusaha melakukan pendaftaran pada platform untuk mendapatkan akses untuk mengunggah ide bisnis mereka.<br>
+                        3.	Pengiriman ide : Para pengusaha dapat mengunggah ide bisnis mereka ke platform, memberikan informasi yang rinci perihal konsep, Analisa pasar, dan potensi pertumbuhan.<br>
+                        4.	Sistem filtrasi AI : Platform memanfaatkan algoritma AI untuk analisa dan seleksi ide bisnis yang diungggah berdasarkan  kriteria yang telah ditentukan, untuk memastikan kualitas dan keberlangsungan.<br>
+                        5.	Menampilkan ide : Ide bisnis yang terpilih akan ditampilkan pada halaman depan platform, meningkatkan visibilitas dan menarik investor potensial.<br>
+                        6.	Interaksi investor : Para pengusaha dapat terlibat dalam diskusi dan pertemuan dengan investor yang tertarik, mengajukan pertanyaan , ketertarikan dan saling bekerjasama dalam pengembangan kedepannya.<br>
+                        7.	Pendanaan dan Pengembangan : Jika para investor menunjukan minat dan ketertarikan dan mempertaruhkan token pada sebuah ide, maka para pengusaha menerima pendanaan yang dibutuhkan untuk mengembangkan dan menjalankan rencana bisnis mereka.<br>
+                        8.	Pembaruan progress : Para pengushaa memberikan informasi pembaruan secara berkala terkait progress proyek, memastikan para investor tetap mendapat informasi perihal pencapaian dan tantangan yang dihadapi.<br>
+                        9.	Keberhasilan potensial : penerapan ide bisnis yang berhasil dapat berakibat pada pertumbuhan bisnis, pendapatan yang berulang, dan imbalan yang potensial untuk para pengusaha dan investor yang terlibat.<br>
+                        
 
                       </p>
                   </div>
@@ -563,12 +525,12 @@ to driving the adoption of digital currencies and empowering individuals to take
       <div class="container" data-aos="zoom-in">
         
         <div class="section-title">
-          <h2>Where to Buy</h2>
+          <h2>Membeli Token</h2>
         </div>
         <div class="row">
           <div class="col-lg-12 text-center text-lg-start">
             <div class="justify-content-center text-center">
-              <a href="{{ url('/buy') }}">
+              <a  target="_blank" href="{{ url('/buy') }}">
               <button type="button" class="btn btn-outline-warning"><img src="assets/img/TUINSWAP-removebg-preview.png" class="img-fluid animated mb-4 " alt="" style="width:300px;height:auto;">  </button><br><br>
             </a>
             </div>  
@@ -585,8 +547,8 @@ to driving the adoption of digital currencies and empowering individuals to take
       <div class="">
 
         <div class="section-title">
-          <h2>Partner</h2>
-          <p>Keep in update</p>
+          <h2>Kemitraan</h2>
+          <p>Dalam Pembaharuan</p>
         </div>
 
         <!-- <div class="row" data-aos="zoom-in">
@@ -626,8 +588,8 @@ to driving the adoption of digital currencies and empowering individuals to take
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>News</h2>
-          <p>Keep in update</p>
+          <h2>Berita</h2>
+          <p>Dalam Pembaharuan</p>
         </div>
 
         <!-- <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -743,7 +705,7 @@ to driving the adoption of digital currencies and empowering individuals to take
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
             <div class="content">
-              <h3><strong>How to Buy Tuin Token</strong></h3>
+              <h3><strong>Cara Membeli Tuin Token</strong></h3>
               <!-- <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
               </p> -->
@@ -752,48 +714,48 @@ to driving the adoption of digital currencies and empowering individuals to take
             <div class="accordion-list">
               <ul>
                 <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Create a Wallet <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span>Membuat Dompet <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                     <p>
-                      Go to metamask.io, install the extension in your browser (or install the mobile app on your iPhone or Android device) and follow the steps to set up your Ethereum wallet. It is important to pay close attention to your unique "Seed Phrase". Ideally, you should write the phrase down and store it in a safe, secure, and memorable location.  
+                        Kunjungi Metamask.io, instal ekstensi pada browser ( atau install aplikasi pada perangkat Iphone atau Android) dan ikuti instruksi untuk membuat dompet Ethereum. Hal yang penting untuk memperhatikan “Seed Phrase” unik milik anda. Bijaknya, anda tulis “Seed Phrase” dan simpan pada tempat yang aman dan pada lokasi yang mudah diingat.  
                     </p> <br>
-                    <a href="https://www.youtube.com/watch?v=8UAz1FyK3-4" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>  
+                    <a href="https://www.youtube.com/watch?v=8UAz1FyK3-4" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Lihat Video</span></a>  
                   </div>
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> To up your wallet <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span>Isi ulang Dompet anda <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      Buy Ethereum directly from Metamask or transfer funds from an exchange (Binance, Crypto.com, Coinbase).  
+                        Beli USDT, USDC, BUSD dan sedikit BNB secara langsung melalui Metamask atau transfer dari platform pertukaran (Binance, Crypto.com, Coinbase). 
                     </p> <br>
-                    <a href="https://www.youtube.com/watch?v=FMTYAMPQzSk" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>  
+                    <a href="https://www.youtube.com/watch?v=FMTYAMPQzSk" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Lihat Video</span></a>  
                   </div>
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Connect Your Wallet to The DEX <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Hubungkan Dompet anda pada DEX <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      You must be connected to TuinSwap. Visit the (Tuin Website link) in Google Chrome or in the browser within the Metamask application. Ensure that your wallet is connected. Paste the $Tuin token address into TuinSwap, select Tuin, and confirm the transaction. If Metamask prompts you to sign your wallet, please do so.
+                        Anda harus terhubung dengan TuinSwap. Kunjungi Tuintoken.com pada Google Chrome atau pada browser yang terdapat dalam aplikasi Metamask. Pastikan dompet anda sudah terhubung. Input alamat $Tuin token pada TuinSwap, pilih Tuin, dan konfirmasi transaksi. Jika Metamask mengingatkan anda untuk memasukkan dompet anda, maka lakukan.
                     </p>
                   </div>
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>04</span> Trade USDT/BUSD/USDC to Tuin Token <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>04</span> Beli USDT/BUSD/USDC Menjadi Tuin Token <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      Input the amount of USDT/BSUD/USDC you would want to trade. Remember to leave some funds in your wallet for “GAS Fees” which is the fuel of the transaction. Then click “Swap”
+                       Input jumlah nilai dari USDT/BSUD/USDC yang anda ingin dagangkan. Ingat untuk menyisihkan beberapa jumlah dana di dompet anda untuk “GAS Fees” yang mana merupakan bahan bakar untuk transaksi. Lalu klik “Swap”.
                     </p>
                   </div>
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>05</span> You have swapped your USDT/BUSD/USDC to Tuin Token! <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-7" class="collapsed"><span>05</span> Anda harus menukarkan USDT/BSUD/USDC anda ke Tuin Token <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-7" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      Congratulations! You are now a holder of Tuin Token!A transaction may take between 30 seconds and an hour. If you have any questions, please feel free to contact us via telegram or discord
+                        Selamat! Sekarang anda seorang pemegang Tuin Token! Sebuah transaksi dapat berlangsung selama 1 jam 30 detik. Jika anda memiliki pertanyaan, silahkan untuk menghubungi kami melalui Telegram atau Discord
                     </p>
                   </div>
                 </li>
@@ -815,22 +777,21 @@ to driving the adoption of digital currencies and empowering individuals to take
 
         <div class="row">
           <div class="col-lg-7 text-center ">
-            <h3>Sign the Tuin Token Manifesto on Twitter!</h3>
+            <h3>menandatangani manifesto Tuin Token di Twitter</h3>
             <a target="_blank" class="cta-btn align-middle" href="https://twitter.com/intent/tweet?text='I'm signing the TuinToken Manifesto! @TuinToken @TT https://tuintoken.com/ #TuinTokenManifesto '"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg enable-background="new 0 0 32 32" height="100%" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="10%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M31.993,6.077C30.816,6.6,29.552,6.953,28.223,7.11c1.355-0.812,2.396-2.098,2.887-3.63  c-1.269,0.751-2.673,1.299-4.168,1.592C25.744,3.797,24.038,3,22.149,3c-3.625,0-6.562,2.938-6.562,6.563  c0,0.514,0.057,1.016,0.169,1.496C10.301,10.785,5.465,8.172,2.227,4.201c-0.564,0.97-0.888,2.097-0.888,3.3  c0,2.278,1.159,4.286,2.919,5.464c-1.075-0.035-2.087-0.329-2.972-0.821c-0.001,0.027-0.001,0.056-0.001,0.082  c0,3.181,2.262,5.834,5.265,6.437c-0.55,0.149-1.13,0.23-1.729,0.23c-0.424,0-0.834-0.041-1.234-0.117  c0.834,2.606,3.259,4.504,6.13,4.558c-2.245,1.76-5.075,2.811-8.15,2.811c-0.53,0-1.053-0.031-1.566-0.092  C2.905,27.913,6.355,29,10.062,29c12.072,0,18.675-10.001,18.675-18.675c0-0.284-0.008-0.568-0.02-0.85  C30,8.55,31.112,7.395,31.993,6.077z" fill="#55ACEE"/><g/><g/><g/><g/><g/><g/></svg>Tweet!</a>
           
           </div>
           <div class="col-lg-5 cta-btn-container text-justify">
-            <p> <div style="font-weight: normal;">We are Tuin Token, one of the most influential contributors to the crypto-movement and mankind's advancement. <br> <br>
+            <p> <div style="font-weight: normal;">Kami Adalah Tuin Token, salah satu contributor yang paling berdampak pada pergerakan crypto dan kelanjutan umat manusia. <br> <br>
 
-              We are engaged in the development of a fair people's currency on which anyone can have a business and participate in the venture capital market. Our engagement has led us to value: <br> <br>
+                Kami terlibat dalam pengembangan mata uang biasa yang mana siapapun dapat memiliki bisnis dan berpartisipasi dalam pasar pemodal usaha. Keterlibatann kami memegang prinsip : <br> <br>
          
-              <div style="font-weight: 	Bold;">Being trustworthy,</div> we always trust others, as trust is the cornerstone of any successful business. <br> 
+              <div style="font-weight: 	Bold;">Menjadi terpercaya,</div> Kami selalu percaya satu sama lain, rasa percaya adalah landasan dari keberhasilan bisnis. <br> 
              
-              <div style="font-weight: 	Bold;">Being optimistic,</div> we value having a positive outlook, expectation, or attitude towards life, events, or the future. <br> 
+              <div style="font-weight: 	Bold;">Menjadi optimistis,</div> Kami berprinsip untuk memiliki pandangan, ekspektasi atau sikap yang positif terhadap kehidupan, kejadian ataupun masa depan. <br> 
               
-              <div style="font-weight: 	Bold;">Being resilient,</div> we value being able to bounce back, recover, or adapt to adversity. <br> <br>
-              
-              To put it another way, we value both sides equally.
+              <div style="font-weight: 	Bold;">Menjadi Tahan Banting,</div> Kami berprinsip untuk bangkit, pulih dan beradaptasi terhadap tantangan dan kesulitan. <br> <br>
+           
             </div>
               </strong>
             
@@ -857,8 +818,8 @@ to driving the adoption of digital currencies and empowering individuals to take
             <!-- <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
             </p> -->
-            <h1>Token Supply: 7B of Tuin Token</h1>
-            <p>It is tax-free and does not incur bank interest. As easy as flipping your hand, you can start your own business. A total of 5B tokens have been sent to the liquidity pool, LP tokens have been burnt, and the contract has been renounced. Tuin's remaining 2B are reserved for dedicated team members, visionary advisors, and early investors who believe in the project's transformative potential.</p>
+            <h1>Persediaan token : Tuin Token Sejumlah 7B</h1>
+            <p>Ini merupakan bebas pajak dan tidak ditanggung bunga bank. Semudah membalikkan telapak tangan anda, anda dapat memulai bisnis anda sendiri. Dengan jumlah total token sebanyak 5B yang telah tersedia di pasar likuid, LP Token telah terbakar, dan kontrak telah ditinggalkan. 2B Tuin Token telah disimpan untuk para anggota tim yang telah berdedikasi, penasehat visioner, dan para investor awal yang telah memberikan kepercayaan pada potensi transformasi proyek ini.</p>
           </div>
          
          <!--  <div class="accordion-list">
@@ -923,23 +884,23 @@ to driving the adoption of digital currencies and empowering individuals to take
 
         <div class="section-title">
           <h2>Roadmap</h2>
-          <p>Proposed Roadmap</p>
+          <p>Roadmap yang direncanakan</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
-              <h3>Phase 1 :</h3>
+              <h3>Fase 1 :</h3>
               <!-- <h4><sup>$</sup>0<span>per month</span></h4> -->
               <ul>
-                <li><i class="bx bx-check"></i> Token and Website Development</li>
-                <li><i class="bx bx-check"></i> Launch to TuinSwap Defi's</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Safety improved (Audit Team KYC and LP locked)</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> First CEX listing</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Launch to Uniswap and PancakeSwap DeFi's</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Legal entity set up</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Bridge to BSC</li>
+                <li><i class="bx bx-check"></i> Pengembangan Token dan Website</li>
+                <li><i class="bx bx-check"></i> Peluncuran Tuinswap</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Peningkatan keamanan (Audit tim KYC dan LP locked)</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Pendaftaran CEX pertama</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Peluncuran di Uniswap dan PancakeSwap Defi’s</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Pembentukan badan hukum</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Menghubungkan ke BSC</li>
               </ul>
               <!-- <a href="#" class="buy-btn">Get Started</a> -->
             </div>
@@ -947,16 +908,16 @@ to driving the adoption of digital currencies and empowering individuals to take
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
-              <h3>Phase 2 :</h3>
+              <h3>Fase 2 :</h3>
               <!-- <h4><sup>$</sup>0<span>per month</span></h4> -->
               <ul>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Tuincast (Weekly Podcast)</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> My Tuin (Tuin Token Investment Website and Apps)</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> SafeMoon Swap listing</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Upgrades to the legal entity</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Binance and Bitmart Exchange Platform listing</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Listing other tokens to TuinSwap DeFi's</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> TuinDAO (Decentralized Autonomous Organization) formation</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Tuincast (Podcast mingguan)</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> My Tuin (Aplikasi dan Website Investasi Tuin Token)</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Pendaftaran Safemoon Swap</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Meningkatkan Badan Hukum</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Pendaftaran pada platform Binance dan Bitmart</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Mendaftarkan Token lain kedalam Tuinswap</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Formasi TuinDAO(Decentralized Autonomous Organization)</li>
               </ul>
               <!-- <a href="#" class="buy-btn">Get Started</a> -->
             </div>
@@ -964,13 +925,13 @@ to driving the adoption of digital currencies and empowering individuals to take
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
-              <h3>Phase 3 :</h3>
+              <h3>Fase 3 :</h3>
               <!-- <h4><sup>$</sup>0<span>per month</span></h4> -->
               <ul>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> My Tuin 2.0 (Online Marketplace for Business in Tuin Sytem)</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Listing other tokens to TuinSwap DeFi's</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Expansion of the governance system</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> My Tuin 3.0 (Star-Up Exchange Platform)</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> My Tuin 2.0 (marketplace online untuk bisnis dalam Sistem Tuin)</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Mendaftarkan token lain kedalam TuinSwap</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Perluasan kedalam system pemerintahan</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> My Tuin 3.0 (Perusahaan Rintisan Platform Pertukaran)</li>
               </ul>
               <!-- <a href="#" class="buy-btn">Get Started</a> -->
             </div>
@@ -1365,8 +1326,8 @@ Our transparent fee structure ensures that you can maximize your trading profits
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Team</h2>
-          <p>At Tuin Token, we are proud to have a diverse and talented team dedicated to revolutionizing the world of digital assets. Our team is comprised of industry experts, visionaries, and technology enthusiasts who share a common goal <br> <strong><i>"to provide innovative solutions and exceptional service to our users."</i></strong>  
+          <h2>Tim</h2>
+          <p>Pada Tuin Token, kami bangga untuk mempunyai tim yang beragam dan berbakat yang berdedikasi untuk perubahan pada dunia asset digital. Tim kami terdiri atas para ahli industry, visoner, dan para penggiat teknologi yang berkumpul dan berbagi untuk tujuan bersama. <br> <strong><i>"untuk memberikan solusi inovatif dan layanan luar biasa kepada pengguna kami."</i></strong>  
             </p>
         </div>
 
@@ -1441,59 +1402,58 @@ Our transparent fee structure ensures that you can maximize your trading profits
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>COMMUNITY</h2>
-          <strong>Welcome to the Tuin Token Community! 
+          <h2>Komunitas</h2>
+          <strong>Selamat Datang di Komunitas Tuin Token! 
           </strong>
-          <p>We believe that a strong and engaged community is the heart of any successful project. 
-            Here, you can connect with like-minded individuals, share your thoughts, and stay up-to-date with the latest news and updates.
+          <p>Kami percaya bahwa sebuah komunitas yang kuat dan saling terikat merupakan inti dari keberhasilan proyek. Disini, anda dapat terhubung dengan individu yang beroikiran sama, saling berbagi pemikiran, dan tetap up-to-date dengan berita dan informasi terkini.
             </p>
         </div>
      
         <div class="faq-list">
-          <strong>Why Join Our Community?</strong>
+          <strong>Mengapa bergabung dengan Komunitas Kami?</strong>
           <br><br>
           <ul>
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Engage with Fellow Enthusiasts <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Terlibat dengan sesama peminat <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                 <p>
-                  Connect with a diverse community of cryptocurrency enthusiasts, traders, and investors who share a common passion for blockchain technology and digital assets.
+                    Terhubung dengan komunitas yang beragam dari para peminat cryptocurrency, trader, dan investor yang mana saling berbagi semangat Bersama untuk teknologi Blockchain dan asset digital.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Stay Informed <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Tetap Mendapatkan Informasi <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                 Be the first to know about the latest developments, product updates, and announcements from Tuin Token.Our community members are always at the forefront of exciting news and insights
+                    Jadilah yang pertama untuk mengetahui perkembangan terkini, kemajuan produk, dan pemberitahuan dari Tuin Token. Anggota Komunitas kami selalu menjadi garis terdepan terhadap wawasan dan berita yang menarik.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Educational Resources <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Sumber Edukasi <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Expand your knowledge and understanding of cryptocurrencies through our educational resources. We provide guides, tutorials, and informative content to help you navigate the world of digital assets with confidence
+                    Kembangkan pengetahuan anda dan pahami cryptocurrency melalui sumber sumber edukasi dan pembelajaran kami. Kami menyediakan panduan, tutorial, dan konten informatif untuk membantu anda bernavigasi dalam dunia asset digital dengan percaya diri.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Exclusive Events and Promotions <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Promosi dan Kegiatan Eksklusif <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Gain access to exclusive events, webinars, and promotions designed specifically for our community members. Get involved in exciting giveaways, contests, and rewards programs as we show our appreciation for your support.
+                    Dapatkan akses untuk kegiatan eksklusif, webinar, dan promosi desain khususnya untuk anggota komunitas kami. Terlibat dalam giveaway, kontes, dan program berhadiah yang menarik sebagai bentuk apresiasi kami atas dukungan anda.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="500">
-              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Support and Assistance<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Dukungan dan Bantuan<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Our community is here to support you on your journey. Whether you have questions, need technical assistance, or want to engage in discussions, our friendly community members and dedicated support team are ready to assist you.
+                    Komunitas kami disini bersedia membantu anda dalam perjalanan anda. Apabila anda memiliki pertanyaan, membutuhkan bantuan secara teknis, atau ingin terlibat dalam diskusi, anggota komunitas dan tim kami yang berdedikasi siap untuk membantu anda.
                   
                 </p>
               </div>
@@ -1503,33 +1463,32 @@ Our transparent fee structure ensures that you can maximize your trading profits
         </div>
 <br><br><br>
         <div class="faq-list">
-          <strong>How to Get Involved?</strong>
+          <strong>Bagaimana cara untuk terlibat?</strong>
           <br><br>
           <ul>
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Join our social media channels <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Bergabung dengan channel media social kami <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                 <p>
-                  Follow us on Twitter, Facebook, LinkedIn, Telegram, instagram and Discord to stay connected and receive real-time updates from the Tuin Token team.
-                  Engage in conversations, share your insights, and connect with other community members
+                    Ikuti kami di Twitter, facebook, Linkedin, telegram, Instagram, dan Discord untuk tetap terhubung dan menerima update secara real time dari tim Tuin Token. Terlibat dalam percakapan, berbagi wawasan, dan terhubung dengan anggota komunitas lainnya
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Participate in Our Forums <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Berpartsipasi dalam Forum Kami <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Visit our community forums to engage in discussions, ask questions, and share your experiences. It's a great place to connect with fellow users, learn from their expertise, and contribute to the growth of our community.
+                    Kunjungi forum komunitas kami untuk terlibat dalam diskusi, pertanyaan, dan berbagi pengalaman anda. Hal tersebut merupakan sebuah tempat yang luar biasa untuk terhubung dengan sesame pengguna, belajar dari ahlinya, dan berkontribusi untuk pertumbuhan komunitas kami.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Spread The Word: <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Sebarkan Beritanya: <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Help us grow our community by sharing Tuin Token with your friends, colleagues, and networks. Together, we can create a vibrant and supportive community that drives the future of cryptocurrencies.
+                    Bantu kami untuk menumbuhkan komunitas dengan berbagi Tuin token dengan Teman, kolega dan jejaring anda. Bersama, kita akan menciptakan semangat dan komunitas suportif yang mendorong masa depan cryptocurrency.
                 </p>
               </div>
             </li>
@@ -1546,8 +1505,8 @@ Our transparent fee structure ensures that you can maximize your trading profits
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>Looking for a way to contact us? We would be delighted to hear from you. Here is how you can contact us.</p>
+          <h2>Kontak</h2>
+          <p>Membutuhkan cara untuk menghubungi kami? Kami dengan senang hati mendengar dari anda. Ini cara anda bisa menghubungi kami.</p>
         </div>
 
         <div class="row">
@@ -1580,20 +1539,20 @@ Our transparent fee structure ensures that you can maximize your trading profits
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
+                  <label for="name">Nama Anda</label>
                   <input type="text" name="name" class="form-control" id="name" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
+                  <label for="name">Email Anda</label>
                   <input type="email" class="form-control" name="email" id="email" required>
                 </div>
               </div>
               <div class="form-group">
-                <label for="name">Subject</label>
+                <label for="name">Subjek</label>
                 <input type="text" class="form-control" name="subject" id="subject" required>
               </div>
               <div class="form-group">
-                <label for="name">Message</label>
+                <label for="name">Pesan</label>
                 <textarea class="form-control" name="message" rows="10" required></textarea>
               </div>
               <div class="my-3">
@@ -1601,7 +1560,7 @@ Our transparent fee structure ensures that you can maximize your trading profits
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Kirim Pesan</button></div>
             </form>
           </div> 
 

@@ -121,43 +121,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
-    <!-- Add this in the head section of your HTML -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
-<!-- Add this before the closing body tag -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
-<script>
-  $(document).ready(function() {
-    $('#languageModal').modal('show');
-  });
-</script>
-
-<!-- Modal -->
-<div class="modal fade show" id="languageModal" tabindex="-1" role="dialog" aria-labelledby="languageModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="languageModalLabel">Select Language</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <!-- Add your language selection form or content here -->
-        <!-- For example: -->
-        <div class="text-center">
-          <h3>Select Language</h3>
-          <a href="{{ url('/bhs') }}"> <img style="max-width: 50px; height: auto;" src="assets/img/indo.png" class="img-fluid logo-image" alt=""></a>
-          <a href="{{ url('/en') }}"> <img style="max-width: 50px; height: auto;" src="assets/img/Flag_of_the_United_Kingdom.png" class="img-fluid logo-image" alt=""></a>
-          <a href="{{ url('/chn') }}"> <img style="max-width: 50px; height: auto;" src="assets/img/china.png" class="img-fluid logo-image" alt=""></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+   
 
 
     <div class="container">
@@ -568,7 +532,7 @@ to driving the adoption of digital currencies and empowering individuals to take
         <div class="row">
           <div class="col-lg-12 text-center text-lg-start">
             <div class="justify-content-center text-center">
-              <a href="{{ url('/buy') }}">
+              <a  target="_blank" href="{{ url('/buy') }}">
               <button type="button" class="btn btn-outline-warning"><img src="assets/img/TUINSWAP-removebg-preview.png" class="img-fluid animated mb-4 " alt="" style="width:300px;height:auto;">  </button><br><br>
             </a>
             </div>  
@@ -765,7 +729,7 @@ to driving the adoption of digital currencies and empowering individuals to take
                   <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> To up your wallet <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      Buy Ethereum directly from Metamask or transfer funds from an exchange (Binance, Crypto.com, Coinbase).  
+                      Buy USDT, USDC, BUSD and a little bit BNB directly from Metamask or transfer funds from an exchange (Binance, Crypto.com, Coinbase).  
                     </p> <br>
                     <a href="https://www.youtube.com/watch?v=FMTYAMPQzSk" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>  
                   </div>

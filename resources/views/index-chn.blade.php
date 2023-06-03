@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Tuin Token</title>
+  <title>图因投资加密货币</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -74,16 +74,16 @@
       <div class="col-md-4 col-2">
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#pricing">Roadmaps</a></li>
-            <li><a class="nav-link scrollto" href="#portfolio">News</a></li>
-            <li><a class="nav-link scrollto" href="#clients_2">Partner</a></li>
-            <li><a class="nav-link scrollto" href="#team">Team</a></li>
-            <li><a class="nav-link scrollto" href="#why-us">Whitepaper</a></li>
-            <li><a class="nav-link scrollto" href="#cta_2">Manifesto</a></li>
-            <li><a class="nav-link scrollto" href="#why-us_2">Tokenomics</a></li>
-            <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li><a class="nav-link scrollto active" href="#hero">主页</a></li>
+            <li><a class="nav-link scrollto" href="#pricing">项目规划</a></li>
+            <li><a class="nav-link scrollto" href="#portfolio">新闻</a></li>
+            <li><a class="nav-link scrollto" href="#clients_2">合作伙伴</a></li>
+            <li><a class="nav-link scrollto" href="#team">团队</a></li>
+            <li><a class="nav-link scrollto" href="#why-us">策划方案</a></li>
+            <li><a class="nav-link scrollto" href="#cta_2">宣言</a></li>
+            <li><a class="nav-link scrollto" href="#why-us_2">代币经济模式</a></li>
+            <li><a class="nav-link scrollto" href="#about">关于</a></li>
+            <li><a class="nav-link scrollto" href="#contact">联系方式</a></li>
           </ul>
           <div class="header-icons">
             <img src="path/to/image1.png" class="header-icon" alt="">
@@ -121,45 +121,6 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
-    <!-- Add this in the head section of your HTML -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
-<!-- Add this before the closing body tag -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
-<script>
-  $(document).ready(function() {
-    $('#languageModal').modal('show');
-  });
-</script>
-
-<!-- Modal -->
-<div class="modal fade show" id="languageModal" tabindex="-1" role="dialog" aria-labelledby="languageModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="languageModalLabel">Select Language</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <!-- Add your language selection form or content here -->
-        <!-- For example: -->
-        <div class="text-center">
-          <h3>Select Language</h3>
-          <a href="{{ url('/bhs') }}"> <img style="max-width: 50px; height: auto;" src="assets/img/indo.png" class="img-fluid logo-image" alt=""></a>
-          <a href="{{ url('/en') }}"> <img style="max-width: 50px; height: auto;" src="assets/img/Flag_of_the_United_Kingdom.png" class="img-fluid logo-image" alt=""></a>
-          <a href="{{ url('/chn') }}"> <img style="max-width: 50px; height: auto;" src="assets/img/china.png" class="img-fluid logo-image" alt=""></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
     <div class="container">
       <br>
       <div class="row">
@@ -167,8 +128,8 @@
           <img src="assets/img/tuin_g.png" class="img-fluid animated" alt="" style="width:100%; max-width: 500px; height:auto;">
         </div>
         <div class="col-lg-4 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-          <h1 class="text-center">Bridging Revolution Of The Funding Gap</h1>
-          <h2 class="text-center"> With Tuin Token and Web 3.0 Ecosystem</h2>
+          <h1 class="text-center">利用Tuin代币和网络 3.0系统架起资金缺口的革命</h1>
+          <h2 class="text-center"> </h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <div class="d-flex justify-content-center">
               <div class="col-lg-1 d-flex align-items-center justify-content-center"><a href="">
@@ -243,7 +204,8 @@
         <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
           <img src="assets/img/tuin.png" class="img-fluid animated mb-4" alt="" style="width:auto;height:auto;">
           <div class="justify-content-center text-center">
-          <a class="nav-link scrollto" href="#buy" type="button" ><button  class="btn btn-outline-secondary"><strong>BUY $ TUIN</strong></button> </a><br><br>
+          <a class="nav-link scrollto" href="#buy" type="button" ><button  class="btn btn-outline-secondary"><strong>购买$Tuin
+          </strong></button> </a><br><br>
         </div>
         <!--  <div class="justify-content-left text-start">-->
             
@@ -356,10 +318,13 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Tuin Token</h2>
+          <h2> TUIN代币
+          </h2>
           <div class="col-lg-12">
-            <strong>Welcome to Tuin Token</strong><br>
-            <i>a cryptocurrency project designed to bridge start-up entrepreneurs and existing business owners with Tuin Venture Capitalists (TVC). Tuin seeks to provide entrepreneurs with a decentralized, transparent, efficient, and accessible platform where they can pitch their business ideas directly to TVC funding through Tuin Tokens. Most often, people with innovative ideas find it difficult to raise capital in the current investment system due to the difficulty of finding bank loans, VC as angel investors, rigid rules of the stock market, etc. <br><br>Tuin Token was created to address this issue. Through the use of blockchain and Web 3 technology, it plans to become the leading disruptor of investment inclusion by bypassing the middleman and providing direct funding from TVC to the innovative business idea around the world.
+            <strong>欢迎访问Tuin代币
+            </strong><br>
+            <i>一个加密货币项目，旨在将初创企业家和现有企业主与 图因 风险投资家 (TVC) 联系起来。 Tuin 旨在为企业家提供一个去中心化、透明、高效且易于访问的平台，他们可以在该平台上通过 Tuin代币将他们的商业理念直接推销给 TVC 资金。大多数情况下，由于难以获得银行贷款、风险投资作为天使投资人、股市的严格规则等，具有创新想法的人发现在当前的投资体系中很难筹集到资金。<br><br>Tuin代币就是为了解决这个问题而创建的。通过使用区块链和 网络 3.0 技术，该项目计划绕过中间商并从 TVC 向全球创新商业理念提供直接资金，成为投资普惠的领先颠覆者。
+
             </i>
           </div>
         </div>
@@ -373,18 +338,22 @@
       <div class="row content">
         <div class="col-md-4 text-center">
           <img src="assets/img/11.png" class="border border-warning rounded-circle" alt="Cinque Terre" width="304" height="236"> 
-          <h1 class="mt-3"> $5M to $5B</h1>
-          <p>Execute your idea with Tuin capital</p>
+          <h1 class="mt-3"> $ 5M 至 $5B
+          </h1>
+          <p>Tuin代币实现你的想法
+          </p>
         </div>
         <div class="col-md-4 text-center">
           <img src="assets/img/12.png" class="border border-warning rounded-circle" alt="Cinque Terre" width="304" height="236">
-          <h1 class="mt-3">No</h1> 
-          <p>Interest, strict regulation and bank form registrartion</p>
+          <h1 class="mt-3">拒绝
+          </h1> 
+          <p>利息、严格监管和银行表格登记</p>
         </div>
         <div class="col-md-4 text-center">
           <img src="assets/img/13.png" class="border border-warning rounded-circle" alt="Cinque Terre" width="304" height="236"> 
           <h1 class="mt-3">+2,000 </h1> 
-          <p>$Tuin Token Holders</p>
+          <p>$Tuin代币持有者
+          </p>
         </div>
       </div>
        <!--  <div class="row content">
@@ -413,8 +382,9 @@ to driving the adoption of digital currencies and empowering individuals to take
       <div class="container" data-aos="zoom-in">
         <div class="row">
           <div class="col-lg-12 text-center text-lg-start">
-            <h3 class="text-center">"Buy and make your Tuin Token work for you"</h3>
-          <p class="text-center text-dark"><strong>-Tuin Fund with crypto standard-
+            <h3 class="text-center">"购买并让您的 Tuin代币为您工作"</h3>
+          <p class="text-center text-dark"><strong> -具有加密标准的Tuin资金-
+
             </strong></p>  
           </div>
           <!-- <div class="col-lg-3 cta-btn-container text-center">
@@ -430,10 +400,13 @@ to driving the adoption of digital currencies and empowering individuals to take
 
 
         <div class="section-title">
-          <h4><strong><a style="display: inline-block; padding-left: 30px; padding-right: 30px;" class="nav-link scrollto btn btn-outline-secondary wide-button" href="#team">Meet The Team</a></strong></h4>
-          <h4><strong><a href="\assets\file\White_Paper._Tuin_1.pdf" download style="display: inline-block; padding-left: 30px; padding-right: 30px;" class="nav-link scrollto btn btn-outline-secondary wide-button" href="#team">Read Whitepaper</a></strong></h4><br>
+          <h4><strong><a style="display: inline-block; padding-left: 30px; padding-right: 30px;" class="nav-link scrollto btn btn-outline-secondary wide-button" href="#team">关于团队
+          </a></strong></h4>
+          <h4><strong><a href="\assets\file\White_Paper._Tuin_1.pdf" download style="display: inline-block; padding-left: 30px; padding-right: 30px;" class="nav-link scrollto btn btn-outline-secondary wide-button" href="#team">阅读策划方案
+          </a></strong></h4><br>
 
-          <i><strong>"Let's growth with Tuin."</strong></i>
+          <i><strong>“让我们与Tuin一起成长”
+          </strong></i>
         </div>
 
         <div class="row">
@@ -441,10 +414,11 @@ to driving the adoption of digital currencies and empowering individuals to take
             <div class="accordion-list">
               <ul>
                 <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1">Our Value <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1">我们的价值 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                     <p>
-                      To be ethical, fair, and transparent in Tuin Token missions and to always be accountable to Tuin community members.
+                      保持道德、公平和透明，并始终对图因 社区成员负责。
+
                     </p>
                   </div>
                 </li>
@@ -462,12 +436,12 @@ to driving the adoption of digital currencies and empowering individuals to take
             <div class="accordion-list">
               <ul>
                 <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-5">Our Vision <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-5">我们的愿景 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-5" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      The Tuin vision goes beyond providing a bridge for the Tuin investment ecosystem. It is also intended that Tuin token capital will provide a contribution to the world since it will be the first venture capital to have a crypto standard, which is similar to what the USD dollar and its gold standard were before they were changed into fiat money. All the businesses that operate within Tuin's ecosystem will be fundamental to the price of Tuin Token in the market as long as Tuin helps people grow their businesses. Not only that, Tuin is also hoping to provide an online marketplace for start-ups and established companies to market and sell their products, using Tuin Tokens as the currency in order to avoid inflationary pressures. The outreach component is part of the long-term roadmap for Tuin.
+                      Tuin的愿景不仅仅是为 Tuin投资代币系统提供桥梁。 Tuin代币资本还打算为世界做出贡献，因为它将成为第一个拥有加密货币标准的风险投资，这类似于美元及其黄金标准在它们变成法定货币之前的标准。只要Tuin帮助人们发展业务，在Tuin代币系统中运营的所有业务都将成为Tuin代币在市场上的价格基础。不仅如此Tuin还希望为初创企业和老牌公司提供一个在线市场来营销和销售他们的产品，使用Tuin代币作为货币以避免通货膨胀压力。外展部分是Tuin长期路线图的一部分。
                     </p>
-                    <p>Your support will enable Tuin Token to transform the fortunes of the investment ecosystem throughout the world, while creating a new entrepreneur, boosting existing business growth, and producing great investors as well as giving everyone the right to grow together.</p>
+                    <p>您的支持将使Tuin代币改变全球投资经济系统的命运，同时创造新的企业家，促进现有业务增长，并产生伟大的投资者，并赋予每个人共同成长的权利。</p>
                   </div>
                 </li>
 
@@ -482,23 +456,26 @@ to driving the adoption of digital currencies and empowering individuals to take
             <div class="accordion-list">
               <ul>
                 <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-3">Tuin Token Offer <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-3">Tuin代币的优势 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                     
-                    <p> <strong> Token Benefits for Investors</strong> <br><br> 
-                    1. Investment Opportunities: Token holders have access to a diverse range of investment opportunities in various business ideas and projects. <br>
-                    2. Diversification: Investing in the token allows for portfolio diversification across different industries and sectors. <br>
-                    3. Early Access: Investors gain early access to promising business ideas and projects with significant growth potential. <br>
-                    4. Liquidity: The token can be easily bought and sold on open markets, providing liquidity to investors. <br>
-                    5. Transparency: Blockchain technology ensures transparency and traceability of investments.
+                    <p> <strong> 对投资者的收益：
+                    </strong> <br><br> 
+                    1. 投资机会：持有代币的投资者可以获取各种不同行业和项目的投资机会。<br>
+                    2. 多样化：通过投资代币，可以在不同行业和领域实现投资组合的多样化。<br>
+                    3. 获取机会：投资者可以提前获取具有巨大增长潜力的有前景的商业理念和项目。<br>
+                    4. 流动性：代币可以在开放市场上轻松买卖，为投资者提供流动性。<br>
+                    5. 透明度：区块链技术确保投资的透明度和可追溯性。<br>
+                    
                     </p><br><br>
                       
-                    <p> <strong> Token Benefits for Entrepreneurs </strong> <br><br> 
-                      1. Access to Capital: Entrepreneurs can raise funds by offering tokens, providing an alternative financing option with a broader investor base. <br>
-                      2. Cost-Effective Fundraising: Token offerings are a cost-effective method compared to traditional fundraising avenues like venture capital or IPOs. <br>
-                      3. Global Reach: Token offerings attract investors globally, expanding the entrepreneur's reach and exposure. <br>
-                      4. Community Building: Token holders form an engaged community that offers feedback, support, and advocacy for the entrepreneur's project. <br>
-                      5. Incentivized Participation: Tokens can incentivize active participation and contribution from holders, boosting the project's success.
+                    <p> <strong> 对企业家的收益 </strong> <br><br> 
+                      1. 资金获取途径：企业家可以通过发行代币来筹集资金，为更广泛的投资者提供另一种融资选择。<br> 
+                      2. 成本效益的筹资方式：与传统的风险投资或IPO相比，代币发行是一种成本效益更高的筹资方法。<br> 
+                      3. 全球触达：代币发行吸引全球投资者，扩大了企业家的影响力和曝光度。<br> 
+                      4. 社群建设：代币持有者形成一个积极参与的社群，为企业家的项目提供反馈、支持和倡导。<br> 
+                      5. 激励参与：代币可以激励持有者积极参与和贡献，提升项目的成功机会。<br> 
+
 
                       </p>
                   </div>
@@ -517,29 +494,33 @@ to driving the adoption of digital currencies and empowering individuals to take
             <div class="accordion-list">
               <ul>
                 <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-4">How Tuin Tokens Work <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-4">Tuin代币运作流程
+                    <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
                     
-                    <p> <strong> For Investors</strong> <br><br> 
-                    1. Purchase Tokens: Investors need to acquire the tuin tokens through a token sale or exchange. <br>
-                    2. Platform Signup: After acquiring tokens, investors sign up on our platform to gain access to the available business ideas. <br>
-                    3. Explore and Analyze: Investors can search and analyze the business ideas listed on the platform, considering factors such as market potential, growth prospects, and alignment with their investment goals. <br>
-                    4. Communication: Investors can engage in discussions and schedule meetings with the idea owners to gain a deeper understanding of the project. <br>
-                    5. Stake Tokens: Once confident in an idea, investors have the option to stake their tokens on that particular business idea, indicating their interest and commitment to supporting its development. <br>
-                    6. Monitor and Participate: Investors can actively monitor the progress of the project, provide feedback, and contribute their expertise or resources when needed. <br>
-                    7. Potential Returns: If the business idea succeeds, investors may benefit from the growth and success of the project, potentially receiving returns on their investment. <br>
+                    <p> <strong> 对于投资者</strong> <br><br> 
+                      1. 购买代币：投资者需要通过代币销售或交易获取Tuin代币。<br>
+                      2. 平台注册：获取代币后，投资者在我们的平台上注册，以获取可用的商业理念。<br>
+                      3. 探索和分析：投资者可以在平台上搜索和分析列出的商业理念，考虑市场潜力、增长前景以及与其投资目标的一致性等因素。<br>
+                      4. 沟通交流：投资者可以参与讨论并安排与项目拥有者的会议，以深入了解项目。<br>
+                      5. 投入代币：一旦对某个理念有信心，投资者可以选择在该特定商业理念上投入他们的代币，表明他们对支持其发展的兴趣和承诺。<br>
+                      6. 监控和参与：投资者可以积极监控项目的进展，提供反馈，并在需要时贡献他们的专业知识或资源。<br>
+                      7. 潜在回报：如果商业理念取得成功，投资者可能会从项目的增长和成功中受益，可能获得投资回报。<br>
+                      
                     </p><br><br>
                       
-                    <p> <strong> For Entrepreneurs </strong> <br><br> 
-                      1. Purchase Tokens: Entrepreneurs need to acquire the tuin tokens through a token sale or exchange to participate in the platform. <br>
-                      2. Platform Signup: Entrepreneurs sign up on our platform to gain access to upload their business ideas. <br>
-                      3. Idea Submission: Entrepreneurs can upload their business ideas onto the platform, providing detailed information about the concept, market analysis, and growth potential. <br>
-                      4. AI Filtration: The platform employs AI algorithms to analyze and filter the uploaded ideas based on predetermined criteria, ensuring quality and viability. <br>
-                      5. Idea Display: Selected business ideas are showcased on the platform's front page, increasing visibility and attracting potential investors.<br>
-                      6. Investor Interaction: Entrepreneurs engage in discussions and meetings with interested investors, addressing their questions, concerns, and collaborating on further development..<br>
-                      7. Funding and Development: If investors show interest and stake tokens in an idea, entrepreneurs receive the necessary funding to develop and execute their business plan.<br>
-                      8. Progress Updates: Entrepreneurs provide regular updates on the project's progress, keeping investors informed about milestones, achievements, and challenges.<br>
-                      9. Potential Success: Successful implementation of the business idea can lead to growth, revenue generation, and potential rewards for the entrepreneur and investors involved.<br>
+                    <p> <strong> 对于企业家 </strong> <br><br> 
+                      1. 购买代币：企业家需要通过代币销售或交易获取Tuin代币，以参与平台。<br> 
+                      2. 平台注册：企业家在我们的平台上注册，以获取上传他们的商业理念的权限。<br> 
+                      3. 提交理念：企业家可以将他们的商业理念上传到平台上，提供关于概念、市场分析和增长潜力的详细信息。<br> 
+                      4. AI过滤：平台采用AI算法根据预先确定的标准分析和过滤上传的理念，确保质量和可行性。<br> 
+                      5. 展示理念：选定的商业理念将在平台的首页展示，提高可见性，吸引潜在投资者。<br> 
+                      6. 与投资者互动：企业家与感兴趣的投资者进行讨论和会议，解答他们的问题和关注，并就进一步发展进行合作。<br> 
+                      7. 资金和发展：如果投资者对某个理念表示兴趣并投入代币，企业家将获得必要的资金来开发和执行他们的商业计划。<br> 
+                      8. 进展更新：企业家定期提供项目进展的更新，向投资者了解里程碑、成就和挑战。<br> 
+                      9. 潜在的成功：商业理念的成功实施可以带来增长、收入生成，并为参与其中的企业家和投资者带来潜在的回报。<br> 
+                      
+                        
 
                       </p>
                   </div>
@@ -563,12 +544,13 @@ to driving the adoption of digital currencies and empowering individuals to take
       <div class="container" data-aos="zoom-in">
         
         <div class="section-title">
-          <h2>Where to Buy</h2>
+          <h2>购买地址
+          </h2>
         </div>
         <div class="row">
           <div class="col-lg-12 text-center text-lg-start">
             <div class="justify-content-center text-center">
-              <a href="{{ url('/buy') }}">
+              <a  target="_blank" href="{{ url('/buy') }}">
               <button type="button" class="btn btn-outline-warning"><img src="assets/img/TUINSWAP-removebg-preview.png" class="img-fluid animated mb-4 " alt="" style="width:300px;height:auto;">  </button><br><br>
             </a>
             </div>  
@@ -585,8 +567,8 @@ to driving the adoption of digital currencies and empowering individuals to take
       <div class="">
 
         <div class="section-title">
-          <h2>Partner</h2>
-          <p>Keep in update</p>
+          <h2>合作伙伴</h2>
+          <p>更新中.</p>
         </div>
 
         <!-- <div class="row" data-aos="zoom-in">
@@ -626,8 +608,9 @@ to driving the adoption of digital currencies and empowering individuals to take
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>News</h2>
-          <p>Keep in update</p>
+          <h2>新闻</h2>
+          <p>更新中.
+          </p>
         </div>
 
         <!-- <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -743,7 +726,7 @@ to driving the adoption of digital currencies and empowering individuals to take
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
             <div class="content">
-              <h3><strong>How to Buy Tuin Token</strong></h3>
+              <h3><strong>如何购买Tuin代币</strong></h3>
               <!-- <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
               </p> -->
@@ -752,48 +735,53 @@ to driving the adoption of digital currencies and empowering individuals to take
             <div class="accordion-list">
               <ul>
                 <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Create a Wallet <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span>创建钱包
+                    <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                     <p>
-                      Go to metamask.io, install the extension in your browser (or install the mobile app on your iPhone or Android device) and follow the steps to set up your Ethereum wallet. It is important to pay close attention to your unique "Seed Phrase". Ideally, you should write the phrase down and store it in a safe, secure, and memorable location.  
+                      访问metamask.io，在浏览器上安装该扩展程序（或在iPhone或Android设备上安装移动应用程序），并按照步骤设置您的以太坊钱包。重要的是要特别注意您独特的“词汇密码”。理想情况下，您应该将该密码写下来并存放在一个安全、可靠且记忆深刻的地方。  
                     </p> <br>
-                    <a href="https://www.youtube.com/watch?v=8UAz1FyK3-4" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>  
+                    <a href="https://www.youtube.com/watch?v=8UAz1FyK3-4" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>看视频</span></a>  
                   </div>
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> To up your wallet <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span>充值您的钱包
+                    <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      Buy Ethereum directly from Metamask or transfer funds from an exchange (Binance, Crypto.com, Coinbase).  
+                      直接从 Metamask 购买 USDT、USDC、BUSD 和一些 BNB，或将资金从交易所（例如 Binance、Crypto.com、Coinbase）转移到您的钱包。
                     </p> <br>
-                    <a href="https://www.youtube.com/watch?v=FMTYAMPQzSk" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>  
+                    <a href="https://www.youtube.com/watch?v=FMTYAMPQzSk" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>看视频</span></a>  
                   </div>
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Connect Your Wallet to The DEX <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> 将您的钱包连接到去中心化交易所（DEX） <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      You must be connected to TuinSwap. Visit the (Tuin Website link) in Google Chrome or in the browser within the Metamask application. Ensure that your wallet is connected. Paste the $Tuin token address into TuinSwap, select Tuin, and confirm the transaction. If Metamask prompts you to sign your wallet, please do so.
+                      您必须连接到TuinSwap。在Google Chrome浏览器或Metamask应用程序中的浏览器中访问（Tuin网站链接）。确保您的钱包已连接。将$Tuin代币地址粘贴到TuinSwap中，选择Tuin，并确认交易。如果Metamask提示您确认钱包，请进行确认。
                     </p>
                   </div>
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>04</span> Trade USDT/BUSD/USDC to Tuin Token <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>04</span> 将USDT/BUSD/USDC交换为Tuin代币
+                    <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      Input the amount of USDT/BSUD/USDC you would want to trade. Remember to leave some funds in your wallet for “GAS Fees” which is the fuel of the transaction. Then click “Swap”
+                      输入您想要交易的USDT/BUSD/USDC金额。记得在钱包中留一些资金作为“手续费”，这是交易的手续费。然后点击“交换”。
                     </p>
                   </div>
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>05</span> You have swapped your USDT/BUSD/USDC to Tuin Token! <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-7" class="collapsed"><span>05</span> 您已成功将USDT/BUSD/USDC交换为Tuin代币！
+                    <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-7" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      Congratulations! You are now a holder of Tuin Token!A transaction may take between 30 seconds and an hour. If you have any questions, please feel free to contact us via telegram or discord
+                      恭喜！您现在是Tuin代币的持有人！交易可能需要30秒到一小时不等的时间。如果您有任何问题，请随时通过Telegram或Discord与我们联系。
+
                     </p>
                   </div>
                 </li>
@@ -815,22 +803,23 @@ to driving the adoption of digital currencies and empowering individuals to take
 
         <div class="row">
           <div class="col-lg-7 text-center ">
-            <h3>Sign the Tuin Token Manifesto on Twitter!</h3>
+            <h3>在Twitter上签署Tuin代币宣言！</h3>
             <a target="_blank" class="cta-btn align-middle" href="https://twitter.com/intent/tweet?text='I'm signing the TuinToken Manifesto! @TuinToken @TT https://tuintoken.com/ #TuinTokenManifesto '"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg enable-background="new 0 0 32 32" height="100%" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="10%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M31.993,6.077C30.816,6.6,29.552,6.953,28.223,7.11c1.355-0.812,2.396-2.098,2.887-3.63  c-1.269,0.751-2.673,1.299-4.168,1.592C25.744,3.797,24.038,3,22.149,3c-3.625,0-6.562,2.938-6.562,6.563  c0,0.514,0.057,1.016,0.169,1.496C10.301,10.785,5.465,8.172,2.227,4.201c-0.564,0.97-0.888,2.097-0.888,3.3  c0,2.278,1.159,4.286,2.919,5.464c-1.075-0.035-2.087-0.329-2.972-0.821c-0.001,0.027-0.001,0.056-0.001,0.082  c0,3.181,2.262,5.834,5.265,6.437c-0.55,0.149-1.13,0.23-1.729,0.23c-0.424,0-0.834-0.041-1.234-0.117  c0.834,2.606,3.259,4.504,6.13,4.558c-2.245,1.76-5.075,2.811-8.15,2.811c-0.53,0-1.053-0.031-1.566-0.092  C2.905,27.913,6.355,29,10.062,29c12.072,0,18.675-10.001,18.675-18.675c0-0.284-0.008-0.568-0.02-0.85  C30,8.55,31.112,7.395,31.993,6.077z" fill="#55ACEE"/><g/><g/><g/><g/><g/><g/></svg>Tweet!</a>
           
           </div>
           <div class="col-lg-5 cta-btn-container text-justify">
-            <p> <div style="font-weight: normal;">We are Tuin Token, one of the most influential contributors to the crypto-movement and mankind's advancement. <br> <br>
+            <p> <div style="font-weight: normal;">我们是Tuin代币，是加密货币运动和人类进步中最有影响力的贡献者之一。 <br> <br>
 
-              We are engaged in the development of a fair people's currency on which anyone can have a business and participate in the venture capital market. Our engagement has led us to value: <br> <br>
+              我们致力于开发一种公平的货币，任何人都可以在其中经商并参与风险投资市场。我们的参与使我们重视以下价值观： <br> <br>
          
-              <div style="font-weight: 	Bold;">Being trustworthy,</div> we always trust others, as trust is the cornerstone of any successful business. <br> 
+              <div style="font-weight: 	Bold;">诚信，</div> 我们始终信任他人，因为信任是任何成功业务的基石。 <br> 
              
-              <div style="font-weight: 	Bold;">Being optimistic,</div> we value having a positive outlook, expectation, or attitude towards life, events, or the future. <br> 
+              <div style="font-weight: 	Bold;">乐观，</div> 我们珍视对生活、事件或未来持有积极的观点、期望或态度。 <br> 
               
-              <div style="font-weight: 	Bold;">Being resilient,</div> we value being able to bounce back, recover, or adapt to adversity. <br> <br>
-              
-              To put it another way, we value both sides equally.
+              <div style="font-weight: 	Bold;">坚韧，
+              </div>我们重视能够从逆境中反弹、恢复或适应的能力。换句话说，我们同样重视两个方面。
+              <br> <br>
+           
             </div>
               </strong>
             
@@ -853,12 +842,14 @@ to driving the adoption of digital currencies and empowering individuals to take
         <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  ">
 
           <div class="content">
-            <h3><strong>Tokenomics</strong></h3>
+            <h3><strong>代币经济模式
+            </strong></h3>
             <!-- <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
             </p> -->
-            <h1>Token Supply: 7B of Tuin Token</h1>
-            <p>It is tax-free and does not incur bank interest. As easy as flipping your hand, you can start your own business. A total of 5B tokens have been sent to the liquidity pool, LP tokens have been burnt, and the contract has been renounced. Tuin's remaining 2B are reserved for dedicated team members, visionary advisors, and early investors who believe in the project's transformative potential.</p>
+            <h1>代币供应量：70亿的Tuin代币
+            </h1>
+            <p>它是免税的，不产生银行利息。就像挥挥手一样简单，您就可以开始自己的生意。总共有50亿代币已发送到流动性池，LP代币已被销毁，并且合约已被放弃。Tuin剩余的20亿代币保留给专职团队成员、有远见的顾问和相信该项目变革潜力的早期投资者。</p>
           </div>
          
          <!--  <div class="accordion-list">
@@ -922,24 +913,32 @@ to driving the adoption of digital currencies and empowering individuals to take
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Roadmap</h2>
-          <p>Proposed Roadmap</p>
+          <h2> 项目规划
+          </h2>
+          <p>提议项目规划</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
-              <h3>Phase 1 :</h3>
+              <h3>阶段一：
+              </h3>
               <!-- <h4><sup>$</sup>0<span>per month</span></h4> -->
               <ul>
-                <li><i class="bx bx-check"></i> Token and Website Development</li>
-                <li><i class="bx bx-check"></i> Launch to TuinSwap Defi's</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Safety improved (Audit Team KYC and LP locked)</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> First CEX listing</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Launch to Uniswap and PancakeSwap DeFi's</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Legal entity set up</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Bridge to BSC</li>
+                <li><i class="bx bx-check"></i> 代币和网站开发
+                </li>
+                <li><i class="bx bx-check"></i> 推出到TuinSwap去中心化金融平台
+                </li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> 提升安全性（审计团队KYC和LP锁定）</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> 首次中心化交易所上市
+                </li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> 推出到Uniswap和PancakeSwap去中心化金融平台
+                </li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> 设立法律实体
+                </li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> 与BSC建立桥接
+                </li>
               </ul>
               <!-- <a href="#" class="buy-btn">Get Started</a> -->
             </div>
@@ -947,16 +946,18 @@ to driving the adoption of digital currencies and empowering individuals to take
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
-              <h3>Phase 2 :</h3>
+              <h3>阶段2 ：</h3>
               <!-- <h4><sup>$</sup>0<span>per month</span></h4> -->
               <ul>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Tuincast (Weekly Podcast)</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> My Tuin (Tuin Token Investment Website and Apps)</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> SafeMoon Swap listing</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Upgrades to the legal entity</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Binance and Bitmart Exchange Platform listing</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Listing other tokens to TuinSwap DeFi's</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> TuinDAO (Decentralized Autonomous Organization) formation</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Tuincast（每周播客）</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> My Tuin（Tuin 代币投资网站和应用程序）</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> SafeMoon Swap 上市
+                </li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> 升级为法人实体
+                </li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Binance 和 Bitmart 交易平台上市</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i>向 TuinSwap DeFi 列出其他代币</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> TuinDAO（去中心化自治组织）的形成</li>
               </ul>
               <!-- <a href="#" class="buy-btn">Get Started</a> -->
             </div>
@@ -964,13 +965,17 @@ to driving the adoption of digital currencies and empowering individuals to take
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
-              <h3>Phase 3 :</h3>
+              <h3>第三阶段：
+              </h3>
               <!-- <h4><sup>$</sup>0<span>per month</span></h4> -->
               <ul>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> My Tuin 2.0 (Online Marketplace for Business in Tuin Sytem)</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Listing other tokens to TuinSwap DeFi's</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> Expansion of the governance system</li>
-                <li><i class="bx bx-right-arrow-alt text-secondary"></i> My Tuin 3.0 (Star-Up Exchange Platform)</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i>My Tuin 2.0（Tuin 系统中的商业在线市场）</li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i> 向 TuinSwap DeFi 列出其他代币
+                </li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i>治理体系的扩展
+                </li>
+                <li><i class="bx bx-right-arrow-alt text-secondary"></i>My Tuin 3.0（星币兑换平台）
+                </li>
               </ul>
               <!-- <a href="#" class="buy-btn">Get Started</a> -->
             </div>
@@ -1365,8 +1370,11 @@ Our transparent fee structure ensures that you can maximize your trading profits
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Team</h2>
-          <p>At Tuin Token, we are proud to have a diverse and talented team dedicated to revolutionizing the world of digital assets. Our team is comprised of industry experts, visionaries, and technology enthusiasts who share a common goal <br> <strong><i>"to provide innovative solutions and exceptional service to our users."</i></strong>  
+          <h2> 团队
+          </h2>
+          <p>在 Tuin代币中，我们很自豪拥有一支多元化且才华横溢的团队，致力于彻底改变数字资产世界。我们的团队由拥有共同目标的行业专家、 <br> <strong><i>、梦想家和技术爱好者组成
+            “为我们的用户提供创新的解决方案和卓越的服务。”
+            </i></strong>  
             </p>
         </div>
 
@@ -1441,59 +1449,68 @@ Our transparent fee structure ensures that you can maximize your trading profits
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>COMMUNITY</h2>
-          <strong>Welcome to the Tuin Token Community! 
+          <h2>  社区
+          </h2>
+          <strong>欢迎来到 Tuin 代币社区！
           </strong>
-          <p>We believe that a strong and engaged community is the heart of any successful project. 
-            Here, you can connect with like-minded individuals, share your thoughts, and stay up-to-date with the latest news and updates.
+          <p>我们相信，一个强大且积极参与的社区是任何成功项目的核心。在这里，您可以与志同道合的人联系，分享您的想法，并了解最新消息和更新。
             </p>
         </div>
      
         <div class="faq-list">
-          <strong>Why Join Our Community?</strong>
+          <strong>为什么加入我们的社区？
+          </strong>
           <br><br>
           <ul>
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Engage with Fellow Enthusiasts <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">与其他爱好者交流
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                 <p>
-                  Connect with a diverse community of cryptocurrency enthusiasts, traders, and investors who share a common passion for blockchain technology and digital assets.
+                  与对区块链技术和数字技术有着共同热情的加密货币爱好者、交易者和投资者组成的多元化社区联系
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Stay Informed <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">化社区联系 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                 Be the first to know about the latest developments, product updates, and announcements from Tuin Token.Our community members are always at the forefront of exciting news and insights
+                  成为第一个了解 Tuin 代币的最新发展、产品更新和公告的人。我们的社区成员始终处于激动人心的新闻和见解的最前沿
+
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Educational Resources <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">教育资源
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Expand your knowledge and understanding of cryptocurrencies through our educational resources. We provide guides, tutorials, and informative content to help you navigate the world of digital assets with confidence
+                  通过我们的教育资源扩展您对加密货币的知识和理解。我们提供指南、教程和信息内容，帮助您自信地驾驭数字资产世界
+
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Exclusive Events and Promotions <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">独家活动和促销
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Gain access to exclusive events, webinars, and promotions designed specifically for our community members. Get involved in exciting giveaways, contests, and rewards programs as we show our appreciation for your support.
+                  获得专为我们的社区成员设计的独家活动、网络研讨会和促销活动的访问权。参与激动人心的赠品、竞赛和奖励计划，感谢您的支持。
+
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="500">
-              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Support and Assistance<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">支持与协助
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Our community is here to support you on your journey. Whether you have questions, need technical assistance, or want to engage in discussions, our friendly community members and dedicated support team are ready to assist you.
+                  我们的社区在这里为您的旅程提供支持。无论您有疑问、需要技术帮助还是想参与讨论，我们友好的社区成员和专门的支持团队随时准备为您提供帮助。
+
                   
                 </p>
               </div>
@@ -1503,33 +1520,38 @@ Our transparent fee structure ensures that you can maximize your trading profits
         </div>
 <br><br><br>
         <div class="faq-list">
-          <strong>How to Get Involved?</strong>
+          <strong>如何参与？
+          </strong>
           <br><br>
           <ul>
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Join our social media channels <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">加入我们的社交媒体
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                 <p>
-                  Follow us on Twitter, Facebook, LinkedIn, Telegram, instagram and Discord to stay connected and receive real-time updates from the Tuin Token team.
-                  Engage in conversations, share your insights, and connect with other community members
+                  在 Twitter、Facebook、LinkedIn、Telegram、Instagram 和 Discord 上关注我们，保持联系并接收来自 Tuin 代币团队的实时更新。参与对话、分享您的见解并与其他社区成员交流
+
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Participate in Our Forums <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">参加我们的论坛
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Visit our community forums to engage in discussions, ask questions, and share your experiences. It's a great place to connect with fellow users, learn from their expertise, and contribute to the growth of our community.
+                  访问我们的社区论坛以参与讨论、提出问题并分享您的经验。这是与其他用户交流、学习他们的专业知识并为我们社区的发展做出贡献的好地方。
+
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Spread The Word: <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-check-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">分享：
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Help us grow our community by sharing Tuin Token with your friends, colleagues, and networks. Together, we can create a vibrant and supportive community that drives the future of cryptocurrencies.
+                  通过与您的朋友、同事和网络分享 Tuin 代币 来帮助发展我们的社区。我们可以一起创建一个充满活力和支持的社区，推动加密货币的未来。
                 </p>
               </div>
             </li>
@@ -1546,8 +1568,10 @@ Our transparent fee structure ensures that you can maximize your trading profits
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>Looking for a way to contact us? We would be delighted to hear from you. Here is how you can contact us.</p>
+          <h2>联系方式
+          </h2>
+          <p>正在寻找联系我们的方式？我们很高兴收到您的来信。您可以通过以下方式联系我们。
+          </p>
         </div>
 
         <div class="row">
@@ -1562,7 +1586,7 @@ Our transparent fee structure ensures that you can maximize your trading profits
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
+                <h4>邮件：  </h4>
                 <p>tuin@tuingroup.company</p>
               </div>
 
@@ -1580,20 +1604,20 @@ Our transparent fee structure ensures that you can maximize your trading profits
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
+                  <label for="name">   您的名字     </label>
                   <input type="text" name="name" class="form-control" id="name" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
+                  <label for="name">  您的邮件</label>
                   <input type="email" class="form-control" name="email" id="email" required>
                 </div>
               </div>
               <div class="form-group">
-                <label for="name">Subject</label>
+                <label for="name">主题</label>
                 <input type="text" class="form-control" name="subject" id="subject" required>
               </div>
               <div class="form-group">
-                <label for="name">Message</label>
+                <label for="name">讯息</label>
                 <textarea class="form-control" name="message" rows="10" required></textarea>
               </div>
               <div class="my-3">
@@ -1601,7 +1625,8 @@ Our transparent fee structure ensures that you can maximize your trading profits
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">   发送讯息
+              </button></div>
             </form>
           </div> 
 
