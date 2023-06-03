@@ -1,8 +1,21 @@
+//
+// DEPLOYED ADDRESSES
+//
 export const tokenContractAddress =
     "0x5ff39141b1f20e2f34a36c5fa8fed88a3dc298ba";
 export const walletContractAddress =
     "0xc68446f1ae943f1c79acfbdeb83f35f57a9fd45f";
 export const poolContractAddress = "0xf08d2c5a0e26ed839e804871c5a0ea3db0d52c01";
+
+//
+// OPTIMISM ADDRESSES (DEV PURPOSES ONLY)
+//
+// export const tokenContractAddress =
+//     "0xb54eaa2d03919229b6010fc0810aebff69f1debc";
+// export const walletContractAddress =
+//     "0x92b5a7b8fe239c6f1f62443320959e830a5f9b2f";
+// export const poolContractAddress = "0x7ce6b6f6f337b1f36e70f00a749048006c6028cc";
+
 // export const USDTContractAddress = "0xdAC17F958D2ee523a2206206994597C13D831ec7";
 // export const USDCContractAddress = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48";
 // export const BUSDContractAddress = "0x4Fabb145d64652a948d72533023f6E7A623C7C53";
