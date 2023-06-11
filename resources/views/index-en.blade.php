@@ -1392,6 +1392,24 @@ Our transparent fee structure ensures that you can maximize your trading profits
             </div>
           </div>
 
+          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/hery.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Heryberthus Setyawan Gultom</h4>
+                <span>Chief Marketing Officer <br><a {{-- href = "mailto: muhammad.ramadhan@tuintoken.com" --}}>heryberthus.gultom@tuintoken.com</a></span>
+                <!-- <p>As our Chief Technology Officer, Taufik is responsible for driving the technical vision and strategy of Tuin Token. With his deep knowledge of blockchain technology and software development, he ensures that our platform remains secure, scalable, and cutting-edge.
+                </p> -->
+                <!-- <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
